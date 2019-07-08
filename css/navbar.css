@@ -1,0 +1,47 @@
+body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   font-family: sans-serif;
+
+   background-color: #1C1C1C;
+}
+
+.navbar:after {
+   display: block;
+   clear: both;
+}
+
+.navbar { 
+   width: 100%;
+   background-color: #202020;
+   position: sticky;
+   top: 0;
+
+   z-index: 1;
+}
+
+.menu {
+   width: 85%;
+   margin: 0 auto;
+   display: flex;
+}
+
+.menu > .links {
+   list-style: none;
+   width: 90%;
+   margin: 1.5em 0;   
+   display: flex;   
+   justify-content: flex-end;
+}
+
+.links li a {   
+   text-decoration: none;   
+   padding: 1.3em;
+   font-size: 1.3vw;   
+   color: #777;
+}
+
+.titulo h2 {
+   color: white;
+}

@@ -1,0 +1,16 @@
+.perfil {
+   margin-top: 1.5em;
+   margin-right: 2em;
+   position: relative;
+   height: auto;
+}
+
+.perfil > .descricao {
+   text-align: center;
+   color: gray;
+}
+
+.perfil > img {
+   width: 100%;
+   height: 15em;
+}
