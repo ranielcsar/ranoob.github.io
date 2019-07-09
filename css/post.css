@@ -18,16 +18,19 @@
 }
 
 .post > .titulo {
+   font-size: 3.2vh;
    color: #eaeaea;
-   border-bottom: 5px solid #663366;
+   border-bottom: 5px solid #8533ee;
    width: max-content;
 }
 
 .post > .subtitulo {
+   font-size: 2.5vh;
    color: #F0EBE866;
 }
 
 .post > .descricao {
+   font-size: 2.2vh;
    text-align: justify;
    color: #eee;
 }

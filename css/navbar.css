@@ -7,13 +7,9 @@ body {
    background-color: #1C1C1C;
 }
 
-.navbar:after {
-   display: block;
-   clear: both;
-}
-
 .navbar { 
    width: 100%;
+   display: flex;
    background-color: #202020;
    position: sticky;
    top: 0;
@@ -21,27 +17,60 @@ body {
    z-index: 1;
 }
 
-.menu {
-   width: 85%;
-   margin: 0 auto;
+.titulo h2 { color: white; margin: 1em 3em;}
+
+.navbar-link {
+   color: gray;
+   padding-right: 2em;   
+   text-decoration: none;
+   transition: 300ms;
+}
+   .navbar-link:hover {
+      color: #8533ee;  
+      text-decoration: none;
+   }
+
+.navbar-itens {
    display: flex;
+   margin: 1.7em auto;
 }
 
-.menu > .links {
-   list-style: none;
-   width: 90%;
-   margin: 1.5em 0;   
-   display: flex;   
-   justify-content: flex-end;
+.navbar-itens-direita { margin-left: auto; }
+
+.botao-menu { display: none; }
+
+.fa {
+   color: gray;
+   transition: 300ms;
 }
 
-.links li a {   
-   text-decoration: none;   
-   padding: 1.3em;
-   font-size: 1.3vw;   
-   color: #777;
+.fa-instagram:hover {
+   color: #c33;
 }
 
-.titulo h2 {
-   color: white;
+.fa-twitter:hover {
+   color: #33c;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-itens,
+  .navbar {
+      flex-direction: column;
+   }
+    
+   .navbar-itens { display: none; margin: 0;}
+       
+   .navbar-itens-direita { margin-left: 0; }
+       
+   .navbar-mostrar { display: flex; }
+       
+   .botao-menu {
+      align-self: flex-end;
+      margin: 0.9em 0;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      font-size: 5vh;
+      color: white;
+   } 
 }
