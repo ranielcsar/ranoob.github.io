@@ -1,12 +1,12 @@
 .conteudoPrincipal {
    max-width: 90%;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 3em auto;
    padding: 0 1rem;
+   background-color: #1c1c1c;
 }
 
 .conteudo {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+   grid-template-columns: 10fr 3.5fr;
    grid-gap: 1rem; 
 }
