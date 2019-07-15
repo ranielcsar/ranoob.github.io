@@ -3,14 +3,11 @@ $(document).ready( function() {
    $('.botao-menu').click( function(e) {
       var el = $(this);
 
-      if (el.text() == '⇊')
-      {
-         el.text('⇈');
-      } else {
-         el.text('⇊');
-      }
+      $('.navbar-itens').toggleClass('navbar-mostrar');
 
-      $('.navbar-itens a').toggle(200);
+      $('.navbar-itens').toggle(200);
+
+      $('.navbar-itens-direita').css('display', 'flex');
    });
 
 });

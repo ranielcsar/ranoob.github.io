@@ -10,3 +10,9 @@
    grid-template-columns: 10fr 3.5fr;
    grid-gap: 1rem; 
 }
+
+@media only screen and (max-width: 768px) {
+   .conteudoPrincipal {
+      margin: 0 auto;
+   }
+}
