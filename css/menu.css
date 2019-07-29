@@ -1,0 +1,29 @@
+.cabecalho a.aberto {
+   display: flex;
+}
+
+.cabecalho a {
+   margin: 1em 1.5em;
+   color: gray;
+   text-decoration: none;
+   transition: 250ms;
+}
+   .cabecalho a:hover {
+      color: #fafafa;
+   }
+
+.redesSociais {
+   display: flex;
+}
+
+.fa {
+   transition: 250ms;
+}
+
+.fa-instagram:hover {
+   color: #c33;
+}
+
+.fa-twitter:hover {
+   color: #33c;
+}
