@@ -12,12 +12,13 @@
 }
 
 .btnMenu {
-   color: #fafafa;
+   color: white;
    text-shadow: 0px 6px 3px #111;
-   float: right;
-   background-color: transparent;
+   background-color: inherit;
    outline: none;
    border: none;
    font-size: 1.333em;
-   margin: -19.7777% 1em;
+   display: block;
+   float: right;
+   margin: -2.55em 1em;
 }

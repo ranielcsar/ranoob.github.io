@@ -7,7 +7,7 @@
    margin: 1em auto;
    border-radius: 7px;
    padding: 2.777%;
-   background-color: #202020;
+   background-color: #222222;
 }
 
 .post > .titulo {
@@ -15,18 +15,18 @@
    border-bottom: 3px solid #1abb9c;
    width: max-content;
 
-   font-size: 1.625em;
+   font-size: 1.425em;
 }
 
 .post > .subtitulo {
-   font-size: 0.975em;
+   font-size: 0.875em;
    opacity: 0.5;
    margin: 2.888% 0;
 }
 
 .post > .descricao {
    margin: 0.7em 0;
-   font-size: 1em;
+   font-size: 0.9em;
    text-align: justify;
    color: #eee;
 }

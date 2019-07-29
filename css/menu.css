@@ -1,5 +1,7 @@
 .cabecalho a.aberto {
-   display: flex;
+   display: block;
+   
+   position: relative;
 }
 
 .cabecalho a {
