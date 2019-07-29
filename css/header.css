@@ -1,0 +1,24 @@
+.cabecalho {   
+   /*padding: 7.5555%;*/
+   color: #fafafa;
+}
+
+.cabecalho a {
+   display: none;
+}
+
+.cabecalho > .titulo {
+   margin: 1em;
+   text-shadow: 0px 6px 3px #111;
+}
+
+.btnMenu {
+   color: #fafafa;
+   text-shadow: 0px 6px 3px #111;
+   float: right;
+   background-color: transparent;
+   outline: none;
+   border: none;
+   font-size: 1.333em;
+   margin: -18.7777% 1em;
+}

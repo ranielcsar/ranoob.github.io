@@ -1,0 +1,23 @@
+@import url('container.css');
+@import url('header.css');
+@import url('conteudo.css');
+@import url('posts.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {   
+   font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-color: #191919;
+}
+
+img {
+   max-width: 100%;
+}

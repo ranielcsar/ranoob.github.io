@@ -1,18 +1,8 @@
-.conteudoPrincipal {
-   max-width: 90%;
-   margin: 3em auto;
-   padding: 0 1rem;
-   background-color: #1c1c1c;
+.container {
+   margin: 0 auto;
+   width: 100%; /* 360px */
 }
 
-.conteudo {
-   display: grid;
-   grid-template-columns: 10fr 3.5fr;
-   grid-gap: 1rem; 
-}
-
-@media only screen and (max-width: 768px) {
-   .conteudoPrincipal {
-      margin: 0 auto;
-   }
+h1 {
+   font-size: 2em; /* 32 / 16 (32px é o alvo, 16px é o tamanho padrão dos browers) */
 }

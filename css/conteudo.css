@@ -1,0 +1,9 @@
+.conteudo {
+   margin: 0;
+   background-color: #1c1c1c;
+}
+
+.conteudo-principal {
+   margin: 0 auto;
+   width: 94.444%; /* 340px */
+}
