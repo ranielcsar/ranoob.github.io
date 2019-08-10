@@ -1,7 +1,7 @@
 $(document).ready( function() {
 
    $('.btnMenu').click( function() {
-      $('.cabecalho a').toggleClass('aberto');
+      $('.links a').toggleClass('aberto');
    });
 
 });

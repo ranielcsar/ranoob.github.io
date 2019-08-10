@@ -20,6 +20,7 @@
 
 .fa {
    transition: 250ms;
+   margin-right: -1em;
 }
 
 .fa-instagram:hover {
