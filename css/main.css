@@ -1,25 +1,28 @@
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('container.css');
-@import url('header.css');
-@import url('conteudo.css');
-@import url('posts.css');
-@import url('menu.css');
-@import url('barra-lateral.css');
-@import url('footer.css');
-@import url('responsividade.css');
+@import url('./header/header.css');
+@import url('./header/perfil.css');
+@import url('./container/container.css');
+@import url('./post/post.css');
+@import url('./footer/footer.css');
 
 * {
-   font-family: 'Poppins', verdana, sans-serif;
-   box-sizing: border-box;    
    margin: 0;
-   padding: 0;  
+   padding: 0;
+   box-sizing: border-box;
 }
 
-body {
-   background-color: #141414;
+html {
+   font-family: arial, sans-serif;
+   font-size: 16px;
+   background-color: #fafafa;
+
+   scroll-behavior: smooth;
 }
 
-img {
-   max-width: 100%;
+p {
+   line-height: 1.5em;
+}
+
+a {
+   text-decoration: none;
+   color: #eee;
 }

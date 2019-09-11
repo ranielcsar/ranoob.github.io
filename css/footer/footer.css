@@ -1,0 +1,25 @@
+.rodape {
+   float: left;
+   padding: 6.0208%;
+   text-align: center;
+   width: 100%;
+   background-color: #25242A;
+   color: #e6e6e6;
+   font-size: 1.25em;
+
+   margin-top: 5em;
+}
+
+.redes-sociais {
+   margin-top: 3em;
+}
+
+.redes-sociais a {   
+   color: #e6e6e6;
+   font-size: 0.9em;
+   margin: 0 0.9em;
+}
+
+.redes-sociais a:hover {
+   border-bottom: 3px solid #6f4aa9;
+}
