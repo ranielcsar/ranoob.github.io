@@ -27,7 +27,7 @@
 }
 
 .post > button {
-   padding: 15px;
+   padding: 18px 32px;
    background-color: #6f4aa9;
    outline: none;
    border: none;
@@ -50,4 +50,3 @@
 }
 
 .post > button a:visited { color: #fafafa; }
-
