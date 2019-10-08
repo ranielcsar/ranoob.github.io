@@ -37,12 +37,18 @@
    font-size: 1.3em;
 }
 
+<<<<<<< HEAD
 .post > a {
    padding: 1.125rem 2rem;
    background: transparent;
    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
    text-decoration: none;
    color: #6f4aa9;
+=======
+.post > button {
+   padding: 16px 32px;
+   background-color: #6f4aa9;
+>>>>>>> master
    outline: none;
    border: 2px solid #6f4aa9;
    border-radius: 5px;
@@ -60,3 +66,12 @@
    transform: scale(.95);
 }
 
+<<<<<<< HEAD
+=======
+.post > button a {
+   text-decoration: none;
+   color: #fafafa;
+}
+
+.post > button a:visited { color: #fafafa; }
+>>>>>>> master
