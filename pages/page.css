@@ -25,11 +25,11 @@
    color: #6f4aa9;
 }
 
-.container-post a { color: #EA7213; font-weight: bold; }
+.container-post a { color: #6f4aa9; font-weight: bold; }
 
-.container-post a:visited { color: #EA7213; }
+.container-post a:visited { color: #6f4aa9; }
 
-.container-post a:hover { color: #c33; }
+.container-post a:hover { color: #EA7213; }
 
 p {
    font-size: 1.5em;
