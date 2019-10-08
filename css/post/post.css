@@ -1,12 +1,14 @@
 .post {
    margin: 2.3em auto;
+   margin-bottom: 3em;
    width: 77.2868%;
    float: left;
 }
 
 .post > .titulo {
-   margin: 1.25rem 0;
-   font-size: 3.75em;
+   margin: 1.2rem 0;
+   line-height: 1.25;
+   font-size: 2.75em;
 }
 
 .post > .subtitulo {
@@ -17,37 +19,44 @@
 
 .post > .img {
    max-width: 100%;
-   background-color: gray;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #F2A301;
+   color: #fafafa;
    height: 300px;
 }
 
+.post > .img h1 {
+   font-size: 58px;
+}
+
 .post > p {
-   margin: 1.25rem 0;
+   margin-top: 1.25rem;
+   margin-bottom: 2.2em;
    font-size: 1.3em;
 }
 
-.post > button {
-   padding: 15px;
-   background-color: #6f4aa9;
+.post > a {
+   padding: 1.125rem 2rem;
+   background: transparent;
+   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+   text-decoration: none;
+   color: #6f4aa9;
    outline: none;
-   border: none;
+   border: 2px solid #6f4aa9;
    border-radius: 5px;
    font-size: 1.12em;
    transition: 150ms;
 }
 
-.post > button:hover {
+.post > a:hover {
+   background-color: #6f4aa9;
+   color: #fafafa;
    transform: scale(1.05);
 }
 
-.post > button:active {
+.post > a:active {
    transform: scale(.95);
 }
-
-.post > button a {
-   text-decoration: none;
-   color: #fafafa;
-}
-
-.post > button a:visited { color: #fafafa; }
 

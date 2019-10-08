@@ -1,8 +1,7 @@
-@import url('./header/header.css');
-@import url('./header/perfil.css');
-@import url('./container/container.css');
-@import url('./post/post.css');
-@import url('./footer/footer.css');
+@import url('../css/header/header.css');
+@import url('../css/header/perfil.css');
+@import url('../css/footer/footer.css');
+@import url('./page.css');
 
 * {
    margin: 0;

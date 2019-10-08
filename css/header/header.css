@@ -1,6 +1,6 @@
 .gradient {
    position: relative;
-   background-color: #25242A;
+   background: linear-gradient(to bottom right, #24252A, #333333);
    width: 100%;
    height: 350px;
 }
