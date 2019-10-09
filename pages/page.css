@@ -5,12 +5,12 @@
 }
 
 .titulo-post {
-   font-size: 2.3em;
+   font-size: 2.5em;
    margin-bottom: 1.25em;
 }
 
 .titulo-secao {
-   font-size: 2em;
+   font-size: 2.2em;
    margin-bottom: 1.3em;
 }
 
@@ -19,6 +19,11 @@
    margin-top: 1.25em;
    margin-bottom: 2em;
    font-size: 1.7em;
+}
+
+.subtitulo-secao {
+   font-size: 1.7em;
+   margin-bottom: 1.3em;
 }
 
 .destaque {
@@ -34,13 +39,16 @@
 p {
    font-size: 1.5em;
    margin-bottom: 2rem;
+   color: #222;
+   text-align: justify;
 }
 
 ul {
    font-size: 1.5em;
    margin: 2rem 0;
    list-style: none;
-   line-height: 1.5;
+   line-height: 1.5;   
+   color: #222;
 }
 
 li {
