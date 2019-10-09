@@ -47,6 +47,8 @@ li {
    margin: 0.7em 0;
 }
 
-section {
-   margin-top: 10em;
+section:before {
+   content: '';
+   display: block;
+   height: 6.5em;
 }
