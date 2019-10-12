@@ -1,15 +1,8 @@
-.gradient {
-   position: relative;
-   background: linear-gradient(to bottom right, #24252A, #333333);
-   width: 100%;
-   height: 350px;
-}
-
 .cabecalho {
    width: 100%;
-   padding: 2.6em;
+   padding: 1em;
    transition: 0.2s;
-   background-color: transparent;
+   background: linear-gradient(to bottom right, #24252A, #333333);
    color: #fafafa;
 
    position: fixed;
