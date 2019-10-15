@@ -24,3 +24,20 @@
 .redes-sociais a:hover {
    border-bottom: 3px solid #6f4aa9;
 }
+
+@media screen and (min-width: 768px) {
+   .rodape {
+      padding: 6.0208%;
+      font-size: 1.25em;
+   }
+
+   .redes-sociais {
+      margin-top: 2em;
+   }
+
+   .redes-sociais a {   
+      color: #e6e6e6;
+      font-size: 0.9em;
+      margin: 0 0.9em;
+   }
+}
