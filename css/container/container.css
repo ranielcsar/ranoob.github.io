@@ -1,4 +1,20 @@
-.principal {
-   width: 85.605%;
-   margin: 13.125em auto;
+.div-conteudo {
+   display: grid;
+
+   width: 98.875%;
+   
+   grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+   
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+}
+
+@media screen and (min-width: 1024px) {
+   .principal {
+      width: 85.605%;
+      margin: 13.125em auto;
+   }
 }
