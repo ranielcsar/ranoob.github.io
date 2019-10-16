@@ -106,3 +106,27 @@ section:before {
       margin: 0.7em 0;
    }
 }
+
+@media screen and (min-width: 1024px) {
+   .container-post {
+      width: 66.875%;
+   }
+
+   p {
+      font-size: 1.4em;
+   }
+
+   ul {
+      font-size: 1.32em;
+   }
+
+   li {
+      margin: 0.7em 0;
+   }
+}
+
+@media screen and (min-width: 1360px) {
+   .container-post {
+      width: 55.875%;
+   }
+}

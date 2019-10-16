@@ -3,3 +3,16 @@
    padding: 0 0.525em;
    margin: 5.125em auto;
 }
+
+@media screen and (min-width: 768px) {
+   .principal {
+      width: 77.605%;
+      margin: 7.125em 0.525em;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .principal {
+      width: 90.605%;
+   }
+}

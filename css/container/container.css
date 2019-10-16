@@ -11,10 +11,3 @@
    grid-template-columns: 1fr;
    grid-template-rows: auto;
 }
-
-@media screen and (min-width: 1024px) {
-   .principal {
-      width: 85.605%;
-      margin: 13.125em auto;
-   }
-}
