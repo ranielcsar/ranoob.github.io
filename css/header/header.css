@@ -10,11 +10,14 @@
    z-index: 1;
 }
 
-.itens-cabecalho {   
+.itens-cabecalho {
+   width: 92.2941%;   
    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
+   flex-direction: column;
+
+   justify-content: center;
+
+   margin: 0 auto;
 }
 
 .menu {
@@ -24,11 +27,16 @@
 
 .menu ul {
    list-style: none;
-   display: flex;
+   margin-top: 1.125rem;
 }
 
-.menu ul li {
-   
+.menu li {
+   margin: 1.3em 0;
+}
+
+.menu-link {
+   padding-bottom: 5px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .aberto {
@@ -36,11 +44,14 @@
 }
 
 .botao-menu {
+   align-self: flex-end;
+   margin-top: -1.9375rem;
    outline: none;
+   background: none;
    border: none;
-   background: transparent;
-   color: #fafafa;
-   font-size: 21px;
+   color: #F4F4F4;
+
+   font-size: 1.4rem;
 }
 
 .titulo-site {
