@@ -4,6 +4,8 @@
 @import url('./post/post.css');
 @import url('./footer/footer.css');
 
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+
 * {
    margin: 0;
    padding: 0;
@@ -11,19 +13,19 @@
 }
 
 html {
-   font-family: arial, sans-serif;
+   font-family: 'Archivo', Helvetica, arial, sans-serif;
    font-size: 16px;
-   background-color: #f3f7f5;
+   background-color: #2f3640;
 
    scroll-behavior: smooth;
 }
 
 p {
    line-height: 1.5;
-   color: #252525;
+   color: #dcdde1;
 }
 
 a {
    text-decoration: none;
-   color: #eee;
+   color: #dcdde1;
 }
