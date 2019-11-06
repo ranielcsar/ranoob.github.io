@@ -56,7 +56,7 @@
 }
 
 .post > a:hover {
-   color: #6f4aa9;
+   color: #8c7ae6;
 }
 
 /* 📖 */
@@ -85,7 +85,7 @@
 }
 
 .post > a:hover > b, .post > a:hover > b:before {
-   background: #6f4aa9;
+   background: #8c7ae6;
    color: #dcdde1;
 }
 
