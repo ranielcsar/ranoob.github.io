@@ -28,16 +28,11 @@
    padding: 0.125rem 0.625rem;
    text-align: left;
    width: 70%;
-}
 
-.subtitulo-secao:before {
-   content: '';
-   position: relative;
-   right: 0.625rem;
-   top: 1.5625rem;
-   margin-right: -4px;
-   padding: 1.6562rem 2px;
-   background: #EA7213;
+   color: hsl(30, 89%, 80%);
+   background-color: hsla(30, 89%, 76%, 0.15);
+   padding: 10px 10px 11px;
+   border-radius: 5px;
 }
 
 .container-post a { color: #8c7ae6; font-weight: bold; }
