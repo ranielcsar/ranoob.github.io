@@ -1,0 +1,60 @@
+@import url(perfil.css);
+@import url(skills.css);
+
+.curriculum-bg {
+   width: 73.5294%;
+   background-color: #EBEBEB;
+   margin: auto;
+}
+
+.curriculum {
+   width: 70%;
+   margin: auto;
+   color: #0F121B;
+}
+
+.titulo-principal {
+   margin-top: 2rem;
+   margin-bottom: 6rem;
+   font-size: 1.7rem;
+   text-align: center;
+}
+
+section {
+   display: flex;
+   align-items: center;
+   text-align: left;
+   margin-top: 2rem;
+   width: 100%;
+   min-height: 160px;
+   font-size: 1.079rem;
+}
+
+section header {
+   transform: rotate(-90deg);
+   letter-spacing: 1.5px;
+   font-weight: bold;
+   height: 20px;
+   margin: auto;
+   color: #454B58;
+}
+
+.descricao {
+   width: 36rem;
+}
+
+/* PROGRESS */
+progress {
+  border-radius: 4px;
+  height: 20px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #454B58;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+   background-color: #0F121B;
+   border-radius: 4px; 
+}

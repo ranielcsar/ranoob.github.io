@@ -1,111 +1,95 @@
 <!DOCTYPE html>
 
-<html lang = "pt-br">
+<html lang="pt-br">
 
-   <head>
-      <meta charset = "utf-8"/>
-      <meta name="viewport" content="width = device-width, initial-scale = 1"/>
-      <title>NOOB</title>
-      <link rel="stylesheet" href="css/main.css">
-      <script type="text/javascript" src="js/menu.js"></script>
-   </head>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Curriculum</title>
+   <link rel="stylesheet" href="index.css">
+</head>
 
-   <body>        
-      <div class="div-conteudo">
+<body>
 
-         <div class="conteudo">            
-            <header class="cabecalho">
-
-               <div class="itens-cabecalho">                  
-                  <a href="#"><h3 class="titulo-site">RANOOB</h3></a>
-                  <button onClick="abrirMenu()" class="botao-menu">☰</button>              
-
-                  <nav class="menu">
-                     <ul>
-                        <li><a class="menu-link" href="#">Menu link 1</a></li>
-                        <li><a class="menu-link" href="#">Menu link 2</a></li>
-                        <li><a class="menu-link" href="#">Menu link 3</a></li>
-                     </ul>
-                  </nav>
-               </div>
-
-            </header>
+   <main class="curriculum-bg">
+      <div class="curriculum flex-c">
+         
+         <div class="titulo-principal">
+            <h1>CURRICULUM VITAE</h1>
          </div>
 
-            <main class="principal">
-               <article class="post">
-                  <h4 class="titulo">Noções de design para desenvolvedores: processos e dicas de CSS para melhorar seu web design</h4>
-                  <h4 class="subtitulo">Tradução de artigo</h4>
-                  <div class="img">
-                     <h1>WEB DESIGN</h1>
-                  </div>
-                  <p>Tecnicamente qualquer pessoa pode cozinhar. Mas há uma grande diferença entre saber como preparar uma boa refeição e jogar os ingredientes na panela esperando que saia algo bom dali...</p>
+         <div class="perfil flex">
+            <div class="imagem">
+               <figure class="flex">
+                  <img src="perfil.jpg" alt="Imagem do perfil">
+               </figure>
+            </div>
 
-                  <a href="pages/traducoes/principios-design/index.html">
-                     Continue lendo <i></i>
-                  </a>
+            <div class="infos">
+               <h1>Raniel César F.</h1>
+               <h4>WebDev Junior</h4>
+            </div>
+         </div>
 
-                  <hr>
-               </article>
+         <section class="sobre">
+            <header class="titulo">SOBRE MIM</header>
 
-               <article class="post">
-                  <h4 class="titulo">Título do post</h4>
-                  <h4 class="subtitulo">Subtítulo do post</h4>
-                  <div class="img">
-                     <h1>TEMA DO POST</h1>
-                  </div>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="descricao">
+               <p>
+                  Oi, meu nome é <b>Raniel César Ferreira Carlos Carmo</b>.
+                  Sou estudante de computação no campus do Instituto Federal que
+                  é da cidade onde moro, Senhor do Bonfim - BA.
+               </p>
 
-                  <a href="#">
-                     Continue lendo <i></i>
-                  </a>
+               <p>
+                  Me encontrei na área do frontend pois acho mais interessante e divertido que o backend. E, dito isso, pretendo seguir em frente nessa
+                  área do desenvolvimento. Claro que não deixando os assuntos de backend
+                  para trás, mas meu foco é front.
+               </p>
+            </div>
+         </section>
 
-                  <hr>
-               </article>
+         <section class="skills">
+            <header class="titulo">HABILIDADES</header>
 
-               <article class="post">
-                  <h4 class="titulo">Título do post</h4>
-                  <h4 class="subtitulo">Subtítulo do post</h4>
-                  <div class="img">
-                     <h1>TEMA DO POST</h1>
-                  </div>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="descricao">
+               <div>
+                  <span>HTML</span>
+                  <progress value="80" max="100"></progress>
+               </div>
+               <div>
+                  <span>CSS</span>
+                  <progress value="70" max="100"></progress>
+               </div>
+               <div>
+                  <span>JS</span>
+                  <progress value="50" max="100"></progress>
+               </div>
+            </div>
+         </section>
 
-                  <a href="#">
-                     Continue lendo <i></i>
-                  </a>
+         <section class="experiencias">
+            <header class="titulo">EXPERIÊNCIAS</header>
 
-                  <hr>
-               </article>
+            <div class="descricao">
+               <p>Infelizmente ainda não tive a oportunidade
+               de trabalhar em alguma empresa ou startup.</p>
+            </div>
+         </section>
 
-               <article class="post">
-                  <h4 class="titulo">Título do post</h4>
-                  <h4 class="subtitulo">Subtítulo do post</h4>
-                  <div class="img">
-                     <h1>TEMA DO POST</h1>
-                  </div>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+         <section class="educacao">
+            <header class="titulo">EDUCAÇÃO</header>
 
-                  <a href="#">
-                     Continue lendo <i></i>
-                  </a>
-               </article>
-            </main>
-
-         </div> <!-- fim conteúdo -->
+            <div class="descricao">
+               <p>Cursando o 7º semestre de</p>
+               <p><b>Licenciatura em Ciências da Computação</b>,</p>
+               <p>pelo IF Baiano - Campus Senhor do Bonfim.</p>
+            </div>
+         </section>
 
       </div>
+   </main>
 
-      <footer class="rodape">
-         <h3>Raniel César (2019) - Todos os direitos reservados.</h3>
-
-         <div class="redes-sociais">
-            <a target="_blank" href="http://instagram.com/ranielcsar">Instagram</a>
-            <a target="_blank" href="http://twitter.com/ranielcsar">Twitter</a>
-            <a target="_blank" href="http://github.com/ranielcsar">Github</a>
-            <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-         </div>
-      </footer>
-   </body>
+</body>
 
 </html>

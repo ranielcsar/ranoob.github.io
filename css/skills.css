@@ -1,0 +1,12 @@
+.descricao div {
+   display: flex;
+   margin: 1rem 0;
+}
+
+.descricao div > span {
+   flex: .2 1 20px;
+}
+
+.descricao div > progress {
+   flex: 2 1 30px;
+}

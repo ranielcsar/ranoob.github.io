@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url(css/curriculum.css);
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html { font: 16px 'Open sans', verdana, arial, sans-serif; }
+
+a { text-decoration: none; }
+
+ul, li { list-style: none; }
+
+p { line-height: 1.5; }
+
+button { 
+   outline: none;
+   border: none;
+}
+
+body {
+   background-color: #16161D;
+}
+
+/* FLEX */
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.flex-c {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+}
