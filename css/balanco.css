@@ -1,0 +1,27 @@
+.balanco {
+   align-self: center;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.balanco > .pessoa {
+   width: 40px;
+   height: 40px;
+}
+
+.balanco > .pessoa:nth-child(1) {
+   align-self: flex-end;
+   position: absolute;
+}
+
+.balanco > .gangorra {
+   width: 400px;
+   height: 30px;
+}
+
+.balanco > .apoio {
+   width: 40px;
+   height: 60px;
+   align-self: center;
+}

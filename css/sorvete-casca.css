@@ -1,0 +1,36 @@
+.sorvete-casca {
+   position: relative;
+   align-self: flex-end;
+}
+
+.sorvete-casca > .colher {
+   width: 30px;
+   height: 100px;
+   background-color: var(--bg) !important;
+   border: 3px solid var(--cor);
+   position: absolute;
+   bottom: 315px;
+   transform: rotate(-30deg);
+}
+
+.sorvete-casca > .bola {
+   width: 160px;
+   height: 160px;
+   position: absolute;
+}
+
+.sorvete-casca > .bola:nth-child(2) {
+   bottom: 120px;
+   left: 18px;
+}
+
+.sorvete-casca > .bola:nth-child(3) {
+   bottom: 220px;
+   left: 18px;
+}
+
+.sorvete-casca > .casca {
+   width: 200px;
+   height: 160px;
+   transform: rotate(-180deg);
+}

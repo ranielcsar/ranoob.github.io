@@ -1,0 +1,28 @@
+.paisagem {
+   position: relative;
+   align-self: flex-end;
+}
+
+.paisagem__sol {
+   width: 75px;
+   height: 75px;
+   position: absolute;
+   bottom: 260px;
+   
+}
+
+.paisagem__montanha {
+   width: 300px;
+   position: absolute;
+   bottom: 0;
+}
+
+.paisagem__montanha:nth-child(2) {
+   height: 220px;
+   right: 0;
+}
+
+.paisagem__montanha:nth-child(3) {
+   height: 170px;
+   left: -30px;
+}

@@ -1,16 +1,77 @@
-@import url(css/reset.css);
-@import url(css/main.css);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url(css/intro.css);
+@import url(css/sorvete.css);
+@import url(css/sorvete-casca.css);
+@import url(css/balanco.css);
+@import url(css/paisagem.css);
+
 
 :root {
-   --bg: #EAE9E5;
-   --preto: #2C2C2C;
-   --realce: #FF225B;
+   --cor: #333;
+   --bg: #F7F7F7;
 }
 
-html { font-size: 16px; }
+html {
+   font-size: 16px;
+   font-family: 'Amatic SC', verdana, sans-serif;
+}
 
-p { line-height: 1.4; }
+body {
+   margin: 0;
+   background-color: var(--bg);
+}
 
-img {
-   max-width: 100%;
+h1 {
+   text-align: center;
+   font-size: 200px;
+}
+
+.main-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 86%;
+   margin: auto;
+}
+
+/* ------ CONTAINER ------ */
+.container {
+   width: 90%;
+   margin: 0 auto 4rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.container header {
+   font-size: 36px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   margin-bottom: 4rem;
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   min-height: 420px;
+}
+
+/* ------ FORMAS BÁSICAS ------ */
+.quadrado,
+.retangulo,
+.circulo,
+.triangulo,
+.trapezio {   
+   background-color: var(--cor);
+}
+
+.circulo {
+   border-radius: 50%;
+}
+
+.triangulo {
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.trapezio {
+   clip-path: polygon(30% 0, 70% 0, 100% 70%, 0 70%);
 }
