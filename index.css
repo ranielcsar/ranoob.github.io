@@ -5,10 +5,11 @@
 @import url(css/balanco.css);
 @import url(css/paisagem.css);
 @import url(css/flor.css);
+@import url(css/carro.css);
 
 
 :root {
-   --cor: #333;
+   --cor: #333333;
    --bg: #F7F7F7;
 }
 
