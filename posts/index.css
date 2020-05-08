@@ -6,8 +6,8 @@
 
    --branco: #DFD5D1;
 
-   --realce: #872653;
-   --realce-claro: #DE5E99;
+   --realce: #9230FB;
+   --realce-claro: #B675FB;
 
    --font-primaria: 'Roboto Mono', verdana, sans-serif;
 }
@@ -60,7 +60,7 @@ html {
 
 .post__section--title {
    margin-bottom: 20px;
-   color: var(--realce--claro);
+   color: var(--realce-claro);
 }
 
 .post__section--content {
@@ -90,8 +90,6 @@ html {
    }
 
    .post__section--title {
-      margin-bottom: 20px;
-      color: var(--realce--claro);
       font-size: 1.4rem;
    }
 }

@@ -77,7 +77,7 @@
 }
 
 .menu__links a:hover {
-   border-bottom: 2px solid var(--realce--claro);
+   border-bottom: 2px solid var(--realce-claro);
 }
 
 .menu__footer {

@@ -22,9 +22,9 @@ const menuMobile = () => (
          <div class="menu__close-button" onclick="abrirMenu(false)"></div>
 
          <nav class="menu__links">
-            <a href="#">Currículo</a>
-            <a href="#">Contatos</a>  
-            <a href="#">Github</a>          
+            <a target="_blank" href="#">Currículo</a>
+            <a target="_blank" href="#">Contatos</a>  
+            <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
          </nav>
 
          <div class="menu__footer">
@@ -41,9 +41,9 @@ const menuDesktop = () => (
       <div class="menu__desktop">
 
          <nav class="menu__desktop--links">
-            <a href="#">Currículo</a>
-            <a href="#">Contatos</a>  
-            <a href="#">Github</a>          
+            <a target="_blank" href="#">Currículo</a>
+            <a target="_blank" href="#">Contatos</a>  
+            <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
          </nav>
          
       </div>
