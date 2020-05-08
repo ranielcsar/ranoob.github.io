@@ -63,6 +63,7 @@ html {
 .post__section--title {
    margin-bottom: 20px;
    color: var(--realce-claro);
+   font-size: 28px;
 }
 
 .post__section--content {
@@ -73,7 +74,13 @@ html {
 .post__section--content p {
    margin-bottom: 1rem;
    line-height: 1.5;
-   font-size: 1.5ch;
+   font-size: 7.1vw;
+}
+
+@media screen and (min-width: 350px) {
+   .post__section--content p {
+      font-size: 6.1vw;
+   }
 }
 
 @media screen and (min-width: 700px) {
@@ -86,13 +93,13 @@ html {
    }
 
    .post__section--content p {
-      font-size: 1.8ch;
+      font-size: 3.2vw;
       margin-bottom: 1.5rem;
       text-align: justify;
    }
 
    .post__section--title {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
    }
 }
 
@@ -102,7 +109,7 @@ html {
    }
 
    .post__section--content p {
-      font-size: 2ch;
+      font-size: 2.2vw;
       margin-bottom: 1.7rem;
    }
 }
