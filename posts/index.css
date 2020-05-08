@@ -23,7 +23,30 @@
 html {
    background-color: var(--preto);
    color: var(--branco);
+   scroll-behavior: smooth;
 }
+
+
+/* ------ FIXAR BOTÃO DE VOLTAR ------ */
+.fixar {
+   position: fixed;
+   top: 1rem;
+   left: 5%;
+   border-bottom: none !important;
+}
+
+.fixar:hover {
+   color: gray;
+}
+
+@media screen and (min-width: 1200px) {
+   .fixar {
+      left: 7.5%;
+   }
+}
+
+
+/* ------ BOTÃO VOLTAR------ */ 
 
 .btn-voltar {
    color: var(--branco);
@@ -42,6 +65,38 @@ html {
    content: '←';
    margin-right: 10px;
 }
+
+/* ------ BOTÃO VOLTAR AO TOPO ------ */ 
+
+.btn-voltar-topo {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   text-decoration: none;
+   background-color: var(--preto-2);
+   transition: all 0.1s;
+   padding: 14px;
+   border-radius: 50%;
+   display: flex;   
+}
+
+.btn-voltar-topo::after {
+   content: '';
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 5px 10px 5px;
+   border-color: transparent transparent var(--branco) transparent;
+   
+   margin: auto;
+
+}
+
+.btn-voltar-topo:hover {
+   
+}
+
+/* ------ POST ------ */
 
 .post-container {
    margin: 1rem auto;
@@ -95,7 +150,7 @@ html {
    .post__section--content p {
       font-size: 3.2vw;
       margin-bottom: 1.5rem;
-      text-align: justify;
+      word-spacing: 4px;
    }
 
    .post__section--title {
