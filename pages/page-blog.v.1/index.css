@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+   --preto: #1A1A1D;
+   --preto-2: #252527;
+
+   --branco: #DFD5D1;
+
+   --realce: #872653;
+   --realce-claro: #DE5E99;
+
+   --font-primaria: 'Roboto Mono', verdana, sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   background-color: var(--preto);
+   color: var(--branco);
+}
+
+.btn-voltar {
+   color: var(--branco);
+   text-decoration: none;
+   font-size: 16px;
+   padding: 10px 0;
+   padding-bottom: 3px;
+   border-bottom: 2px solid var(--realce);
+}
+
+.btn-voltar:hover {
+   border-bottom: 2px solid var(--realce-claro);
+}
+
+.btn-voltar::before {
+   content: '←';
+   margin-right: 10px;
+}
+
+.post-container {
+   margin: 1rem auto;
+   font-family: var(--font-primaria);
+   padding: 10px 14px;
+}
+
+.post__titulo {
+   font-family: var(--font-primaria);
+   font-size: 40px;
+   font-weight: bold;
+   margin: 50px 0 100px;
+}
+
+.post__section {
+   margin-bottom: 50px;
+}
+
+.post__section--title {
+   margin-bottom: 20px;
+   color: var(--realce--claro);
+}
+
+.post__section--content {
+   width: 100%;
+   text-align: left;
+}
+
+.post__section--content p {
+   margin-bottom: 1rem;
+   line-height: 1.5;
+   font-size: 1.5ch;
+}
+
+@media screen and (min-width: 700px) {
+   .post-container {
+      width: 36rem;
+   }
+
+   .post__titulo {
+      font-size: 55px;
+   }
+
+   .post__section--content p {
+      font-size: 1.8ch;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+   }
+
+   .post__section--title {
+      margin-bottom: 20px;
+      color: var(--realce--claro);
+      font-size: 1.4rem;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .post-container {
+      width: 40rem;
+   }
+
+   .post__section--content p {
+      font-size: 2ch;
+      margin-bottom: 1.7rem;
+   }
+}

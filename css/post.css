@@ -1,0 +1,70 @@
+/* ----- POST ------ */
+.post {
+   width: 100%;
+   border-radius: 6px;
+   background-color: var(--preto-2);
+   padding: 20px 12px;
+   margin-bottom: 1rem;
+}
+
+.post__title {
+   font-size: 26px;
+   margin-bottom: 16px;
+}
+
+.post__subtitle {
+   font-size: 16px;
+   color: gray;
+}
+
+.post__bottom {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin: 3rem 0 0;
+}
+
+.fake-img {
+   width: inherit;
+   height: inherit;
+   background-color: gray;
+   border-radius: inherit;
+}
+
+.post__author {
+   display: flex;
+   align-items: center;
+}
+
+.post__author--img {
+   width: 36px;
+   height: 36px;
+   border-radius: 50%;
+   margin-right: 8px;
+}
+
+.post__author--infos {
+   line-height: 1;
+}
+
+.post__author--infos span {
+   font-size: 12px;
+   color: gray;
+}
+
+.post__link {
+   align-self: center;
+   position: relative;
+}
+
+.post__link a {
+   font-size: 14px;
+   align-self: center;
+   padding-bottom: 4px;
+   border-bottom: 2px solid var(--realce);
+   transition: 0.2s;
+}
+
+.post__link a:hover {
+   border-bottom: 2px solid var(--realce--claro);
+}

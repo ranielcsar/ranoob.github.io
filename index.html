@@ -1,112 +1,76 @@
-<!-- section.container>header+div.content  -->
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Blog</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
 
 <main class="main-container">
+
+   <header class="main-header">
+      <div class="logo">
+         <h1>RANOOB</h1>
+      </div>
    
-   <h1>F O R M A S</h1>
+      <div class="menu-container"></div>
+   </header>
 
-   <section class="intro">
-      <div class="circulo"></div>
-      <div class="quadrado"></div>
-      <div class="retangulo"></div>
-      <div class="triangulo"></div>
-      <div class="trapezio"></div>
-   </section>
+   <section class="content">
+      <article class="post">
+         <h1 class="post__title">Como fazer uma lista de tarefas (ToDo list)</h1>
+         <h2 class="post__subtitle">ToDo list com apenas HTML, CSS e JAVASCRIPT</h2>
 
-   <section class="container">
-      <header>Sorvete no pote</header>
-
-      <div class="content">
-         
-         <div class="sorvete">
-            <div class="colher retangulo"></div>
-            <div class="bola circulo"></div> 
-            <div class="bola circulo"></div>
-            <div class="bola circulo"></div>
-            <div class="pote trapezio"></div>
-         </div>
-
-      </div>
-   </section>
-
-   <section class="container">
-      <header>Sorvete na casquinha</header>
-
-      <div class="content">
-         
-         <div class="sorvete-casca">
-            <div class="colher retangulo"></div>
-            <div class="bola circulo"></div> 
-            <div class="bola circulo"></div>
-            <div class="casca triangulo"></div>
-         </div>
-
-      </div>
-   </section>
-
-   <section class="container">
-      <header>Balanço</header>
-
-      <div class="content">
-
-         <div class="balanco">
-            <div class="pessoa circulo"></div>
-            <div class="pessoa circulo"></div>
-            <div class="gangorra retangulo"></div>
-            <div class="apoio triangulo"></div>
-         </div>
-
-      </div>
-   </section>
-
-   <section class="container">
-      <header>Paisagem</header>
-
-      <div class="content">
-         
-         <div class="paisagem">
-            <div class="paisagem__sol circulo"></div>
-            <div class="paisagem__montanha triangulo"></div>
-            <div class="paisagem__montanha triangulo"></div>
-         </div>
-
-      </div>
-   </section>
-
-   <section class="container">
-      <header>Jarro com flor</header>
-
-      <div class="content">
-         
-         <div class="flor">
-            <div class="flor__petalas circulo"></div>
-            <div class="flor__petalas circulo"></div>
-            <div class="flor__petalas circulo"></div>
-            <div class="flor__petalas circulo"></div>
-            <div class="flor__miolo circulo"></div>
-            <div class="flor__folha triangulo"></div>
-            <div class="flor__caule retangulo"></div>
-            <div class="flor__vaso trapezio"></div>
-         </div>
-
-      </div>
-   </section>
-
-   <section class="container">
-      <header>Carro</header>
-
-      <div class="content">
-         
-         <div class="carro">
-            <div class="carro__cabine retangulo">
-               <div class="carro__cabine--janela retangulo"></div>
+         <div class="post__bottom">
+            
+            <div class="post__author">
+               <div class="post__author--img fake-img"></div>
+               
+               <div class="post__author--infos">
+                  <p class="post__author--name">Ranoob</p>
+                  <span class="post__data">2020. 4 Maio.</span>
+               </div>
             </div>
-            <div class="carro__corpo retangulo"></div>
-            <div class="carro__roda circulo"></div>
-            <div class="carro__roda circulo"></div>
-         </div>
 
-      </div>
+            <div class="post__link">
+               <a href="#">Leia mais →</a>
+            </div>
+
+         </div>
+      </article>
+
+      <article class="post">
+         <h1 class="post__title">Primeiro post deste bendito blog!</h1>
+         <h2 class="post__subtitle">Acho que finalmente saiu algo...</h2>
+
+         <div class="post__bottom">
+            
+            <div class="post__author">
+               <div class="post__author--img fake-img"></div>
+               
+               <div class="post__author--infos">
+                  <p class="post__author--name">Ranoob</p>
+                  <span class="post__data">2020. 4 Maio.</span>
+               </div>
+            </div>
+
+            <div class="post__link">
+               <a href="#">Leia mais →</a>
+            </div>
+
+         </div>
+      </article>
    </section>
+
 </main>
 
-<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="menu.js"></script>
+
+</body>
+
+</html>

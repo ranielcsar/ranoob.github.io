@@ -1,0 +1,9 @@
+.main-header {
+   font-family: 'Pixel', verdana;
+   font-size: 20px;
+   color: var(--branco);
+   padding: 20px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
