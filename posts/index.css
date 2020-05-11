@@ -6,6 +6,7 @@
    --preto-2: #121C21;
 
    --branco: #DFD5D1;
+   --cor-sub: #576B75;
 
    --realce: #9230FB;
    --realce-claro: #B690FF;
@@ -41,7 +42,7 @@ a {
 }
 
 .fixar:hover {
-   color: gray;
+   color: var(--cor-sub);
 }
 
 @media screen and (min-width: 1200px) {
@@ -96,10 +97,6 @@ a {
    
    margin: auto;
 
-}
-
-.btn-voltar-topo:hover {
-   
 }
 
 /* ------ POST ------ */
