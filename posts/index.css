@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-   --preto: #1A1A1D;
-   --preto-2: #252527;
+   --preto: #001119;
+   --preto-2: #121C21;
 
    --branco: #DFD5D1;
 
    --realce: #9230FB;
-   --realce-claro: #BA91F9;
+   --realce-claro: #B675FB;
 
    --font-primaria: 'Roboto Mono', verdana, sans-serif;
    --font-secundaria: 'Roboto', verdana, sans-serif;

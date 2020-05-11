@@ -1,0 +1,95 @@
+:root {
+   --cor-coracao: #3C484E;
+}
+
+footer {
+   color: var(--branco);
+   width: 100%;
+   margin: 2rem 0;
+   display: grid;
+   align-self: center;
+   grid-template-columns: 1fr 10rem 1fr;
+   grid-template-rows: repeat(2, 1.7rem);
+}
+
+footer p {
+   grid-column: 2 / 3;
+   grid-row: 1;
+   text-align: center;
+   color: var(--cor-coracao);
+}
+
+.coracoes {
+   display: inline-flex;
+   grid-column: 2 / 3;
+   grid-row: 2;
+}
+
+.coracao {
+   width: var(--pixel);
+   height: var(--pixel);
+   margin: 0 1rem;
+
+   box-shadow:
+   calc( var(--pixel) * 4 ) 0 var(--cor-coracao),
+   calc( var(--pixel) * 5 ) 0 var(--cor-coracao),
+   calc( var(--pixel) * 7 ) 0 var(--cor-coracao),
+   calc( var(--pixel) * 8 ) 0 var(--cor-coracao),
+
+   calc( var(--pixel) * 3 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 4 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 5 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 6 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 8 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 9 ) var(--pixel) var(--cor-coracao),
+
+   calc( var(--pixel) * 3 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 4 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 5 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 8 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 9 ) calc( var(--pixel) * 2) var(--cor-coracao),
+
+   calc( var(--pixel) * 4 ) calc( var(--pixel) * 3) var(--cor-coracao),
+   calc( var(--pixel) * 5 ) calc( var(--pixel) * 3) var(--cor-coracao),
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 3) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) calc( var(--pixel) * 3) var(--cor-coracao),
+   calc( var(--pixel) * 8 ) calc( var(--pixel) * 3) var(--cor-coracao),
+
+   calc( var(--pixel) * 5 ) calc( var(--pixel) * 4) var(--cor-coracao),
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 4) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) calc( var(--pixel) * 4) var(--cor-coracao),
+
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 5) var(--cor-coracao);
+}
+
+.coracao-metade {
+   width: var(--pixel);
+   height: var(--pixel);
+   margin: 0 1rem;   
+
+   box-shadow:
+   calc( var(--pixel) * 7 ) 0 var(--cor-coracao),
+   calc( var(--pixel) * 8 ) 0 var(--cor-coracao),
+
+   calc( var(--pixel) * 6 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 8 ) var(--pixel) var(--cor-coracao),
+   calc( var(--pixel) * 9 ) var(--pixel) var(--cor-coracao),
+
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 8 ) calc( var(--pixel) * 2) var(--cor-coracao),
+   calc( var(--pixel) * 9 ) calc( var(--pixel) * 2) var(--cor-coracao),
+
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 3) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) calc( var(--pixel) * 3) var(--cor-coracao),
+   calc( var(--pixel) * 8 ) calc( var(--pixel) * 3) var(--cor-coracao),
+
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 4) var(--cor-coracao),
+   calc( var(--pixel) * 7 ) calc( var(--pixel) * 4) var(--cor-coracao),
+
+   calc( var(--pixel) * 6 ) calc( var(--pixel) * 5) var(--cor-coracao);
+}

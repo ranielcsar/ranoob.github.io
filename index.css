@@ -4,11 +4,12 @@
 @import url(css/menu.css);
 @import url(css/menu-desktop.css);
 @import url(css/post.css);
+@import url(css/footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
-   --preto: #1A1A1D;
-   --preto-2: #252527;
+   --preto: #001119;
+   --preto-2: #121C21;
 
    --branco: #DFD5D1;
 
@@ -17,6 +18,8 @@
 
    --font-primaria: 'Pixel', sans-serif;
    --font-secundaria: 'Roboto Mono', verdana, sans-serif;
+   
+   --pixel: 0.2rem;
 }
 
 @font-face {
