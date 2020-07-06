@@ -1,1 +1,1 @@
-Pode vir a ser um blog! :D
+Portfolio que, quem sabe, pode vir a ter um blog também.
