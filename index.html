@@ -5,7 +5,7 @@
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>o~ RanooBlog ~o</title>
+   <title>ranoob</title>
    <link rel="stylesheet" href="index.css">
 </head>
 
@@ -22,49 +22,48 @@
    </header>
 
    <section class="content">
-      <article class="post">
-         <h1 class="post__title">Como fazer um semáforo</h1>
-         <h2 class="post__subtitle">Semáforo simples usando HTML, CSS e JAVASCRIPT</h2>
+      <div class="tab">
+        <button class="tablinks active" onclick="switchTab(event, 'who')">Quem sou eu?</button>
+        <button class="tablinks" onclick="switchTab(event, 'exp')">Experiências</button>
+        <button class="tablinks" onclick="switchTab(event, 'school')">Educação</button>
+      </div>
 
-         <div class="post__bottom">
-            
-            <div class="post__author">
-               <div class="post__author--img fake-img"></div>
-               
-               <div class="post__author--infos">
-                  <p class="post__author--name">Ranoob</p>
-                  <span class="post__data">2020. 11 Maio.</span>
-               </div>
+      <div id="who" class="tabcontent active">        
+        <div class="subcontent">
+            <div class="subcontent-img">
+               <img src="perfil.jpg" alt="">
             </div>
 
-            <div class="post__link">
-               <a href="posts/semaforo/index.html">Leia mais →</a>
+            <div class="subcontent-infos">
+               <h3 class="subtext">Olá! Meu nome é</h3>
+               <h1 class="text">Raniel César</h1>
+               <p>
+                  Sou desenvolvedor <b>Frontend Jr</b> com habilidades em HTML, CSS e Javascript.
+                  Atualmente tenho como principal ferramenta de desenvolvimento o React.
+                  Meu foco é web, por enquanto.                  
+               </p>
+
+               <p>
+                  Nordestino, do interior da Bahia, da cidade de Senhor do Bonfim.
+                  24 anos.
+               </p>
             </div>
+        </div>
+      </div>
 
-         </div>
-      </article>
+      <div id="exp" class="tabcontent">
+        <h1>Um pouco noob...</h1>
+        <p>
+           Consegui um emprego recentemente, ou seja, ainda não tenho muita experiência pra compartilhar.
+        </p> 
+      </div>
 
-      <article class="post">
-         <h1 class="post__title">Primeiro post deste maldito blog!</h1>
-         <h2 class="post__subtitle">Acho que finalmente saiu algo...</h2>
-
-         <div class="post__bottom">
-            
-            <div class="post__author">
-               <div class="post__author--img fake-img"></div>
-               
-               <div class="post__author--infos">
-                  <p class="post__author--name">Ranoob</p>
-                  <span class="post__data">2020. 4 Maio.</span>
-               </div>
-            </div>
-
-            <div class="post__link">
-               <a href="posts/primeiro/index.html">Leia mais →</a>
-            </div>
-
-         </div>
-      </article>
+      <div id="school" class="tabcontent">
+        <h1>Licenciando</h1>
+        <p>
+            No momento cursando Licenciatura em Ciências da Computação pelo IF Baiano - Campus Senhor do Bonfim. Infelizmente, por conta da pandemia, estamos sem aula ):
+        </p>
+      </div>
    </section>   
 
    <footer>
@@ -80,6 +79,7 @@
 </main>
 
 <script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="tab.js"></script>
 
 </body>
 

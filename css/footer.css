@@ -10,6 +10,7 @@ footer {
    align-self: center;
    grid-template-columns: 1fr 10rem 1fr;
    grid-template-rows: repeat(2, 1.7rem);
+   font-family: 'Pixel', verdana;
 }
 
 footer p {

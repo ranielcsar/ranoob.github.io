@@ -79,28 +79,3 @@
 .menu__links a:hover {
    border-bottom: 2px solid var(--realce-claro);
 }
-
-.menu__footer {
-   align-self: center;
-   justify-self: center;
-   text-align: center;
-}
-
-.menu__footer p {
-   line-height: 1.3;
-   color: var(--branco);
-   font-size: 0.8907rem;
-   font-family: var(--font-primaria);
-}
-
-.menu__footer p:first-child {
-   font-size: 1.3rem;
-}
-
-.menu__footer-img {
-   border-radius: 50%;
-   width: 100px;
-   height: 100px;
-   background-color: gray;
-   margin-bottom: 1rem;
-}

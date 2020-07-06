@@ -24,14 +24,16 @@ const menuMobile = () => (
          <nav class="menu__links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
             <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-            <a target="_blank" href="#">Contatos</a>  
+            <a target="_blank" href="https://jsfiddle.net/user/ranielcsar">JSFiddle</a>  
          </nav>
 
-         <div class="menu__footer">
-            <div class="menu__footer-img"></div>
-            <p>RANOOB</p>
-            <p>2020 ©</p>
-         </div>
+         <footer> 
+            <div class="coracoes">
+               <div class="coracao-metade"></div>
+               <div class="coracao"></div>
+               <div class="coracao"></div>
+            </div>
+         </footer>
       </div>
    `
 );
@@ -43,7 +45,7 @@ const menuDesktop = () => (
          <nav class="menu__desktop--links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
             <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-            <a target="_blank" href="#">Contatos</a>  
+            <a target="_blank" href="https://jsfiddle.net/user/ranielcsar">JSFiddle</a>  
          </nav>
          
       </div>
@@ -55,5 +57,7 @@ const init = () => {
 
    document.querySelector('.menu-container').innerHTML = menu;
 }
+
+window.addEventListener('resize', init);
 
 init();

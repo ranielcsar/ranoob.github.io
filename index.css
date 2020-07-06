@@ -3,7 +3,7 @@
 @import url(css/content.css);
 @import url(css/menu.css);
 @import url(css/menu-desktop.css);
-@import url(css/post.css);
+@import url(css/tab.css);
 @import url(css/footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
@@ -17,6 +17,7 @@
 
    --realce: #9230FB;
    --realce-claro: #B690FF;
+   --realce-escuro: #2A094E;
 
    --font-primaria: 'Pixel', sans-serif;
    --font-secundaria: 'Roboto Mono', verdana, sans-serif;
@@ -45,6 +46,19 @@ body {
 a {
    color: var(--branco);
    text-decoration: none;
+}
+
+button {
+   font-family: var(--font-secundaria); 
+}
+
+p {
+   line-height: 1.5;
+}
+
+img {
+   width: 100%;
+   height: auto;
 }
 
 ::-webkit-scrollbar {
