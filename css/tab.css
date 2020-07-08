@@ -14,18 +14,30 @@
   font-size: 16px;
   color: var(--cor-sub);
   background-color: inherit;
+  border-bottom: 2px solid var(--preto-2);
+  transition: all 0.3s ease;
 }
 
-.tab button:hover {
-  background-color: var(--preto-2);
-  color: var(--bra);
+.tab button:hover {  
+   color: var(--bra);
 }
 
 /* active/current tablink */
 .tab button.active {
-  border-radius: 50px;
-  background-color: var(--realce-claro);
-  color: var(--realce-escuro);
+   position: relative;
+   color: var(--bra);
+}
+
+.tab button.active::after {
+   content: '';
+   position: absolute;
+      bottom: 0;
+      left: 0;
+   height: 20px;
+   width: 100%;
+   transition: all 0.3s ease;
+   background-color: var(--preto-2);
+   z-index: -1; 
 }
 
 /* tab content */
@@ -53,11 +65,5 @@
 @media screen and (min-width: 425px) {
    .tab button {
       padding: 10px;
-   }
-}
-
-@media screen and (min-width: 1000px) {
-   .tab button {
-      padding: 12px;
    }
 }

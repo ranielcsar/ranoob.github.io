@@ -11,8 +11,22 @@
    padding-bottom: 4px;
    transition: 0.2s;
    font-family: var(--font-secundaria);
+   position: relative;
+   border-bottom: 2px solid var(--realce);
 }
 
-.menu__desktop--links a:hover {
-   border-bottom: 2px solid var(--realce);
+.menu__desktop--links a::after {
+   content: '';
+   position: absolute;
+      bottom: 0;
+      left: 0;
+   height: 0;
+   width: 100%;
+   background-color: var(--realce);
+   transition: height 0.3s ease;
+   z-index: -1; 
+}
+
+.menu__desktop--links a:hover::after {
+   height: 15px;
 }

@@ -17,6 +17,7 @@
 .menu {
    width: 200px;
    height: 100vh;
+   padding-top: 20px;
    position: fixed;
    right: 0;
    top: 0;
@@ -74,8 +75,21 @@
    border-bottom: 2px solid var(--realce);
    padding-bottom: 4px;
    transition: 0.2s;
+   position: relative;
 }
 
-.menu__links a:hover {
-   border-bottom: 2px solid var(--realce-claro);
+.menu__links a::after {
+   content: '';
+   position: absolute;
+      bottom: 0;
+      left: 0;
+   height: 0;
+   width: 100%;
+   background-color: var(--realce);
+   transition: height 0.3s ease;
+   z-index: -1;   
+}
+
+.menu__links a:hover::after {
+   height: 15px;
 }
