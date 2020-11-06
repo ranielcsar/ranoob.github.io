@@ -24,7 +24,7 @@ const menuMobile = () => (
          <nav class="menu__links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
             <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-            <a target="_blank" href="https://jsfiddle.net/user/ranielcsar">JSFiddle</a>  
+            <a target="_blank" href="https://codesandbox.io/u/ranielcsar/sandboxes">CodeSandbox</a>  
          </nav>
 
          <footer> 
@@ -45,7 +45,7 @@ const menuDesktop = () => (
          <nav class="menu__desktop--links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
             <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-            <a target="_blank" href="https://jsfiddle.net/user/ranielcsar">JSFiddle</a>  
+            <a target="_blank" href="https://codesandbox.io/u/ranielcsar/sandboxes">CodeSandbox</a>  
          </nav>
          
       </div>
