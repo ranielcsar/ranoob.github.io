@@ -1,5 +1,5 @@
 function switchTab(evt, id) {
-   var i, tabcontent, tablinks;
+   var tabcontent, tablinks;
 
    tabcontent = document.getElementsByClassName("tabcontent");
    for (let content of tabcontent) {
