@@ -23,8 +23,7 @@ const menuMobile = () => (
 
          <nav class="menu__links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
-            <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-            <a target="_blank" href="https://codesandbox.io/u/ranielcsar/sandboxes">CodeSandbox</a>  
+            <a target="_blank" href="https://www.linkedin.com/in/raniel-c%C3%A9sar-5bb0991a3/">Linkedin</a>
          </nav>
 
          <footer> 
@@ -44,8 +43,7 @@ const menuDesktop = () => (
 
          <nav class="menu__desktop--links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
-            <a target="_blank" href="https://codepen.io/ranielcsar">Codepen</a>
-            <a target="_blank" href="https://codesandbox.io/u/ranielcsar/sandboxes">CodeSandbox</a>  
+            <a target="_blank" href="https://www.linkedin.com/in/raniel-c%C3%A9sar-5bb0991a3/">Linkedin</a>
          </nav>
          
       </div>
