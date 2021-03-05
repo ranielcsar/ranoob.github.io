@@ -1,32 +1,32 @@
 .menu__desktop--links {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu__desktop--links a {
-   color: var(--branco);
-   margin: 10px 20px;
-   text-decoration: none;
-   border-bottom: 2px solid var(--branco);
-   padding-bottom: 4px;
-   transition: 0.2s;
-   font-family: var(--font-secundaria);
-   position: relative;
-   border-bottom: 2px solid var(--realce);
+  color: var(--white);
+  margin: 0.625rem 1.25rem;
+  text-decoration: none;
+  border-bottom: 0.125rem solid var(--white);
+  padding-bottom: 0.25rem;
+  transition: 0.2s;
+  font-family: var(--secondary-font);
+  position: relative;
+  border-bottom: 0.125rem solid var(--accent);
 }
 
 .menu__desktop--links a::after {
-   content: '';
-   position: absolute;
-      bottom: 0;
-      left: 0;
-   height: 0;
-   width: 100%;
-   background-color: var(--realce);
-   transition: height 0.3s ease;
-   z-index: -1; 
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--accent);
+  transition: height 0.3s ease;
+  z-index: -1;
 }
 
 .menu__desktop--links a:hover::after {
-   height: 15px;
+  height: 0.9375rem;
 }

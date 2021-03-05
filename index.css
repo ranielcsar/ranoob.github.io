@@ -8,55 +8,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
-   --preto: #090F03;
-   --preto-2: #152228;
-   --cor-sub: #758088;
-   --branco: #E0E8EE;
+  --black: #090f03;
+  --black-2: #152228;
+  --gray: #758088;
+  --white: #e0e8ee;
 
-   --realce: #9230FB;
-   --realce-claro: #D3BCFF;
-   --realce-escuro: #2A094E;
+  --accent: #9230fb;
+  --accent-light: #d3bcff;
+  --accent-dark: #2a094e;
 
-   --font-primaria: 'Pixel', sans-serif;
-   --font-secundaria: 'Roboto Mono', verdana, sans-serif;
-   
-   --pixel: 0.2rem;
+  --primary-font: 'Pixel', sans-serif;
+  --secondary-font: 'Roboto Mono', verdana, sans-serif;
+
+  --pixel: 0.2rem;
 }
 
 @font-face {
-   font-family: 'Pixel';
-   src: url('pixel.ttf');
+  font-family: 'Pixel';
+  src: url('pixel.ttf');
 }
 
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-   display: flex;
-   margin: 0;
-   font-family: var(--font-secundaria);   
-   background-color: var(--preto);
+  display: flex;
+  margin: 0;
+  font-family: var(--secondary-font);
+  background-color: var(--black);
 }
 
 a {
-   color: var(--branco);
-   text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 button {
-   font-family: var(--font-secundaria); 
+  font-family: var(--secondary-font);
 }
 
 p {
-   line-height: 1.5;
+  line-height: 1.5;
 }
 
 img {
-   width: 100%;
-   height: auto;
+  width: 100%;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
@@ -65,15 +65,15 @@ img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--preto-2); 
+  background: var(--black-2);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--preto); 
+  background: var(--black);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: gray; 
+  background: var(--gray);
 }

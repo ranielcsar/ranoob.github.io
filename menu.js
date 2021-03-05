@@ -1,14 +1,14 @@
-const abrirMenu = (abrir) => {
+const openMenu = (open) => {
 
-   abrir ?
-   document.querySelector('.menu-container').innerHTML = menuMobile() : 
+   open ?
+   document.querySelector('.menu-container').innerHTML = mobileMenu() : 
    document.querySelector('.menu-container').innerHTML = menuIcon();
 
 }
 
 const menuIcon = () => (
    `
-      <div class="menu-icon" onclick="abrirMenu(true)">
+      <div class="menu-icon" onclick="openMenu(true)">
          <div class="menu-icon__bar"></div>
          <div class="menu-icon__bar"></div>
          <div class="menu-icon__bar"></div>
@@ -16,10 +16,10 @@ const menuIcon = () => (
    `
 );
 
-const menuMobile = () => (
+const mobileMenu = () => (
    `
       <div class="menu">
-         <div class="menu__close-button" onclick="abrirMenu(false)"></div>
+         <div class="menu__close-button" onclick="openMenu(false)"></div>
 
          <nav class="menu__links">
             <a target="_blank" href="https://github.com/ranielcsar">Github</a>          
@@ -28,17 +28,17 @@ const menuMobile = () => (
          </nav>
 
          <footer> 
-            <div class="coracoes">
-               <div class="coracao-metade"></div>
-               <div class="coracao"></div>
-               <div class="coracao"></div>
+            <div class="hearts">
+               <div class="half-heart"></div>
+               <div class="heart"></div>
+               <div class="heart"></div>
             </div>
          </footer>
       </div>
    `
 );
 
-const menuDesktop = () => (
+const desktopMenu = () => (
    `
       <div class="menu__desktop">
 
@@ -53,7 +53,7 @@ const menuDesktop = () => (
 );
 
 const init = () => {
-   let menu = window.innerWidth > 760 ? menuDesktop() : menuIcon();
+   let menu = window.innerWidth > 760 ? desktopMenu() : menuIcon();
 
    document.querySelector('.menu-container').innerHTML = menu;
 }
