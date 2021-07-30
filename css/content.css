@@ -12,15 +12,19 @@
 }
 
 .subcontent-img {
-  width: 50%;
+  width: 56%;
+  max-width: 13.375rem;
   height: 11.25rem;
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
+  background-image: url('../perfil.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .subcontent-img > img {
-  transform: translateY(-15.3025%);
+  visibility: hidden;
 }
 
 .subcontent-infos {
@@ -55,9 +59,9 @@
   }
 
   .subcontent-img {
-    flex: 1;
+    flex: 1.1;
     height: 11.25rem;
-    margin-right: 1.875rem;
+    margin-right: 2.875rem;
   }
 
   .subcontent-infos {
@@ -68,5 +72,11 @@
   .subcontent-infos > .text {
     font-size: 2.2rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subcontent-img {
+    flex: 1;
   }
 }
