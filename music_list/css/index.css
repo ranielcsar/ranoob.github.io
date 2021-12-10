@@ -1,0 +1,27 @@
+@import url(../../root.css);
+@import url(has_learned_icon.css);
+@import url(music_template.css);
+@import url(artist.css);
+
+.page-title {
+  font-size: 50px;
+  margin-bottom: 60px;
+  width: max-content;
+  position: relative;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 30%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--accent);
+}
+
+.music-list {
+  height: 45vh;
+  overflow: auto;
+}

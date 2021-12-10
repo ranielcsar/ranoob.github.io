@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url(css/all.css);
+@import url(css/footer.css);
+@import url(css/menu.css);
+
+:root {
+  --black: #090f03;
+  --black-2: #1d2d35;
+  --gray: #758088;
+  --white: #e0e8ee;
+
+  --accent: #9230fb;
+  --accent-light: #d3bcff;
+  --accent-dark: #2a094e;
+
+  --primary-font: 'Pixel', sans-serif;
+  --secondary-font: 'Roboto Mono', verdana, sans-serif;
+
+  --pixel: 0.2rem;
+}
+
+@font-face {
+  font-family: 'Pixel';
+  src: url('pixel.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: var(--secondary-font);
+  background-color: var(--black);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--secondary-font);
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--black-2);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+}
+
+.main-header {
+  font-family: 'Pixel', verdana;
+  font-size: 1.25rem;
+  color: var(--white);
+  padding: 1.25rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--black);
+}
+
+.main-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (min-width: 700px) {
+  .main-container {
+     width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+     width: 40rem;
+  }
+}
+
+.content {
+  margin: 6rem 0 2rem;
+  padding: 0 1.25rem;
+  color: var(--white);
+}

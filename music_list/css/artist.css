@@ -1,0 +1,14 @@
+.artist {
+  margin-bottom: 5rem;
+}
+
+.artist-name {
+  font-size: 36px;
+}
+
+.artist-musics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 25px;
+}
