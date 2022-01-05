@@ -24,14 +24,15 @@
   }
 }
 
-.menu a {
+.link {
   color: var(--white);
   text-decoration: none;
   border-bottom: 0.125rem solid var(--accent);
   transition: 0.2s;
   position: relative;
+  width: max-content;
 }
 
-.menu a:hover {
+.link:hover {
   color: var(--accent);
 }
