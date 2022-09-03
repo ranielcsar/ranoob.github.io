@@ -12,7 +12,7 @@
   overflow: hidden;
   border-radius: 50%;
   background-image: url('../perfil.jpg');
-  background-position: center;
+  background-position: 0 -3.75rem;
   background-size: cover;
 }
 
