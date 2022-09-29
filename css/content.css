@@ -5,14 +5,14 @@
 }
 
 .subcontent-img {
-  width: 56%;
-  max-width: 13.375rem;
+  width: 66%;
+  max-width: 14.375rem;
   height: 11.25rem;
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
   background-image: url('../perfil.jpg');
-  background-position: 0 -3.75rem;
+  background-position: 0 0;
   background-size: cover;
 }
 
