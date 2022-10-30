@@ -4,10 +4,10 @@
 @import url(css/menu.css);
 
 :root {
-  --black: #090f03;
+  --black: #111113;
   --black-2: #1d2d35;
   --gray: #758088;
-  --white: #e0e8ee;
+  --white: #f6f6f6;
 
   --accent: #9230fb;
   --accent-light: #d3bcff;
