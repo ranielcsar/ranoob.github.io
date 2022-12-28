@@ -35,7 +35,7 @@
   width: 1.875rem;
   height: 1.875rem;
   filter: invert(100%);
-  transition: filter 0.2s;
+  transition: filter 0.15s;
 }
 
 .sandbox-icon:hover {
