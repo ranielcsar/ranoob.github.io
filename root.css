@@ -100,13 +100,13 @@ img {
 
 @media screen and (min-width: 700px) {
   .main-container {
-     width: 36rem;
+    width: 36rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-container {
-     width: 40rem;
+    width: 40rem;
   }
 }
 
