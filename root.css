@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url(css/all.css);
-@import url(css/footer.css);
-@import url(css/menu.css);
 
 :root {
   --black: #111113;
-  --black-2: #1d2d35;
-  --gray: #758088;
+  --gray: #9e9e9e;
   --white: #f6f6f6;
 
   --accent: #9230fb;
-  --accent-light: #d3bcff;
-  --accent-dark: #2a094e;
 
   --primary-font: 'Pixel', sans-serif;
   --secondary-font: 'Roboto Mono', verdana, sans-serif;
@@ -49,6 +43,7 @@ button {
 p {
   line-height: 1.5;
   letter-spacing: 0.5px;
+  color: var(--gray);
 }
 
 img {
@@ -74,44 +69,4 @@ img {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gray);
-}
-
-.main-header {
-  font-family: 'Pixel', verdana;
-  font-size: 1.25rem;
-  color: var(--white);
-  padding: 1.25rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: var(--black);
-}
-
-.main-container {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-@media screen and (min-width: 700px) {
-  .main-container {
-    width: 36rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-container {
-    width: 40rem;
-  }
-}
-
-.content {
-  margin: 6rem 0 2rem;
-  padding: 0 1.25rem;
-  color: var(--white);
 }

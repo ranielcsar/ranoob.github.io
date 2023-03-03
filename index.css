@@ -1,3 +1,35 @@
-@import url(root.css);
-@import url(css/content.css);
-@import url(css/tab.css);
+@import url('root.css');
+@import url('css/profile-picture.css');
+@import url('css/apresentation.css');
+@import url('css/social.css');
+@import url('css/experiences.css');
+
+.container {
+  container: main / inline-size;
+  width: 100%;
+  height: 100%;
+  max-width: 50rem;
+  padding: 4rem 1.25rem 0;
+  margin: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 0.3fr 0.65fr 1fr;
+  grid-template-areas:
+    'profile-pic'
+    'apresentation'
+    'experiences';
+}
+
+@container main (min-width: 660px) {
+  .content {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 4rem;
+    grid-template-areas:
+      'profile-pic apresentation'
+      'experiences experiences';
+  }
+}

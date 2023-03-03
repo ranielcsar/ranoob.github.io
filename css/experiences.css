@@ -1,0 +1,10 @@
+.experiences {
+  margin-top: 2rem;
+  grid-area: experiences;
+}
+
+.experiences > header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
