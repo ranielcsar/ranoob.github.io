@@ -1,11 +1,11 @@
 .social {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  bottom: 0;
+  top: 0;
   background-color: var(--black);
 }
 
