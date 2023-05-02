@@ -2,12 +2,25 @@
   border-radius: 5px;
   margin: auto;
   grid-area: profile-pic;
+  border-radius: 50%;
+  background: #111113;
+  box-shadow: inset 5px 5px 16px #070708, inset -5px -5px 16px #1b1b1e;
+  width: 14rem;
+  height: 14rem;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-picture {
+    margin: 0;
+  }
 }
 
 .profile-picture > img {
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  border-radius: inherit;
+  margin: auto;
+  width: 85%;
+  height: 85%;
   object-fit: cover;
   object-position: bottom -3.5rem right 0;
 }
