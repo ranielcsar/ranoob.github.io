@@ -1,13 +1,19 @@
 .apresentation {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .apresentation {
+    margin-bottom: 0;
+  }
 }
 
 .apresentation > header {
   color: var(--white);
   line-height: 1.5;
   margin: 1rem 0;
-  flex: 2;
 }
 
 .apresentation > header > mark {
