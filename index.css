@@ -9,28 +9,60 @@
   container: main / inline-size;
   width: 100%;
   height: 100%;
-  max-width: 65rem;
   padding: 4rem 1.25rem 0;
-  margin: 1rem auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 65rem;
+  }
 }
 
 .content {
+  margin: auto;
   display: grid;
   grid-template-rows: 0.3fr 0.65fr 1fr;
   grid-template-areas:
-    'profile-pic'
     'apresentation'
+    'skills'
     'experiences';
 }
 
-@container main (min-width: 660px) {
+@container main (min-width: 800px) {
   .content {
+    width: 90%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr max-content;
     grid-template-columns: 0.5fr 1fr;
-    grid-gap: 5rem;
+    grid-row-gap: 1rem;
     grid-template-areas:
-      'profile-pic apresentation'
+      'apresentation apresentation'
+      'skills skills'
       'experiences experiences';
+  }
+}
+
+section:not(.apresentation) {
+  margin-bottom: 1.5rem;
+}
+
+section:not(.apresentation) > header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  section:not(.apresentation) > header {
+    font-size: 2rem;
+    grid-column: 1 / 3;
   }
 }

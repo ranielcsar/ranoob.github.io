@@ -2,12 +2,22 @@
   display: grid;
   grid-template-columns: 1fr;
   font-size: 1rem;
+  grid-area: skills;
 }
 
 @media screen and (min-width: 1024px) {
   .skills {
+    grid-template-rows: max-content 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
+  }
+
+  .skills > header {
+    grid-row: 1;
+  }
+
+  .skills > ul {
+    grid-row: 2;
   }
 }
 

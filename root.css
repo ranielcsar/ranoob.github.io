@@ -11,11 +11,13 @@
   --secondary-font: 'Roboto Mono', verdana, sans-serif;
 
   --pixel: 0.2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   :root {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -47,7 +49,6 @@ button {
 }
 
 p {
-  line-height: 1.5;
   letter-spacing: 0.7px;
   color: var(--gray);
 }
