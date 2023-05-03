@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  bottom: 0;
+  bottom: env(safe-area-inset-bottom);
   background-color: var(--black);
 }
 
