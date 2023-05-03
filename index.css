@@ -28,7 +28,7 @@
 .content {
   margin: auto;
   display: grid;
-  grid-template-rows: 0.3fr 0.65fr 1fr;
+  grid-template-rows: 0.3fr 0.65fr max-content;
   grid-template-areas:
     'apresentation'
     'skills'
