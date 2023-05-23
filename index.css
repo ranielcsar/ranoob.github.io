@@ -1,3 +1,9 @@
+@import url('./css/profile-picture.css');
+@import url('./css/apresentation.css');
+@import url('./css/social.css');
+@import url('./css/skills.css');
+@import url('./css/experiences.css');
+
 :root {
   --black: #111113;
   --gray: #9e9e9e;
@@ -12,7 +18,6 @@
   font-size: 1.1rem;
   line-height: 1.5;
   letter-spacing: 0.027rem;
-  font-display: swap;
 }
 
 @media screen and (min-width: 1024px) {
@@ -25,6 +30,7 @@
 @font-face {
   font-family: 'Pixel';
   src: url('pixel.ttf');
+  font-display: swap;
 }
 
 * {
