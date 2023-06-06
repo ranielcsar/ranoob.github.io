@@ -5,6 +5,10 @@
   grid-area: skills;
 }
 
+.backend-skills {
+  grid-area: backend;
+}
+
 @media screen and (min-width: 1024px) {
   .skills {
     grid-template-rows: max-content 1fr;
