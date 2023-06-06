@@ -1,5 +1,6 @@
 .apresentation {
   display: flex;
+  grid-area: apresentation;
   flex-direction: column;
   margin-bottom: 2rem;
   width: 100%;
