@@ -6,7 +6,7 @@
 
 :root {
   --black: #111113;
-  --gray: #9e9e9e;
+  --gray: #b3b3b3;
   --white: #f6f6f6;
 
   --accent: #9230fb;
@@ -44,6 +44,10 @@ body {
   margin: 0;
   font-family: var(--secondary-font);
   background-color: var(--black);
+
+  background-image: url('./assets/body-bg.svg');
+  background-position: center;
+  background-size: cover;
 }
 
 a {
@@ -108,10 +112,11 @@ img {
 .content {
   margin: auto;
   display: grid;
-  grid-template-rows: 0.3fr 0.65fr max-content;
+  grid-template-rows: 0.3fr 0.65fr 0.5fr max-content;
   grid-template-areas:
     'apresentation'
     'skills'
+    'backend'
     'experiences';
 }
 
@@ -125,8 +130,22 @@ img {
     grid-template-areas:
       'apresentation apresentation'
       'skills skills'
+      'backend backend'
       'experiences experiences';
   }
+}
+
+section:not(.apresentation) > header hgroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section:not(.apresentation) > header h4 {
+  font-size: 1rem;
+  color: var(--gray);
+  margin: 0 0 0.5rem;
 }
 
 section:not(.apresentation) {
@@ -144,5 +163,9 @@ section:not(.apresentation) > header {
   section:not(.apresentation) > header {
     font-size: 2rem;
     grid-column: 1 / 3;
+  }
+
+  section:not(.apresentation) > header h4 {
+    margin: 0;
   }
 }
