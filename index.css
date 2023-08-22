@@ -3,6 +3,7 @@
 @import url('./css/social.css');
 @import url('./css/skills.css');
 @import url('./css/experiences.css');
+@import url('./css/repos.css');
 
 :root {
   --black: #111113;
@@ -118,12 +119,13 @@ img {
 .content {
   margin: auto;
   display: grid;
-  grid-template-rows: 0.3fr 0.65fr 0.5fr max-content;
+  grid-template-rows: 0.3fr 0.65fr 0.5fr 0.8fr max-content;
   grid-template-areas:
     'apresentation'
     'skills'
     'backend'
-    'experiences';
+    'experiences'
+    'repos';
 }
 
 @container main (min-width: 800px) {
@@ -137,7 +139,8 @@ img {
       'apresentation apresentation'
       'skills skills'
       'backend backend'
-      'experiences experiences';
+      'experiences experiences'
+      'repos repos';
   }
 }
 
