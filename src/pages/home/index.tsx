@@ -14,17 +14,6 @@ export function HomePage() {
     },
   })
 
-  const [devFrontRef] = useTransitionAnimation({
-    from: {
-      background: 'transparent',
-    },
-    to: {
-      background:
-        'linear-gradient(var(--deg), var(--primary) 25%, var(--secondary) 100%)',
-    },
-    duration: 1.5,
-  })
-
   const [profilePicRef] = useTransitionAnimation({
     from: {
       opacity: 0,
@@ -56,12 +45,8 @@ export function HomePage() {
         <div className="h-full text-xl leading-relaxed lg:text-[3ch] xl:h-auto">
           Olá!
           <br />
-          Me chamo <strong className="tracking-wide">Raniel César</strong> e sou{' '}
-          <br />
-          <mark
-            ref={devFrontRef}
-            className="font-pixel rounded-sm p-1 text-[3ch] tracking-wider text-neutral-50 lg:text-4xl"
-          >
+          Me chamo <strong className="tracking-wide">Raniel César</strong> e sou <br />
+          <mark className="bg-gradient-to-r from-primary to-secondary font-pixel rounded-sm p-1 text-[3ch] tracking-wider text-neutral-50 lg:text-4xl">
             ✦ Desenvolvedor Frontend
           </mark>
           <p>Nordestino, moro em Sr. do Bonfim, interior da Bahia.</p>
@@ -72,8 +57,8 @@ export function HomePage() {
           <br />
           Amo gatos, música e jogos indie, principalmente feitos em Pixel Art.
           <br />
-          Tenho experiência com ReactJS, TypeScript e NextJS. Possuo
-          conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.
+          Tenho experiência com ReactJS, TypeScript e NextJS. Possuo conhecimento em desenvolvimento
+          Backend com NestJS, Prisma e Express.
           <br />
           Atualmente estou estudando VueJS, Python e Inteligência Artificial.
         </p>

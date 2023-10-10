@@ -80,17 +80,6 @@ const backendSkills: SkillProps[] = [
 ]
 
 function Skill({ text, title }: SkillProps) {
-  const [titleRef] = useTransitionAnimation({
-    from: {
-      background: 'transparent',
-    },
-    to: {
-      background:
-        'linear-gradient(var(--deg), var(--primary) 25%, var(--secondary) 100%)',
-    },
-    duration: 1,
-  })
-
   const [textRef] = useTransitionAnimation({
     from: {
       opacity: 0,
@@ -102,10 +91,7 @@ function Skill({ text, title }: SkillProps) {
 
   return (
     <article className="h-max list-none text-[1.75ch]">
-      <strong
-        className="rounded-sm p-1 tracking-widest text-neutral-50"
-        ref={titleRef}
-      >
+      <strong className="rounded-sm p-1 tracking-widest text-neutral-50 bg-gradient-to-r from-primary to-secondary">
         ✦ {title}
       </strong>
       <span className="leading-relaxed tracking-wide" ref={textRef}>

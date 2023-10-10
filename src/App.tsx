@@ -9,7 +9,7 @@ export function App() {
   return (
     <BrowserRouter>
       <div className="relative flex w-full flex-col">
-        <div className="fixed top-0 z-20 w-full backdrop-blur-lg xl:backdrop-blur-sm">
+        <div className="fixed top-0 z-20 w-full backdrop-blur-lg xl:backdrop-blur-sm bg-black/75 xl:bg-black/50">
           <Header />
         </div>
 

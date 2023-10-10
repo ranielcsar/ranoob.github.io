@@ -8,11 +8,11 @@ export default {
         'max-allowed': '90rem',
       },
       colors: {
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        accent: 'var(--accent)',
-        black: 'var(--background)',
-        white: 'var(--text)',
+        primary: 'rgb(var(--primary) / <alpha-value>)',
+        secondary: 'rgb(var(--secondary) / <alpha-value>)',
+        accent: 'rgb(var(--accent) / <alpha-value>)',
+        black: 'rgb(var(--background) / <alpha-value>)',
+        white: 'rgb(var(--text) / <alpha-value>)',
       },
       fontFamily: {
         jetbrains: ['MPLUSCodeLatin', 'sans-serif'],
