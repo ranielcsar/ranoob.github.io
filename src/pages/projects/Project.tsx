@@ -24,14 +24,9 @@ export function Project(project: ProjectProps) {
   })
 
   return (
-    <div
-      className="flex h-[65vh] w-full rounded-sm text-white xl:m-auto xl:h-[82vh]"
-      ref={ref}
-    >
+    <div className="flex h-[65vh] w-full rounded-sm text-white xl:m-auto xl:h-[82vh]" ref={ref}>
       <section className="relative m-auto flex h-full flex-col gap-5 md:px-5 xl:p-0">
-        <header className="text-2xl font-bold xl:text-4xl">
-          {project.title}
-        </header>
+        <header className="text-2xl font-bold xl:text-4xl">{project.title}</header>
 
         <p className="text-lg">{project.description}</p>
 
@@ -41,6 +36,7 @@ export function Project(project: ProjectProps) {
             src={project.image as string}
             alt={`${project.title} image`}
             rel="preload"
+            loading="eager"
           />
         </figure>
 
