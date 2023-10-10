@@ -5,10 +5,7 @@ import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
 
 const emailSubmitSchema = z.object({
-  from: z
-    .string()
-    .email('Digite um email válido')
-    .nonempty('Preciso saber quem envia o Email.'),
+  from: z.string().email('Digite um email válido').nonempty('Preciso saber quem envia o Email.'),
   subject: z.string().nonempty('Sem assunto?'),
   message: z.string().nonempty('Não esquece de falar o que você quer!'),
 })
@@ -70,14 +67,10 @@ export function SendEmail() {
         <MailIcon />
       </button>
 
-      <Modal
-        title="Me manda um salve! ;)"
-        isOpen={openSendEmailModal}
-        onClose={handleClose}
-      >
+      <Modal title="Me manda um salve! ;)" isOpen={openSendEmailModal} onClose={handleClose}>
         <form
           onSubmit={handleEmailSubmit}
-          className="grid max-h-[65vh] grid-rows-[max-content,max-content,1fr] gap-5"
+          className="grid max-h-max grid-rows-[max-content,max-content,1fr] gap-5"
         >
           <label htmlFor="from" className="flex flex-col gap-2">
             <span className="text-lg text-black">De (email):</span>
@@ -109,7 +102,7 @@ export function SendEmail() {
               name="message"
               id="message"
               aria-label="Área de texto para mensagem do email"
-              rows={8}
+              rows={6}
               className="w-full resize-none rounded-md border border-black p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.message}</p>
