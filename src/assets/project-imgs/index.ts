@@ -1,0 +1,5 @@
+export { default as CoinSynchPrint } from './coinsynch.webp'
+export { default as JohnTasksPrint } from './john-tasks.webp'
+export { default as NextShoppingPrint } from './next-shopping-cart.webp'
+export { default as NLWAiPrint } from './nlw-ai.webp'
+export { default as NLWSpacetimePrint } from './nlw-spacetime.webp'
