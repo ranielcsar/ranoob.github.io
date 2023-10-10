@@ -43,7 +43,7 @@ export function Modal({ children, isOpen, onClose, title }: ModalProps) {
 
                 <button
                   type="button"
-                  className="absolute top-6 right-4 text-black h-6 w-6"
+                  className="absolute outline-none top-6 right-4 text-black h-6 w-6"
                   onClick={onClose}
                 >
                   <CloseIcon />
