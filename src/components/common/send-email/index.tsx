@@ -70,7 +70,7 @@ export function SendEmail() {
       <Modal title="Me manda um salve! ;)" isOpen={openSendEmailModal} onClose={handleClose}>
         <form
           onSubmit={handleEmailSubmit}
-          className="grid max-h-max grid-rows-[max-content,max-content,1fr] gap-5"
+          className="grid h-full grid-rows-[max-content,max-content,1fr] gap-2 xl:gap-5"
         >
           <label htmlFor="from" className="flex flex-col gap-2">
             <span className="text-lg text-black">De (email):</span>
@@ -102,8 +102,7 @@ export function SendEmail() {
               name="message"
               id="message"
               aria-label="Área de texto para mensagem do email"
-              rows={6}
-              className="w-full resize-none rounded-md border border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full h-[20vh] resize-none rounded-md border border-black p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.message}</p>
           </label>
