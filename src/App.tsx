@@ -13,7 +13,7 @@ export function App() {
           <Header />
         </div>
 
-        <main className="relative flex w-full max-w-max-allowed flex-1 flex-col items-center overflow-y-auto px-3 lg:mx-auto lg:h-screen lg:flex-row lg:px-5 xl:px-10">
+        <main className="relative flex w-full max-w-max-allowed flex-1 flex-col items-center overflow-y-auto overflow-x-hidden px-3 lg:mx-auto lg:h-screen lg:flex-row lg:px-5 xl:px-10">
           <Sidebar />
 
           <div className="flex-1 md:px-5 lg:order-2 lg:ml-[13rem] xl:ml-[15rem]">
