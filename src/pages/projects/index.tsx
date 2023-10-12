@@ -10,7 +10,7 @@ import {
 
 export function ProjectsPage() {
   return (
-    <div className="mt-20 h-full">
+    <div className="mt-20 h-full w-full">
       <Carousel>
         {projects.map((project) => (
           <Project key={project.title} {...project} />
@@ -31,9 +31,9 @@ const projects: ProjectProps[] = [
     },
   },
   {
-    title: 'Upload AI',
+    title: 'Upload AI (NLW AI)',
     description:
-      'App feito na edição "AI" da NLW (Next Level Week) da Rocketseat',
+      'Cria resultados gerados pela API da OpenAI a partir de prompts pré-cadastrados, para vídeos.',
     image: NLWAiPrint,
     links: {
       sandbox: 'https://v4xv8t-5173.csb.app/',
@@ -41,8 +41,10 @@ const projects: ProjectProps[] = [
     },
   },
   {
-    title: 'Coinsynch',
-    description: 'Projeto desafio para vaga de Dev Frontend',
+    title: 'Coinsynch (desafio vaga)',
+    description:
+      'Aplicação que simula uma carteira de Cryptomoedas na qual o usuário pode \
+    se registrar, logar, fazer logout, adicionar moedas em sua carteira, remover, vender e/ou trocar e também se inscrever na Newsletter.',
     image: CoinSynchPrint,
     links: {
       sandbox: 'https://8p4cxd-3000.csb.app/',
@@ -50,9 +52,10 @@ const projects: ProjectProps[] = [
     },
   },
   {
-    title: 'Capsula do Tempo',
+    title: 'Capsula do Tempo (NLW Spacetime)',
     description:
-      'App feito na edição "Spacetime" da NLW (Next Level Week) da Rocketseat',
+      'O usuário pode salvar memórias, escrever sobre elas e adicionar fotos/vídeos. \
+      Com versões web e mobile, login através do Github e funcionalidades para tornar as memórias públicas ou privadas.',
     image: NLWSpacetimePrint,
     links: {
       sandbox: 'https://6l9ld9-3000.csb.app/',
@@ -60,8 +63,8 @@ const projects: ProjectProps[] = [
     },
   },
   {
-    title: "John's Task List",
-    description: 'Projeto desafio para vaga de Mid Dev Frontend',
+    title: "John's Task List (desafio vaga)",
+    description: 'CRUD de tarefas com subtarefas.',
     image: JohnTasksPrint,
     links: {
       sandbox: 'https://3dsjkz-3000.csb.app/',
