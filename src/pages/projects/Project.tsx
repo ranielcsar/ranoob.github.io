@@ -12,8 +12,8 @@ export type ProjectProps = {
 
 export function Project(project: ProjectProps) {
   return (
-    <div className="mx-2 flex flex-col gap-5 md:h-[75vh] xl:h-full xl:gap-5 w-full xl:w-auto rounded-sm text-white">
-      <section className="relative m-auto flex h-full flex-col gap-5 xl:p-0">
+    <div className="mx-2 flex flex-col gap-5 md:h-[77vh] xl:h-full xl:gap-5 w-full xl:w-auto rounded-sm text-white">
+      <section className="relative grid h-[85%] lg:h-full grid-rows-[max-content,max-content,1fr] gap-5 xl:p-0">
         <header className="text-2xl font-bold xl:text-4xl">
           {project.title}
         </header>
@@ -21,7 +21,7 @@ export function Project(project: ProjectProps) {
         <p className="text-lg">{project.description}</p>
 
         <img
-          className="h-[45vh] md:h-full aspect-video w-full object-fill rounded-sm"
+          className="h-[inherit] aspect-video w-full object-fill rounded-sm"
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"
@@ -29,7 +29,7 @@ export function Project(project: ProjectProps) {
         />
       </section>
 
-      <footer className="flex items-center justify-end gap-4 md:flex-1">
+      <footer className="flex h-full w-full items-center justify-end gap-4 flex-1">
         <a
           target="_blank"
           rel="noreferrer"
