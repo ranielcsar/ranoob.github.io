@@ -7,13 +7,20 @@ import {
   NLWSpacetimePrint,
   NextShoppingPrint,
 } from '@/assets/project-imgs'
+import { useState } from 'react'
 
 export function ProjectsPage() {
+  const [activeItem, setActiveItem] = useState(projects[0].title)
+
   return (
     <div className="mt-20 h-full w-full">
-      <Carousel>
+      <Carousel setActiveItem={setActiveItem}>
         {projects.map((project) => (
-          <Project key={project.title} {...project} />
+          <Project
+            key={project.title}
+            {...{ project }}
+            activeItem={activeItem === project.title}
+          />
         ))}
       </Carousel>
     </div>

@@ -3,18 +3,36 @@ import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { ReactNode, useEffect } from 'react'
 import { useSpringCarousel } from 'react-spring-carousel'
 
-export function Carousel({ children }: { children: ReactNode[] }) {
+export function Carousel({
+  children,
+  setActiveItem,
+}: {
+  children: ReactNode[]
+  setActiveItem?: (id: string) => void
+}) {
   const isMobile = useMediaQuery('(max-width: 1024px)')
 
-  const { carouselFragment, slideToPrevItem, slideToNextItem } =
-    useSpringCarousel({
-      itemsPerSlide: isMobile ? 1.1 : 1,
-      withLoop: true,
-      items: children.map((child: any) => ({
-        id: child?.key,
-        renderItem: child,
-      })),
-    })
+  const {
+    carouselFragment,
+    slideToPrevItem,
+    slideToNextItem,
+    useListenToCustomEvent,
+  } = useSpringCarousel({
+    itemsPerSlide: isMobile ? 1.1 : 1,
+    withLoop: true,
+    items: children.map((child: any) => ({
+      id: child?.key,
+      renderItem: child,
+    })),
+  })
+
+  useListenToCustomEvent(
+    (event: { eventName: string; nextItem: { id: any } }) => {
+      if (event.eventName === 'onSlideStartChange' && setActiveItem) {
+        setActiveItem(event.nextItem.id)
+      }
+    },
+  )
 
   function handleKeyPress(evt: KeyboardEvent) {
     if (evt.key === 'ArrowRight') return slideToNextItem()

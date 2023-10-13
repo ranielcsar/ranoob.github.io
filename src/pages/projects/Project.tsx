@@ -10,9 +10,19 @@ export type ProjectProps = {
   }
 }
 
-export function Project(project: ProjectProps) {
+export function Project({
+  project,
+  activeItem,
+}: {
+  project: ProjectProps
+  activeItem: boolean
+}) {
   return (
-    <div className="mx-2 flex flex-col gap-5 md:h-[77vh] xl:h-full xl:gap-5 w-full xl:w-auto rounded-sm text-white">
+    <div
+      className={`transition-opacity mx-2 flex flex-col gap-5 md:h-[77vh] xl:h-full xl:gap-5 w-full xl:w-auto rounded-sm text-white ${
+        activeItem ? 'opacity-100' : 'opacity-40'
+      }`}
+    >
       <section className="relative grid h-[85%] lg:h-full grid-rows-[max-content,max-content,1fr] gap-5 xl:p-0">
         <header className="text-2xl font-bold xl:text-4xl">
           {project.title}
