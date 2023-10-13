@@ -1,11 +1,14 @@
 import { LeftArrow, RightArrow } from '@/assets/icons'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { ReactNode, useEffect } from 'react'
 import { useSpringCarousel } from 'react-spring-carousel'
 
 export function Carousel({ children }: { children: ReactNode[] }) {
+  const isMobile = useMediaQuery('(max-width: 1024px)')
+
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
-      itemsPerSlide: 1,
+      itemsPerSlide: isMobile ? 1.1 : 1,
       withLoop: true,
       items: children.map((child: any) => ({
         id: child?.key,
