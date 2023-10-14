@@ -1,8 +1,10 @@
 import { MailIcon } from '@/assets/icons'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 import { Modal } from '@/components/common'
 import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
+import { useLocation } from 'react-router-dom'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const emailSubmitSchema = z.object({
   from: z
@@ -28,6 +30,7 @@ export function SendEmail() {
   const [errors, setErrors] = useState<SendEmailParams | null>()
   const [loading, setLoading] = useState(false)
   const { handleSendEmail } = useSendEmail()
+  const isMobile = useMediaQuery('(max-width: 1024px)')
 
   async function handleEmailSubmit(evt: FormEvent) {
     try {
@@ -58,13 +61,19 @@ export function SendEmail() {
   function handleClose() {
     setErrors(null)
     setOpenSendEmailModal(false)
+    isMobile ? history.replaceState({}, document.title, '.') : null
+  }
+
+  function handleOpen() {
+    setOpenSendEmailModal(true)
+    isMobile ? (window.location.hash = 'email') : null
   }
 
   return (
     <>
       <button
         className="h-10 w-10 cursor-pointer outline-none transition-colors hover:text-accent animate-bounce"
-        onClick={() => setOpenSendEmailModal(true)}
+        onClick={handleOpen}
         aria-label="Abrir formulário de contato"
       >
         <MailIcon />
@@ -139,7 +148,7 @@ export function SendEmail() {
                     fill="currentFill"
                   />
                 </svg>
-                <span>Enviando email...</span>
+                <span>Enviando Email...</span>
               </div>
             ) : (
               'Enviar'
