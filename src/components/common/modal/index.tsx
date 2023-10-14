@@ -10,6 +10,12 @@ type ModalProps = {
 }
 
 export function Modal({ children, isOpen, onClose, title }: ModalProps) {
+  useEffect(() => {
+    window.addEventListener('beforeunload', onClose)
+
+    return () => window.removeEventListener('beforeunload', onClose)
+  }, [])
+  
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose} onBackdropClick={onClose}>
