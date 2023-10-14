@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  @media (hover: hover) {
+    button:hover {
+      @apply text-accent;
+    }
+  }
+
+  /* --- THEMING --- */
   :root {
     --primary: 96 163 217;
     --secondary: 0 116 183;
@@ -24,6 +31,7 @@
     font-display: swap;
   }
 
+  /* SCROLLBAR */
   * {
     scrollbar-width: auto;
     scrollbar-color: rgb(var(--text));

@@ -81,7 +81,7 @@ export function SendEmail() {
   return (
     <>
       <button
-        className="h-10 w-10 cursor-pointer outline-none transition-colors hover:text-accent animate-bounce"
+        className="h-10 w-10 cursor-pointer outline-none transition-colors animate-bounce"
         onClick={handleOpen}
         aria-label="Abrir formulário de contato"
       >

@@ -15,7 +15,7 @@ export function Modal({ children, isOpen, onClose, title }: ModalProps) {
 
     return () => window.removeEventListener('beforeunload', onClose)
   }, [])
-  
+
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose}>
@@ -43,7 +43,10 @@ export function Modal({ children, isOpen, onClose, title }: ModalProps) {
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="relative w-full max-w-lg transform overflow-hidden rounded-md bg-white p-6 text-left align-middle shadow-xl transition-all md:h-[79vh] xl:h-auto">
-                <Dialog.Title as="h3" className="mb-10 text-lg font-medium leading-6 text-black">
+                <Dialog.Title
+                  as="h3"
+                  className="mb-10 text-lg font-medium leading-6 text-black"
+                >
                   {title}
                 </Dialog.Title>
 
