@@ -1,5 +1,5 @@
 import { MailIcon } from '@/assets/icons'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 import { Modal } from '@/components/common'
 import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
@@ -60,6 +60,7 @@ export function SendEmail() {
   function handleClose() {
     setErrors(null)
     setOpenSendEmailModal(false)
+    window.location.hash = ''
     isMobile ? history.replaceState({}, document.title, '.') : null
   }
 
@@ -67,6 +68,13 @@ export function SendEmail() {
     setOpenSendEmailModal(true)
     isMobile ? (window.location.hash = 'email') : null
   }
+
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash === '') {
+      handleClose()
+    }
+  }, [window.location.hash])
 
   return (
     <>
