@@ -1,9 +1,8 @@
 import { MailIcon } from '@/assets/icons'
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { Modal } from '@/components/common'
 import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
-import { useLocation } from 'react-router-dom'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const emailSubmitSchema = z.object({
