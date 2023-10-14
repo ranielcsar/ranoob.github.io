@@ -1,6 +1,6 @@
 import { CloseIcon } from '@/assets/icons'
 import { Dialog, Transition } from '@headlessui/react'
-import { ReactNode, Fragment } from 'react'
+import { ReactNode, Fragment, useEffect } from 'react'
 
 type ModalProps = {
   isOpen: boolean
