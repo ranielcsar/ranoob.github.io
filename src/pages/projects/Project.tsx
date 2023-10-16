@@ -40,18 +40,19 @@ export function Project({
       </section>
 
       <footer className="flex h-full w-full items-center justify-end gap-4 flex-1">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={project.links.sandbox}
+        <button
+          // target="_blank"
+          // rel="noreferrer"
+          // href={project.links.sandbox}
+          disabled={true}
           title="CodeSandbox"
-          className="flex items-center rounded-sm bg-white w-max gap-1 p-2 text-black transition-colors hover:text-primary"
+          className="disabled:bg-white/50 disabled:select-none disabled:hover:text-black flex items-center rounded-sm bg-white w-max gap-1 p-2 text-black transition-colors hover:text-primary"
         >
           <i className="h-7 w-7">
             <CodeSandboxIcon />
           </i>
           <span className="text-xl">Demo</span>
-        </a>
+        </button>
 
         <a
           target="_blank"
