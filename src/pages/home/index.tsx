@@ -32,7 +32,7 @@ export function HomePage() {
             src={ProfilePic}
             alt="foto perfil de Raniel César"
             loading="lazy"
-            className="h-52 w-52 rounded-full object-cover object-[0,-7.5rem] xl:h-64 xl:w-64 xl:object-[0,-9.5rem]"
+            className="bg-black/50 h-52 w-52 rounded-full object-cover object-[0,-7.5rem] xl:h-64 xl:w-64 xl:object-[0,-9.5rem]"
           />
         </picture>
 
@@ -45,7 +45,8 @@ export function HomePage() {
         <div className="h-full text-xl leading-relaxed lg:text-[3ch] xl:h-auto">
           Olá!
           <br />
-          Me chamo <strong className="tracking-wide">Raniel César</strong> e sou <br />
+          Me chamo <strong className="tracking-wide">Raniel César</strong> e sou{' '}
+          <br />
           <mark className="bg-gradient-to-r from-primary to-secondary font-pixel rounded-sm p-1 text-[3ch] tracking-wider text-neutral-50 lg:text-4xl">
             ✦ Desenvolvedor Frontend
           </mark>
@@ -57,8 +58,8 @@ export function HomePage() {
           <br />
           Amo gatos, música e jogos indie, principalmente feitos em Pixel Art.
           <br />
-          Tenho experiência com ReactJS, TypeScript e NextJS. Possuo conhecimento em desenvolvimento
-          Backend com NestJS, Prisma e Express.
+          Tenho experiência com ReactJS, TypeScript e NextJS. Possuo
+          conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.
           <br />
           Atualmente estou estudando VueJS, Python e Inteligência Artificial.
         </p>
