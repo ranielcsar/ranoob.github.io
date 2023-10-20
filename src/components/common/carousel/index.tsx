@@ -1,15 +1,16 @@
 import { LeftArrow, RightArrow } from '@/assets/icons'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { ReactNode, useEffect } from 'react'
+import { FunctionComponent, useEffect, useState } from 'react'
 import { useSpringCarousel } from 'react-spring-carousel'
 
-export function Carousel({
-  children,
-  setActiveItem,
-}: {
-  children: ReactNode[]
-  setActiveItem?: (id: string) => void
-}) {
+type CarouselProps<T> = {
+  items: T[]
+  children: FunctionComponent<{ item: T; activeItem: boolean }>
+}
+
+export function Carousel<T>({ items, children }: CarouselProps<T>) {
+  const [activeItem, setActiveItem] = useState(0)
+
   const isMobile = useMediaQuery('(max-width: 1024px)')
 
   const {
@@ -20,15 +21,15 @@ export function Carousel({
   } = useSpringCarousel({
     itemsPerSlide: isMobile ? 1.1 : 1,
     withLoop: true,
-    items: children.map((child: any) => ({
-      id: child?.key,
-      renderItem: child,
+    items: items.map((item, index) => ({
+      id: index,
+      renderItem: children({ item, activeItem: activeItem === index }),
     })),
   })
 
   useListenToCustomEvent(
-    (event: { eventName: string; nextItem: { id: any } }) => {
-      if (event.eventName === 'onSlideStartChange' && setActiveItem) {
+    (event: { eventName: string; nextItem: { id: number } }) => {
+      if (event.eventName === 'onSlideStartChange') {
         setActiveItem(event.nextItem.id)
       }
     },
@@ -41,14 +42,10 @@ export function Carousel({
   }
 
   useEffect(() => {
-    if (document) {
+    if (!isMobile) {
       document.addEventListener('keydown', handleKeyPress)
-    }
 
-    return () => {
-      if (document) {
-        document.removeEventListener('keydown', handleKeyPress)
-      }
+      return () => document.removeEventListener('keydown', handleKeyPress)
     }
   }, [])
 

@@ -31,7 +31,6 @@ export function SendEmail() {
   const [loading, setLoading] = useState(false)
   const { handleSendEmail } = useSendEmail()
   const isMobile = useMediaQuery('(max-width: 1024px)')
-  const location = useLocation()
 
   async function handleEmailSubmit(evt: FormEvent) {
     try {
@@ -63,7 +62,6 @@ export function SendEmail() {
     setErrors(null)
     setOpenSendEmailModal(false)
     window.location.hash = ''
-    isMobile ? history.replaceState({}, document.title, '.') : null
   }
 
   function handleOpen() {
@@ -72,9 +70,10 @@ export function SendEmail() {
   }
 
   useEffect(() => {
-    const hash = location.hash || window.location.hash
-    if (hash === '') {
-      handleClose()
+    const hash = window.location.hash
+    if (hash === '' && isMobile) {
+      history.forward()
+      history.replaceState(null, document.title, ' ')
     }
   }, [window.location.hash])
 
