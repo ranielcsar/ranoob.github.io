@@ -1,15 +1,19 @@
 import { CloseIcon } from '@/assets/icons'
 import { Dialog, Transition } from '@headlessui/react'
-import { ReactNode, Fragment } from 'react'
+import { PropsWithChildren, Fragment } from 'react'
 
 type ModalProps = {
   isOpen: boolean
   onClose(): void
   title: string
-  children: ReactNode
 }
 
-export function Modal({ children, isOpen, onClose, title }: ModalProps) {
+export function Modal({
+  children,
+  isOpen,
+  onClose,
+  title,
+}: PropsWithChildren<ModalProps>) {
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose}>
