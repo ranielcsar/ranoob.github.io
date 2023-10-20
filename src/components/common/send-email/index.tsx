@@ -81,14 +81,15 @@ export function SendEmail() {
 
   function handleOpen() {
     setOpenSendEmailModal(true)
-    isMobile
-      ? window.history.pushState(
-          null,
-          document.title,
-          location.pathname + '#email',
-        )
-      : null
-    location.hash = '#email'
+
+    if (isMobile) {
+      window.history.pushState(
+        null,
+        document.title,
+        location.pathname + '#email',
+      )
+      location.hash = '#email'
+    }
   }
 
   useEffect(() => {
