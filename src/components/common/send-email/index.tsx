@@ -92,7 +92,6 @@ export function SendEmail() {
   }
 
   useEffect(() => {
-    console.log({ location })
     function close() {
       if (openSendEmailModal) reset()
     }
