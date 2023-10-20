@@ -4,48 +4,51 @@ import { ReactNode } from 'react'
 export function ExperienciesPage() {
   return (
     <div className="m-auto flex h-full w-full cursor-default items-center py-20 lg:h-screen lg:p-0 xl:m-0">
-      <ul>
-        <Exp>
-          Minha mais recente experiência aconteceu numa{' '}
-          <Mark>software house</Mark> chamada Brainny Smart Solutions. A qual
-          foi fundamental para o meu crescimento profissional. Atuei como{' '}
-          <Mark>Dev Frontend Jr</Mark> de Setembro de 2021 a Outubro de 2022,
-          trabalhando em diversos projetos que incluiam desde{' '}
-          <Mark>Administração de Negócios</Mark> à <Mark>Landing Pages</Mark> e
-          aplicando minhas habilidades em React, TypeScript, Apollo e GraphQL.
-          Houve também alguns projetos <Mark>outsourcing</Mark>. Além disso,
-          tive a oportunidade de trabalhar com Scrum, dailys, sprints, reviews,
-          etc.
+      <ul className="flex flex-col gap-14">
+        <Exp title="Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)">
+          Prestação de serviços para reparo e criação de novas funcionalidades
+          em aplicações web de administração, assim como em landing pages,
+          usando tecnologias web como React, TypeScript, ChakraUI, Apollo e
+          GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum
+          (dailies, reviews, plannings, sprints, etc) para desenvolver soluções
+          web eficientes e de alta qualidade.
+          <p className="mt-5">
+            Tempo de atuação:{' '}
+            <strong className="tracking-wide">
+              Setembro de 2021 - Outubro de 2022
+            </strong>
+          </p>
         </Exp>
 
-        <br />
-
-        <Exp>
-          Na minha 1ª oportunidade atuei como{' '}
-          <Mark>Dev Frontend Jr (freelancer)</Mark> reparando e criando novas
-          funcionalidades em aplicações web de administração, e também num
-          projeto de plataforma EAD, de Maio a Novembro de 2020, utilizando
-          React, TypeScript e StyledComponents como principais tecnologias. Foi
-          uma experiência valiosa para o desenvolvimento das minhas habilidades
-          em Frontend.
+        <Exp title="Dev Frontend Jr ~ (Freelancer na SystemHope - Agência de Software)">
+          Atuação freelancer para reparos e criação de novas funcionalidades em
+          aplicações web de administração, como também num projeto de plataforma
+          EAD, utilizando React, TypeScript e ChakraUI como principais
+          tecnologias.
+          <p className="mt-5">
+            Tempo de atuação:{' '}
+            <strong className="tracking-wide">
+              Maio de 2020 - Novembro de 2020
+            </strong>
+          </p>
         </Exp>
       </ul>
     </div>
   )
 }
 
-function Mark({ children }: { children: ReactNode }) {
-  return <strong className="italic tracking-widest">{children}</strong>
-}
-
-function Exp({ children }: { children: ReactNode }) {
+function Exp({ title, children }: { title: string; children: ReactNode }) {
   const [childrenRef] = useTransitionAnimation({
     from: { opacity: 0 },
     to: { opacity: 1 },
   })
 
   return (
-    <li className="flex list-none flex-col gap-2 before:text-3xl before:text-accent before:content-['✦'] lg:flex-row">
+    <li className="flex list-none flex-col gap-4">
+      <h3 className="text-2xl pb-0.5 font-bold w-auto max-w-max decoration-accent leading-relaxed underline decoration-4 underline-offset-4 lg:underline-offset-8 tracking-wide">
+        {title}
+      </h3>
+
       <p className="text-xl leading-relaxed" ref={childrenRef}>
         {children}
       </p>
