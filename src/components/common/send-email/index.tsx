@@ -4,6 +4,7 @@ import { Modal } from '@/components/common'
 import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { useLocation } from 'react-router-dom'
 
 const emailSubmitSchema = z.object({
   from: z
@@ -31,6 +32,7 @@ export function SendEmail() {
 
   const { handleSendEmail } = useSendEmail()
   const isMobile = useMediaQuery('(max-width: 1020px)')
+  const location = useLocation()
 
   async function handleEmailSubmit(evt: FormEvent) {
     try {
@@ -65,13 +67,12 @@ export function SendEmail() {
 
   function handleClose() {
     if (isMobile) {
-      if (document.location.href.includes('#email')) window.history.back()
+      if (location.hash.includes('#email')) {
+        window.history.back()
+        location.hash = ''
+      }
 
-      window.history.replaceState(
-        null,
-        document.title,
-        document.location.pathname,
-      )
+      window.history.replaceState(null, document.title, location.pathname)
       reset()
     } else {
       reset()
@@ -84,12 +85,14 @@ export function SendEmail() {
       ? window.history.pushState(
           null,
           document.title,
-          document.location.href + '#email',
+          location.pathname + '#email',
         )
       : null
+    location.hash = '#email'
   }
 
   useEffect(() => {
+    console.log({ location })
     function close() {
       if (openSendEmailModal) reset()
     }
