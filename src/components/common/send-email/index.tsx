@@ -66,12 +66,12 @@ export function SendEmail() {
   function handleClose() {
     if (isMobile) {
       if (document.location.href.includes('#email')) window.history.back()
+
       window.history.replaceState(
         null,
         document.title,
         document.location.pathname,
       )
-
       reset()
     } else {
       reset()
