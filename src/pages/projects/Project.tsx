@@ -31,7 +31,7 @@ export function Project({
         <p className="text-lg">{project.description}</p>
 
         <img
-          className="h-[inherit] aspect-video w-full object-fill rounded-sm"
+          className="h-[inherit] aspect-video w-full object-fill rounded-sm bg-white/60 text-black"
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"
