@@ -4,7 +4,6 @@ import { Modal } from '@/components/common'
 import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { useLocation } from 'react-router-dom'
 
 const emailSubmitSchema = z.object({
   from: z
