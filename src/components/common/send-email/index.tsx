@@ -28,8 +28,9 @@ export function SendEmail() {
   const [openSendEmailModal, setOpenSendEmailModal] = useState(false)
   const [errors, setErrors] = useState<SendEmailParams | null>()
   const [loading, setLoading] = useState(false)
+
   const { handleSendEmail } = useSendEmail()
-  const isMobile = useMediaQuery('(max-width: 1024px)')
+  const isMobile = useMediaQuery('(max-width: 1020px)')
 
   async function handleEmailSubmit(evt: FormEvent) {
     try {
@@ -57,23 +58,45 @@ export function SendEmail() {
     }
   }
 
-  function handleClose() {
+  function reset() {
     setErrors(null)
     setOpenSendEmailModal(false)
-    window.location.hash = ''
+  }
+
+  function handleClose() {
+    if (isMobile) {
+      if (document.location.href.includes('#email')) window.history.back()
+      window.history.replaceState(
+        null,
+        document.title,
+        document.location.pathname,
+      )
+
+      reset()
+    } else {
+      reset()
+    }
   }
 
   function handleOpen() {
     setOpenSendEmailModal(true)
-    isMobile ? (window.location.hash = 'email') : null
+    isMobile
+      ? window.history.pushState(
+          null,
+          document.title,
+          document.location.href + '#email',
+        )
+      : null
   }
 
   useEffect(() => {
-    const hash = window.location.hash
-    if (hash === '' && isMobile) {
-      history.forward()
-      history.replaceState(null, document.title, ' ')
+    function close() {
+      if (openSendEmailModal) reset()
     }
+
+    window.addEventListener('popstate', close)
+
+    return () => window.removeEventListener('popstate', close)
   }, [window.location.hash])
 
   return (
