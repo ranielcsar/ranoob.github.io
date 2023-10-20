@@ -58,10 +58,12 @@ export function HomePage() {
           <br />
           Amo gatos, música e jogos indie, principalmente feitos em Pixel Art.
           <br />
-          Tenho experiência com ReactJS, TypeScript e NextJS. Possuo
+          <br />
+          Tenho experiência com ReactJS, TypeScript, NextJS, TailwindCSS,
+          ChakraUI entre outras bibliotecas de desenvolvimento web. Possuo
           conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.
           <br />
-          Atualmente estou estudando VueJS, Python e Inteligência Artificial.
+          Atualmente estou estudando VueJS, Python e Aprendizado de Máquina.
         </p>
       </section>
     </div>
