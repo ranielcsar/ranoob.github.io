@@ -21,7 +21,7 @@ export function ExperienciesPage() {
         </Exp>
 
         <Exp title="Dev Frontend Jr ~ (Freelancer na SystemHope - Agência de Software)">
-          Atuação freelancer para reparos e criação de novas funcionalidades em
+          Reparos e criação de novas funcionalidades em
           aplicações web de administração, como também num projeto de plataforma
           EAD, utilizando React, TypeScript e ChakraUI como principais
           tecnologias.
