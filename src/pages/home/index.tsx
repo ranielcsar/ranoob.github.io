@@ -1,6 +1,7 @@
 import ProfilePic from '@/assets/perfil.webp'
 import { SocialLinksAndContact } from '@/components/common'
 import { useTransitionAnimation } from '@/hooks'
+import { useTranslation } from 'react-i18next'
 
 export function HomePage() {
   const [sectionRef] = useTransitionAnimation({
@@ -23,6 +24,8 @@ export function HomePage() {
     },
   })
 
+  const { t } = useTranslation()
+
   return (
     <div className="flex h-full w-full cursor-default flex-col gap-5 py-20 md:py-16 lg:pb-14 xl:h-screen xl:flex-row xl:items-center xl:py-0">
       <section className="flex flex-col items-center self-center xl:order-2">
@@ -43,27 +46,31 @@ export function HomePage() {
 
       <section className="flex flex-col gap-10 xl:flex-1" ref={sectionRef}>
         <div className="h-full text-xl leading-relaxed lg:text-[3ch] xl:h-auto">
-          Olá!
+          {t('Olá')}!
           <br />
-          Me chamo <strong className="tracking-wide">Raniel César</strong> e sou{' '}
+          {t('Me chamo')}{' '}
+          <strong className="tracking-wide">Raniel César</strong> {t('e sou')}{' '}
           <br />
           <mark className="bg-gradient-to-r from-primary to-secondary font-pixel rounded-sm p-1 text-[3ch] tracking-wider text-neutral-50 lg:text-4xl">
-            ✦ Desenvolvedor Frontend
+            ✦ {t('Desenvolvedor Frontend')}
           </mark>
-          <p>Nordestino, moro em Sr. do Bonfim, interior da Bahia.</p>
+          <p>{t('Nordestino, moro em Sr. do Bonfim, interior da Bahia.')}</p>
         </div>
 
         <p className="max-w-[50rem] text-xl leading-relaxed lg:text-[2.75ch]">
-          Apaixonado por Ciência, Tecnologia, Web e entusiasta de UX/UI.
+          {t('Apaixonado por Ciência, Tecnologia, Web e entusiasta de UX/UI.')}
           <br />
-          Amo gatos, música e jogos indie, principalmente feitos em Pixel Art.
+          {t(
+            'Amo gatos, música e jogos indie, principalmente os feitos em Pixel Art.',
+          )}
           <br />
+          {t(
+            'Tenho experiência com ReactJS, TypeScript, NextJS, TailwindCSS, ChakraUI entre outras bibliotecas de desenvolvimento web. Possuo conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.',
+          )}
           <br />
-          Tenho experiência com ReactJS, TypeScript, NextJS, TailwindCSS,
-          ChakraUI entre outras bibliotecas de desenvolvimento web. Possuo
-          conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.
-          <br />
-          Atualmente estou estudando VueJS, Python e Aprendizado de Máquina.
+          {t(
+            'Atualmente estou estudando VueJS, Python e Aprendizado de Máquina.',
+          )}
         </p>
       </section>
     </div>

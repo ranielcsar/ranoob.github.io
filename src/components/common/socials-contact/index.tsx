@@ -5,7 +5,7 @@ export function SocialLinksAndContact() {
   return (
     <>
       <a
-        className="h-8 w-8 cursor-pointer transition-colors hover:text-accent"
+        className="h-8 w-8 cursor-pointer transition-colors"
         href="https://github.com/ranielcsar"
         referrerPolicy="no-referrer"
         target="_blank"
@@ -15,7 +15,7 @@ export function SocialLinksAndContact() {
       </a>
 
       <a
-        className="h-8 w-8 cursor-pointer transition-colors hover:text-accent"
+        className="h-8 w-8 cursor-pointer transition-colors"
         href="https://www.linkedin.com/in/raniel-cesar-5bb0991a3/"
         referrerPolicy="no-referrer"
         target="_blank"

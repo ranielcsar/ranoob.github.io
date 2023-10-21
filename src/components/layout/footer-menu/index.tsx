@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 
 export function FooterMenu() {
@@ -6,19 +7,21 @@ export function FooterMenu() {
       <FooterMenuItem label="Sobre" route="/" />
       <FooterMenuItem label="Projetos" route="/projects" />
       <FooterMenuItem label="Experiências" route="/experiences" />
-      <FooterMenuItem label="Curriculum" route="/curriculum" />
+      <FooterMenuItem label="Currículo" route="/curriculum" />
     </footer>
   )
 }
 
 function FooterMenuItem({ label, route }: { label: string; route: string }) {
+  const { t } = useTranslation()
+
   return (
     <NavLink className="group w-max tracking-wider" to={route}>
       {({ isActive }) =>
         isActive ? (
-          <span className="text-accent">{label}</span>
+          <span className="text-accent">{t(label)}</span>
         ) : (
-          <span>{label.slice(0, 4).concat('~')}</span>
+          <span>{t(label).slice(0, 4).concat('~')}</span>
         )
       }
     </NavLink>
