@@ -5,6 +5,7 @@ import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const emailSubmitSchema = z.object({
   from: z
@@ -33,6 +34,7 @@ export function SendEmail() {
   const { handleSendEmail } = useSendEmail()
   const isMobile = useMediaQuery('(max-width: 1020px)')
   const location = useLocation()
+  const { t } = useTranslation()
 
   async function handleEmailSubmit(evt: FormEvent) {
     try {
@@ -113,7 +115,7 @@ export function SendEmail() {
       </button>
 
       <Modal
-        title="Me manda um salve! ;)"
+        title={t('Me manda um salve! ;)')}
         isOpen={openSendEmailModal}
         onClose={handleClose}
       >
@@ -122,7 +124,7 @@ export function SendEmail() {
           className="grid h-full grid-rows-[max-content,max-content,1fr] gap-2 xl:gap-5"
         >
           <label htmlFor="from" className="flex flex-col gap-2">
-            <span className="text-lg text-black">De (email):</span>
+            <span className="text-lg text-black">{t('De (email)')}:</span>
             <input
               type="text"
               name="from"
@@ -134,7 +136,7 @@ export function SendEmail() {
           </label>
 
           <label htmlFor="subject" className="flex flex-col gap-2">
-            <span className="text-lg text-black">Assunto:</span>
+            <span className="text-lg text-black">{t('Assunto')}:</span>
             <input
               type="text"
               name="subject"
@@ -146,7 +148,7 @@ export function SendEmail() {
           </label>
 
           <label htmlFor="message" className="flex flex-col gap-2">
-            <span className="text-lg text-black">Mensagem:</span>
+            <span className="text-lg text-black">{t('Mensagem')}:</span>
             <textarea
               name="message"
               id="message"
@@ -181,10 +183,10 @@ export function SendEmail() {
                     fill="currentFill"
                   />
                 </svg>
-                <span>Enviando Email...</span>
+                <span>{t('Enviando Email...')}</span>
               </div>
             ) : (
-              'Enviar'
+              t('Enviar')
             )}
           </button>
         </form>
