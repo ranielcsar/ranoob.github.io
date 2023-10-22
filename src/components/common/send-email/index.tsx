@@ -121,7 +121,7 @@ export function SendEmail() {
       >
         <form
           onSubmit={handleEmailSubmit}
-          className="grid h-full grid-rows-[max-content,max-content,1fr] gap-2 xl:gap-5"
+          className="grid h-full grid-rows-[max-content,max-content,0.8fr,max-content] gap-2 xl:gap-5"
         >
           <label htmlFor="from" className="flex flex-col gap-2">
             <span className="text-lg text-black">{t('De (email)')}:</span>

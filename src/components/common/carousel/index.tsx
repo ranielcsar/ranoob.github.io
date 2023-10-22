@@ -11,7 +11,7 @@ type CarouselProps<T> = {
 export function Carousel<T>({ items, children }: CarouselProps<T>) {
   const [activeItem, setActiveItem] = useState(0)
 
-  const isMobile = useMediaQuery('(max-width: 1024px)')
+  const isMobile = useMediaQuery('(max-width: 1020px)')
 
   const {
     carouselFragment,
