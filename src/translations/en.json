@@ -52,5 +52,12 @@
   "NestJS": "NestJS",
   "Prisma": "Prisma",
   "Familiaridade com o framework NestJS para construção de aplicativos server-side.": "Familiarity with the NestJS framework for building server-side applications.",
-  "Experiência no uso do Prisma como ORM (Object-Relational Mapping) para interagir com bancos de dados.": "Experience in using Prisma as an Object-Relational Mapping (ORM) to interact with databases."
+  "Experiência no uso do Prisma como ORM (Object-Relational Mapping) para interagir com bancos de dados.": "Experience in using Prisma as an Object-Relational Mapping (ORM) to interact with databases.",
+
+  "Me manda um salve! ;)": "Say hello! ;)",
+  "De (email)": "From (email)",
+  "Assunto": "Subject",
+  "Mensagem": "Message",
+  "Enviar": "Send",
+  "Enviando Email...": "Sending Email..."
 }
