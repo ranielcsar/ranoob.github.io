@@ -48,8 +48,7 @@ const projects: ProjectProps[] = [
   {
     title: 'Coinsynch (desafio vaga)',
     description:
-      'Aplicação que simula uma carteira de Cryptomoedas na qual o usuário pode \
-    se registrar, logar, fazer logout, adicionar moedas em sua carteira, remover, vender e/ou trocar e também se inscrever na Newsletter.',
+      'Aplicação que simula uma carteira de Cryptomoedas na qual o usuário pode se registrar, logar, fazer logout, adicionar moedas em sua carteira, remover, vender e/ou trocar e também se inscrever na Newsletter.',
     image: CoinSynchPrint,
     links: {
       sandbox: 'https://8p4cxd-3000.csb.app/',
@@ -59,8 +58,7 @@ const projects: ProjectProps[] = [
   {
     title: 'Capsula do Tempo (NLW Spacetime)',
     description:
-      'O usuário pode salvar memórias, escrever sobre elas e adicionar fotos/vídeos. \
-      Com versões web e mobile, login através do Github e funcionalidades para tornar as memórias públicas ou privadas.',
+      'O usuário pode salvar memórias, escrever sobre elas e adicionar fotos/vídeos. Com versões web e mobile, login através do Github e funcionalidades para tornar as memórias públicas ou privadas.',
     image: NLWSpacetimePrint,
     links: {
       sandbox: 'https://6l9ld9-3000.csb.app/',

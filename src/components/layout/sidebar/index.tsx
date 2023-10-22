@@ -1,4 +1,5 @@
 import { SocialLinksAndContact } from '@/components/common'
+import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 
 export function Sidebar() {
@@ -8,7 +9,7 @@ export function Sidebar() {
         <SidebarLink label="Sobre" route="/" />
         <SidebarLink label="Projetos" route="/projects" />
         <SidebarLink label="Experiências" route="/experiences" />
-        <SidebarLink label="Curriculum" route="/curriculum" />
+        <SidebarLink label="Currículo" route="/curriculum" />
       </section>
 
       <footer className="fixed bottom-14 flex items-center gap-5">
@@ -19,9 +20,11 @@ export function Sidebar() {
 }
 
 function SidebarLink({ label, route }: { label: string; route: string }) {
+  const { t } = useTranslation()
+
   return (
     <NavLink
-      className="group w-max tracking-wider"
+      className="group w-max tracking-wider hover:text-white"
       to={route}
       aria-label={`Ir para a página ${label}`}
     >
@@ -34,7 +37,7 @@ function SidebarLink({ label, route }: { label: string; route: string }) {
           >
             {'<'}
           </span>
-          {label}
+          {t(label)}
           <span
             className={`text-accent ${
               isActive ? 'opacity-100' : 'opacity-0'

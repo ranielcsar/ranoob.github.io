@@ -4,8 +4,9 @@
 
 @layer base {
   @media (hover: hover) {
-    button:hover {
-      @apply text-accent;
+    button:hover,
+    a:hover {
+      @apply text-accent transition-colors;
     }
   }
 

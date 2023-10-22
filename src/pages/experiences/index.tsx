@@ -1,34 +1,37 @@
 import { useTransitionAnimation } from '@/hooks'
 import { ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function ExperienciesPage() {
+  const { t } = useTranslation()
+
   return (
     <div className="m-auto flex h-full w-full cursor-default items-center py-20 lg:h-screen lg:p-0 xl:m-0">
       <ul className="flex flex-col gap-14">
-        <Exp title="Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)">
-          Prestação de serviços para reparo e criação de novas funcionalidades
-          em aplicações web de administração, assim como em landing pages,
-          usando tecnologias web como React, TypeScript, ChakraUI, Apollo e
-          GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum
-          (dailies, reviews, plannings, sprints, etc) para desenvolver soluções
-          web eficientes e de alta qualidade.
+        <Exp title={t('Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)')}>
+          {t(
+            'Prestação de serviços para reparo e criação de novas funcionalidades em aplicações web de administração, assim como em landing pages, usando tecnologias web como React, TypeScript, ChakraUI, Apollo e GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum (dailies, reviews, plannings, sprints, etc) para desenvolver soluções web eficientes e de alta qualidade.',
+          )}
           <p className="mt-5">
-            Tempo de atuação:{' '}
+            {t('Tempo de atuação')}:{' '}
             <strong className="tracking-wide">
-              Setembro de 2021 - Outubro de 2022
+              {t('Setembro de 2021 - Outubro de 2022')}
             </strong>
           </p>
         </Exp>
 
-        <Exp title="Dev Frontend Jr ~ (Freelancer na SystemHope - Agência de Software)">
-          Reparos e criação de novas funcionalidades em
-          aplicações web de administração, como também num projeto de plataforma
-          EAD, utilizando React, TypeScript e ChakraUI como principais
-          tecnologias.
+        <Exp
+          title={t(
+            'Dev Frontend Jr ~ (Freelancer na SystemHope - Agência de Software)',
+          )}
+        >
+          {t(
+            'Reparos e criação de novas funcionalidades em aplicações web de administração, como também num projeto de plataforma EAD, utilizando React, TypeScript e ChakraUI como principais tecnologias.',
+          )}
           <p className="mt-5">
-            Tempo de atuação:{' '}
+            {t('Tempo de atuação')}:{' '}
             <strong className="tracking-wide">
-              Maio de 2020 - Novembro de 2020
+              {t('Maio de 2020 - Novembro de 2020')}
             </strong>
           </p>
         </Exp>
@@ -49,9 +52,9 @@ function Exp({ title, children }: { title: string; children: ReactNode }) {
         {title}
       </h3>
 
-      <p className="text-xl leading-relaxed" ref={childrenRef}>
+      <section className="text-xl leading-relaxed" ref={childrenRef}>
         {children}
-      </p>
+      </section>
     </li>
   )
 }

@@ -1,6 +1,9 @@
 import { useTransitionAnimation } from '@/hooks'
+import { useTranslation } from 'react-i18next'
 
 export function CurriculumPage() {
+  const { t } = useTranslation()
+
   return (
     <div className="flex h-full cursor-default flex-col justify-center gap-10 py-20 text-[3ch] lg:text-[2.55ch]">
       <section className="grid grid-rows-[auto] gap-5 lg:grid-cols-2">
@@ -10,12 +13,7 @@ export function CurriculumPage() {
       </section>
 
       <section className="flex flex-col gap-6">
-        <header>
-          <hgroup>
-            <h2 className="text-3xl">Backend knowledge</h2>
-            <h3>- Conhecimentos Backend</h3>
-          </hgroup>
-        </header>
+        <h2 className="text-3xl">{t('Conhecimentos em Backend')}</h2>
 
         <div className="grid grid-rows-[auto] gap-5 lg:grid-cols-2">
           {backendSkills.map((skill) => (
@@ -27,14 +25,15 @@ export function CurriculumPage() {
   )
 }
 
-type SkillProps = { title: string; text: string }
+type SkillProps = {
+  title: string
+  text: string
+}
 
 const skills: SkillProps[] = [
   {
     title: 'React e NextJS',
-    text: `Experiência em desenvolvimento de aplicações web com React e NextJS, incluindo criação de componentes
-    reutilizáveis, gerenciamento de estado com Context API e Hooks, e
-    roteamento com React Router e Pages/App folder do NextJS.`,
+    text: 'Experiência em desenvolvimento de aplicações web com React e NextJS, incluindo criação de componentes reutilizáveis, gerenciamento de estado com Context API, Zustand e Redux. Roteamento de páginas com React Router e Pages/App folder do NextJS.',
   },
   {
     title: 'UX e Clean Code',
@@ -59,8 +58,7 @@ const skills: SkillProps[] = [
   },
   {
     title: 'TDD',
-    text: `Testes unitários e de integração usando Jest,
-    React Testing Library e Mock Service Worker (MSW)`,
+    text: `Testes unitários e de integração usando Jest, React Testing Library e Mock Service Worker (MSW)`,
   },
 ]
 
@@ -89,13 +87,15 @@ function Skill({ text, title }: SkillProps) {
     },
   })
 
+  const { t } = useTranslation()
+
   return (
     <article className="h-max list-none text-[1.75ch]">
       <strong className="rounded-sm p-1 tracking-widest text-neutral-50 bg-gradient-to-r from-primary to-secondary">
-        ✦ {title}
+        ✦ {t(title)}
       </strong>
       <span className="leading-relaxed tracking-wide" ref={textRef}>
-        <strong>:</strong> {text}
+        <strong>:</strong> {t(text)}
       </span>
     </article>
   )

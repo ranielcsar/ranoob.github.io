@@ -1,4 +1,5 @@
 import { CodeSandboxIcon, GithubIcon } from '@/assets/icons'
+import { useTranslation } from 'react-i18next'
 
 export type ProjectProps = {
   title: string
@@ -17,6 +18,8 @@ export function Project({
   project: ProjectProps
   activeItem: boolean
 }) {
+  const { t } = useTranslation()
+
   return (
     <div
       className={`transition-opacity mx-2 flex flex-col gap-5 md:h-[77vh] xl:h-full xl:gap-5 w-full xl:w-auto rounded-sm text-white ${
@@ -25,10 +28,10 @@ export function Project({
     >
       <section className="relative grid h-[85%] lg:h-full grid-rows-[max-content,max-content,1fr] gap-5 xl:p-0">
         <header className="text-2xl font-bold xl:text-4xl">
-          {project.title}
+          {t(project.title)}
         </header>
 
-        <p className="text-lg">{project.description}</p>
+        <p className="text-lg">{t(project.description)}</p>
 
         <img
           className="h-[inherit] aspect-video w-full object-fill rounded-sm bg-white/60 text-black"
