@@ -35,7 +35,7 @@ export function HomePage() {
             src={ProfilePic}
             alt="foto perfil de Raniel César"
             loading="lazy"
-            className="bg-black/50 h-52 w-52 rounded-full object-cover object-[0,-7.5rem] xl:h-64 xl:w-64 xl:object-[0,-9.5rem]"
+            className="bg-black/50 h-52 w-52 rounded-full object-cover xl:h-64 xl:w-64 object-[0,-4.5rem]"
           />
         </picture>
 
