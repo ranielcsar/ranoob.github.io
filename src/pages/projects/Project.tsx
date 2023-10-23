@@ -1,8 +1,5 @@
 import { CodeSandboxIcon, GithubIcon } from '@/assets/icons'
 import { useTranslation } from 'react-i18next'
-import styles from './style.module.css'
-
-const { container } = styles
 
 export type ProjectProps = {
   title: string
