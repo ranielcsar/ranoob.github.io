@@ -1,5 +1,8 @@
 import { CodeSandboxIcon, GithubIcon } from '@/assets/icons'
 import { useTranslation } from 'react-i18next'
+import styles from './style.module.css'
+
+const { container } = styles
 
 export type ProjectProps = {
   title: string
@@ -22,11 +25,11 @@ export function Project({
 
   return (
     <div
-      className={`transition-opacity mx-2 flex flex-col gap-5 md:h-[77vh] xl:h-full xl:gap-5 w-full xl:w-auto rounded-sm text-white ${
+      className={`transition-opacity mx-2 h-full flex flex-col gap-5 w-full rounded-sm text-white ${
         activeItem ? 'opacity-100' : 'opacity-40'
       }`}
     >
-      <section className="relative grid h-[85%] lg:h-full grid-rows-[max-content,max-content,1fr] gap-5 xl:p-0">
+      <section className="relative flex flex-col gap-5 xl:p-0 flex-1">
         <header className="text-2xl font-bold xl:text-4xl">
           {t(project.title)}
         </header>
@@ -34,7 +37,7 @@ export function Project({
         <p className="text-lg">{t(project.description)}</p>
 
         <img
-          className="h-[inherit] aspect-video w-full object-fill rounded-sm bg-white/60 text-black"
+          className={`flex-1 aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"
@@ -42,7 +45,7 @@ export function Project({
         />
       </section>
 
-      <footer className="flex h-full w-full items-center justify-end gap-4 flex-1">
+      <footer className="flex w-full items-center justify-end gap-4">
         <button
           // target="_blank"
           // rel="noreferrer"
