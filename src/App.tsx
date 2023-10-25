@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom'
 import { FooterMenu, Header, Sidebar } from '@/components/layout'
 import { AppRoutes } from '@/routes'
 import { ToastContainer } from 'react-toastify'
@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export function App() {
   return (
-    <BrowserRouter>
+    <MemoryRouter initialEntries={['/']}>
       <div className="relative flex w-full flex-col">
         <div className="fixed top-0 z-20 w-full backdrop-blur-lg xl:backdrop-blur-sm bg-black/75 xl:bg-black/50">
           <Header />
@@ -27,6 +27,6 @@ export function App() {
       </div>
 
       <ToastContainer />
-    </BrowserRouter>
+    </MemoryRouter>
   )
 }
