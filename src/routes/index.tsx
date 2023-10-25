@@ -5,11 +5,10 @@ import {
   CurriculumPage,
 } from '@/pages'
 
-import { Route, Routes, browserHistory } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { browserHistory } from 'react-router'
 
 export function AppRoutes() {
-  const history = createMemoryHistory(location)
-  
   return (
     <Routes history={browserHistory}>
       <Route path="/" element={<HomePage />} />
