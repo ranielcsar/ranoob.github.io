@@ -1,6 +1,7 @@
 import ProfilePic from '@/assets/perfil.webp'
 import { SocialLinksAndContact } from '@/components/common'
 import { useTransitionAnimation } from '@/hooks'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { useTranslation } from 'react-i18next'
 
 export function HomePage() {
@@ -25,6 +26,7 @@ export function HomePage() {
   })
 
   const { t } = useTranslation()
+  const isMobile = useMediaQuery('(max-width: 1020px)')
 
   return (
     <div className="flex h-full w-full cursor-default flex-col gap-5 py-20 md:py-16 lg:pb-14 xl:h-screen xl:flex-row xl:items-center xl:py-0">
@@ -39,9 +41,13 @@ export function HomePage() {
           />
         </picture>
 
-        <div className="mt-5 flex w-max items-center gap-5 self-center lg:hidden">
-          <SocialLinksAndContact />
-        </div>
+        {isMobile ? (
+          <div className="mt-5 flex w-max items-center gap-5 self-center lg:hidden">
+            <SocialLinksAndContact />
+          </div>
+        ) : (
+          <></>
+        )}
       </section>
 
       <section className="flex flex-col gap-10 xl:flex-1" ref={sectionRef}>
