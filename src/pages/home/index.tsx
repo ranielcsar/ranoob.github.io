@@ -1,4 +1,4 @@
-import ProfilePic from '@/assets/perfil.webp'
+import ProfilePic from '@/assets/perfil.png'
 import { SocialLinksAndContact } from '@/components/common'
 import { useTransitionAnimation } from '@/hooks'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
@@ -37,7 +37,7 @@ export function HomePage() {
             src={ProfilePic}
             alt="foto perfil de Raniel César"
             loading="lazy"
-            className="bg-black/50 h-52 w-52 rounded-full object-cover xl:h-64 xl:w-64 object-bottom"
+            className="bg-gradient-to-r from-primary to-secondary h-52 w-52 rounded-full object-cover xl:h-64 xl:w-64 object-bottom"
           />
         </picture>
 
