@@ -13,6 +13,7 @@ export default {
         accent: 'rgb(var(--accent) / <alpha-value>)',
         black: 'rgb(var(--background) / <alpha-value>)',
         white: 'rgb(var(--text) / <alpha-value>)',
+        yellow: 'rgb(var(--yellow) / <alpha-value>)',
       },
       fontFamily: {
         jetbrains: ['MPLUSCodeLatin', 'sans-serif'],
