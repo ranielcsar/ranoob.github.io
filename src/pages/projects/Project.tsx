@@ -22,7 +22,7 @@ export function Project({
 
   return (
     <div
-      className={`transition-opacity mx-2 h-full flex flex-col gap-5 w-full rounded-sm text-white ${
+      className={`transition-opacity mx-2 h-[calc(100vh_-_10.3125rem)] flex flex-col gap-5 w-full rounded-sm text-white ${
         activeItem ? 'opacity-100' : 'opacity-40'
       }`}
     >
@@ -34,7 +34,7 @@ export function Project({
         <p className="text-lg">{t(project.description)}</p>
 
         <img
-          className={`flex-1 aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
+          className={`h-auto m-auto aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"
