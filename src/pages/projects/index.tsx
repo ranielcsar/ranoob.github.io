@@ -10,7 +10,7 @@ import {
 
 export function ProjectsPage() {
   return (
-    <div className="mt-20 h-full w-full">
+    <div className="mt-20 h-[calc(100vh_-_16rem)] w-full">
       <Carousel
         items={projects}
         children={({ item: project, activeItem }) => (

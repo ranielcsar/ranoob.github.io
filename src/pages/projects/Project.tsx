@@ -22,11 +22,11 @@ export function Project({
 
   return (
     <div
-      className={`transition-opacity mx-2 h-[calc(100vh_-_10.3125rem)] flex flex-col gap-5 w-full rounded-sm text-white ${
+      className={`transition-opacity mx-2 h-full flex flex-col gap-5 w-full rounded-sm text-white ${
         activeItem ? 'opacity-100' : 'opacity-40'
       }`}
     >
-      <section className="relative flex flex-col gap-5 xl:p-0 flex-1">
+      <section className="relative flex flex-col gap-5 xl:p-0 flex-[2]">
         <header className="text-2xl font-bold xl:text-4xl">
           {t(project.title)}
         </header>
@@ -34,7 +34,7 @@ export function Project({
         <p className="text-lg">{t(project.description)}</p>
 
         <img
-          className={`flex-[0.5] m-auto aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
+          className={`h-max w-full aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"
@@ -42,7 +42,7 @@ export function Project({
         />
       </section>
 
-      <footer className="flex w-full items-center justify-end gap-4">
+      <footer className="flex flex-1 w-full items-center justify-end gap-4">
         <button
           // target="_blank"
           // rel="noreferrer"
