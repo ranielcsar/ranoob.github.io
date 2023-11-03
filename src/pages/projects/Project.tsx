@@ -34,7 +34,7 @@ export function Project({
         <p className="text-lg">{t(project.description)}</p>
 
         <img
-          className={`h-auto m-auto aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
+          className={`flex-[0.5] m-auto aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"
