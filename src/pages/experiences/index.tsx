@@ -6,7 +6,7 @@ export function ExperienciesPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="m-auto flex h-full w-full cursor-default items-center py-20 lg:h-screen lg:p-0 xl:m-0">
+    <div className="m-auto flex h-full cursor-default items-center py-20">
       <ul className="flex flex-col gap-14">
         <Exp title={t('Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)')}>
           {t(

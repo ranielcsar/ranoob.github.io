@@ -5,17 +5,17 @@ export function CurriculumPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="flex h-full cursor-default flex-col justify-center gap-10 py-20 text-[3ch] lg:text-[2.55ch]">
-      <section className="grid grid-rows-[auto] gap-5 lg:grid-cols-2">
+    <div className="flex h-full cursor-default flex-col justify-center gap-10 text-[3ch] lg:text-[2.55ch] xl:text-[2.8ch]">
+      <section className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
         {skills.map((skill) => (
           <Skill key={skill.title} {...skill} />
         ))}
       </section>
 
       <section className="flex flex-col gap-6">
-        <h2 className="text-3xl">{t('Conhecimentos em Backend')}</h2>
+        <h2 className="text-2xl font-bold">{t('Conhecimentos em Backend')}</h2>
 
-        <div className="grid grid-rows-[auto] gap-5 lg:grid-cols-2">
+        <div className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
           {backendSkills.map((skill) => (
             <Skill key={skill.title} {...skill} />
           ))}
@@ -91,7 +91,7 @@ function Skill({ text, title }: SkillProps) {
 
   return (
     <article className="h-max list-none text-[1.75ch]">
-      <strong className="rounded-sm p-1 tracking-widest text-neutral-50 bg-gradient-to-r from-primary to-secondary">
+      <strong className="rounded-sm p-1 tracking-widest text-black bg-accent border-2 border-secondary">
         ✦ {t(title)}
       </strong>
       <span className="leading-relaxed tracking-wide" ref={textRef}>

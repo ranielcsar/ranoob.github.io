@@ -1,3 +1,1 @@
-export * from './header'
-export * from './sidebar'
-export * from './footer-menu'
+export * from './header/_index'
