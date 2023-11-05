@@ -1,32 +1,29 @@
 import { MoonIcon } from '@/assets/icons'
 // import { Link } from 'react-router-dom'
 import { LanguageSwitch } from '@/components/common'
-import { Navbar } from './navbar'
+import { Navbar } from '../navbar/_index'
 import { Profile } from './profile'
+import { Link } from 'react-router-dom'
 
 export function Header() {
   return (
-    <header className="row-[1] w-full flex border-b-2 border-b-secondary h-[25vh]">
-      <div className="grid w-full grid-rows-2 grid-cols-[15rem,1fr] m-auto xl:max-w-max-xl lg:max-w-max-lg">
+    <header className="row-[1] w-full h-max flex lg:border-y-2 border-primary">
+      <div className="grid grid-rows-[10rem,8vh,8vh] grid-cols-[1fr,1fr] md:grid-cols-[25vw,1fr] w-full lg:grid-rows-[repeat(2,11vh)] xl:grid-rows-[repeat(2,10.5vh)] lg:grid-cols-[max-content,1fr] m-auto xl:max-w-max-xl lg:max-w-max-lg">
         <Profile />
 
-        <section className="relative flex items-center justify-center row-span-1 border-b-2 border-r-2 border-secondary xl:text-4xl">
-          <p>{'<ranielcsar/>'}</p>
+        <section className="border-2 row-[2] col-span-2 lg:row-[1] lg:col-[2] lg:w-full text-2xl relative flex justify-around items-center lg:border-r-2 lg:border-y-0 lg:border-l-0 border-primary xl:text-4xl">
+          <Link to="/" className="hover:text-primary">
+            <strong className="tracking-wider">
+              {'<'}
+              ranielcsar
+              {'/>'}
+            </strong>
+          </Link>
 
-          <div className="absolute right-10 flex items-center justify-center p-4 md:px-5 xl:gap-10 xl:px-10">
-            <button
-              className="h-6 w-6 cursor-pointer"
-              aria-label="Button for change color mode"
-              onClick={handleChangeTheme}
-            >
-              <MoonIcon />
-            </button>
-
-            <LanguageSwitch />
-          </div>
+          <ChangeThemeAndLang />
         </section>
 
-        <nav className="row-span-1 column-[2]">
+        <nav className="row-[3] lg:row-[2] lg:col-[2] col-span-2">
           <Navbar />
         </nav>
       </div>
@@ -34,29 +31,21 @@ export function Header() {
   )
 }
 
-// export function Header() {
-//   return (
-//     <header className="">
-//       <Link to="/" className="">
-//         <span className="">{'<'}</span>
-//         <span>ranielcsar</span>
-//         <span className="">{'/>'}</span>
-//       </Link>
+function ChangeThemeAndLang() {
+  return (
+    <div className="flex h-full items-center justify-center gap-5">
+      <button
+        className="h-6 cursor-pointer"
+        aria-label="Button for change color mode"
+        onClick={handleChangeTheme}
+      >
+        <MoonIcon />
+      </button>
 
-//       <section className="">
-//         <button
-//           className="h-6 w-6 cursor-pointer"
-//           aria-label="Button for change color mode"
-//           onClick={handleChangeTheme}
-//         >
-//           <MoonIcon />
-//         </button>
-
-//         <LanguageSwitch />
-//       </section>
-//     </header>
-//   )
-// }
+      <LanguageSwitch />
+    </div>
+  )
+}
 
 function handleChangeTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme')

@@ -20,6 +20,7 @@ export default {
         roboto: ['Roboto Mono', 'sans-serif'],
       },
       boxShadow: {
+        neo: '0 2px 0 rgb(var(--black))',
         'neo-sm': '4px 4px 0 rgb(var(--black))',
         'neo-md': '6px 6px 0 rgb(var(--black))',
         'neo-lg': '8px 8px 0 rgb(var(--black))',

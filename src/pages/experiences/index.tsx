@@ -6,8 +6,8 @@ export function ExperienciesPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="m-auto flex h-full cursor-default items-center py-20">
-      <ul className="flex flex-col gap-14">
+    <div className="m-auto xl:max-w-max-xl lg:max-w-max-lg flex cursor-default items-center">
+      <ul className="flex flex-col gap-12">
         <Exp title={t('Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)')}>
           {t(
             'Prestação de serviços para reparo e criação de novas funcionalidades em aplicações web de administração, assim como em landing pages, usando tecnologias web como React, TypeScript, ChakraUI, Apollo e GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum (dailies, reviews, plannings, sprints, etc) para desenvolver soluções web eficientes e de alta qualidade.',
@@ -48,8 +48,8 @@ function Exp({ title, children }: { title: string; children: ReactNode }) {
 
   return (
     <li className="flex list-none flex-col gap-4">
-      <h3 className="text-2xl pb-0.5 font-bold w-auto max-w-max decoration-accent leading-relaxed underline decoration-4 underline-offset-4 lg:underline-offset-8 tracking-wide">
-        {title}
+      <h3 className="bg-accent text-[3ch] lg:text-[2.7ch] px-3 py-2 border-4 border-primary text-black rounded-sm shadow-neo-sm lg:shadow-neo-md dark:shadow-accent font-bold w-auto max-w-max tracking-wider">
+        ✦ {title}
       </h3>
 
       <section className="text-xl leading-relaxed" ref={childrenRef}>

@@ -5,14 +5,14 @@ export function CurriculumPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="flex h-full cursor-default flex-col justify-center gap-10 text-[3ch] lg:text-[2.55ch] xl:text-[2.8ch]">
-      <section className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
+    <section className="flex m-auto cursor-default flex-col justify-center gap-10 text-[3ch] lg:text-[2.55ch] xl:text-[2.8ch]">
+      <div className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
         {skills.map((skill) => (
           <Skill key={skill.title} {...skill} />
         ))}
-      </section>
+      </div>
 
-      <section className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6">
         <h2 className="text-2xl font-bold">{t('Conhecimentos em Backend')}</h2>
 
         <div className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
@@ -20,8 +20,8 @@ export function CurriculumPage() {
             <Skill key={skill.title} {...skill} />
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 
@@ -90,12 +90,12 @@ function Skill({ text, title }: SkillProps) {
   const { t } = useTranslation()
 
   return (
-    <article className="h-max list-none text-[1.75ch]">
-      <strong className="rounded-sm p-1 tracking-widest text-black bg-accent border-2 border-secondary">
+    <article className="h-max list-none lg:text-[1.75ch]">
+      <strong className="rounded-sm p-1 text-2xl lg:text-xl tracking-widest text-black bg-accent border-2 border-primary dark:shadow-accent shadow-neo-sm">
         ✦ {t(title)}
       </strong>
-      <span className="leading-relaxed tracking-wide" ref={textRef}>
-        <strong>:</strong> {t(text)}
+      <span className="leading-relaxed text-xl tracking-wide" ref={textRef}>
+        <strong className="ml-1">:</strong> {t(text)}
       </span>
     </article>
   )

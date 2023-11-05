@@ -10,7 +10,7 @@ import {
 
 export function ProjectsPage() {
   return (
-    <div className="mt-20 h-[calc(100vh_-_16rem)] w-full">
+    <section className="xl:max-w-max-xl lg:max-w-max-lg m-auto overflow-hidden">
       <Carousel
         items={projects}
         children={({ item: project, activeItem }) => (
@@ -21,7 +21,7 @@ export function ProjectsPage() {
           />
         )}
       />
-    </div>
+    </section>
   )
 }
 

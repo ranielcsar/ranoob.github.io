@@ -107,7 +107,7 @@ export function SendEmail() {
   return (
     <>
       <button
-        className="h-10 w-10 cursor-pointer outline-none transition-colors animate-bounce"
+        className="h-10 w-10 md:h-14 md:w-14 shadow-neo shadow-primary rounded-full bg-secondary text-primary border-2 border-primary p-2 cursor-pointer outline-none transition-colors animate-bounce"
         onClick={handleOpen}
         aria-label="Abrir formulário de contato"
       >
@@ -124,36 +124,36 @@ export function SendEmail() {
           className="grid h-full grid-rows-[max-content,max-content,0.8fr,max-content] gap-2 xl:gap-5"
         >
           <label htmlFor="from" className="flex flex-col gap-2">
-            <span className="text-lg text-black">{t('De (email)')}:</span>
+            <span className="text-lg">{t('De (email)')}:</span>
             <input
               type="text"
               name="from"
               id="from"
               aria-label="Input de remetente do email"
-              className="w-full rounded-md border border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full rounded-sm border-2 border-black p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.from}</p>
           </label>
 
           <label htmlFor="subject" className="flex flex-col gap-2">
-            <span className="text-lg text-black">{t('Assunto')}:</span>
+            <span className="text-lg">{t('Assunto')}:</span>
             <input
               type="text"
               name="subject"
               id="subject"
               aria-label="Input de assunto do email"
-              className="w-full rounded-md border border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full rounded-sm border-2 border-black p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.subject}</p>
           </label>
 
           <label htmlFor="message" className="flex flex-col gap-2">
-            <span className="text-lg text-black">{t('Mensagem')}:</span>
+            <span className="text-lg">{t('Mensagem')}:</span>
             <textarea
               name="message"
               id="message"
               aria-label="Área de texto para mensagem do email"
-              className="w-full h-[20vh] resize-none rounded-md border border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full h-[20vh] resize-none rounded-sm border-2 border-black p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.message}</p>
           </label>
@@ -161,15 +161,15 @@ export function SendEmail() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-max justify-self-end rounded-md bg-primary px-5 py-2 transition-colors hover:bg-secondary hover:text-zinc-50 ${
-              loading ? 'bg-secondary text-zinc-50' : 'bg-primary'
+            className={`w-max justify-self-end rounded-sm border-2 border-black px-5 py-2 transition-colors ${
+              loading ? 'bg-black text-accent' : 'bg-accent text-black'
             }`}
           >
             {loading ? (
               <div role="status" className="flex items-center gap-2">
                 <svg
                   aria-hidden="true"
-                  className="mr-2 h-6 w-6 animate-spin fill-accent text-zinc-50"
+                  className="mr-2 h-6 w-6 animate-spin fill-accent text-black"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

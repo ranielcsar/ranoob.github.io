@@ -7,21 +7,26 @@
     a:hover {
       @apply text-accent bg-secondary transition-colors;
     }
+
+    .custom_hover:hover {
+      @apply text-primary bg-primary transition-colors;
+    }
   }
 
   /* --- THEMING --- */
   :root {
-    --primary: 241 235 213;
-    --secondary: 22 18 3;
     --accent: 243 211 95;
 
-    --black: 22 18 3;
+    --black: 20 16 1;
     --white: 241 235 213;
+
+    --primary: var(--black);
+    --secondary: var(--white);
   }
 
   [data-theme='dark'] {
-    --primary: var(--secondary);
-    --secondary: var(--primary);
+    --primary: var(--white);
+    --secondary: var(--black);
   }
 
   @font-face {

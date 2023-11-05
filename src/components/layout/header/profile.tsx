@@ -1,36 +1,24 @@
 import ProfilePic from '@/assets/perfil.png'
-// import { SocialLinksAndContact } from '@/components/common'
-import { useTransitionAnimation } from '@/hooks'
+import { SocialLinksAndContact } from '@/components/common'
 // import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 export function Profile() {
-  const [profilePicRef] = useTransitionAnimation({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-  })
   // const isMobile = useMediaQuery('(max-width: 1020px)')
 
   return (
-    <picture className="row-span-2 columns-1 border-x-2 border-x-secondary h-auto w-auto">
-      <img
-        ref={profilePicRef}
-        src={ProfilePic}
-        alt="foto perfil de Raniel César"
-        loading="lazy"
-        className="bg-accent object-cover h-[24.8vh] w-full object-bottom overflow-hidden"
-      />
+    <>
+      <picture className="row-[1] col-[1] lg:row-span-2 border-2 lg:border-x-2 lg:border-t-0 border-b-0 bg-accent flex items-end overflow-hidden border-primary h-full w-full">
+        <img
+          src={ProfilePic}
+          alt="foto perfil de Raniel César"
+          loading="lazy"
+          className="object-fill lg:object-contain w-[inherit] h-auto object-center max-h-52 max-w-sm lg:max-h-60"
+        />
+      </picture>
 
-      {/* {isMobile ? (
-        <div className="mt-5 flex w-max items-center gap-5 self-center lg:hidden">
-          <SocialLinksAndContact />
-        </div>
-      ) : (
-        <></>
-      )} */}
-    </picture>
+      <div className="flex items-center border-r-2 border-t-2 border-b-0 lg:border-l-0 border-primary justify-around lg:hidden">
+        <SocialLinksAndContact />
+      </div>
+    </>
   )
 }
