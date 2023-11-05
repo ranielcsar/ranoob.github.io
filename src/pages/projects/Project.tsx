@@ -22,12 +22,12 @@ export function Project({
 
   return (
     <article
-      className={`transition-opacity mx-3 w-full flex flex-col gap-5 max-h-[90%] overflow-hidden rounded-sm text-primary ${
+      className={`transition-opacity mx-3 w-full flex flex-col gap-2 overflow-hidden rounded-sm text-primary ${
         activeItem ? 'opacity-100' : 'opacity-40'
       }`}
     >
-      <section className="relative flex flex-wrap w-full gap-3">
-        <h3 className="text-[2.65ch] min-w-[50vw] lg:min-w-[30vw] font-bold xl:text-4xl flex-1">
+      <section className="relative flex items-center flex-wrap gap-3">
+        <h3 className="text-xl min-w-[50vw] lg:min-w-[30vw] font-bold lg:text-2xl flex-1">
           {t(project.title)}
         </h3>
 
@@ -61,15 +61,19 @@ export function Project({
         </div>
       </section>
 
-      <p className="text-[2ch] lg:max-w-[70%]">{t(project.description)}</p>
+      <p className="text-[2ch] lg:text-xl lg:max-w-[70%]">
+        {t(project.description)}
+      </p>
 
-      <img
-        className={`w-full h-auto aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
-        src={project.image}
-        alt={`${project.title} image`}
-        rel="preload"
-        loading="eager"
-      />
+      <picture className="w-full lg:h-[calc(100%_-_15rem)] overflow-hidden">
+        <img
+          className={`w-full h-auto aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
+          src={project.image}
+          alt={`${project.title} image`}
+          rel="preload"
+          loading="eager"
+        />
+      </picture>
     </article>
   )
 }

@@ -20,18 +20,18 @@ export function HomePage() {
       className="m-auto flex flex-col gap-5 xl:max-w-max-xl lg:max-w-max-lg"
       ref={sectionRef}
     >
-      <div className="h-full text-xl leading-relaxed lg:text-[4ch] xl:h-auto">
+      <div className="h-full text-xl lg:text-2xl leading-relaxed">
         {t('Olá')}!
         <br />
         {t('Me chamo')} <strong className="tracking-wide">Raniel César</strong>{' '}
         {t('e sou')} <br />
-        <p className="bg-accent max-w-3xl text-black font-pixel rounded-sm p-2 mb-2 border-4 border-primary shadow-neo-md dark:shadow-accent text-[3.5ch] leading-tight tracking-wider lg:text-5xl lg:p-4 lg:text-center">
+        <p className="bg-accent max-w-3xl text-black font-pixel rounded-sm p-2 mb-2 border-4 border-primary shadow-neo-md dark:shadow-accent text-[8.5vw] md:text-[6vw] leading-tight tracking-wider lg:text-5xl lg:p-4 lg:text-center">
           ✦ {t('Desenvolvedor Frontend')}
         </p>
         <p>{t('Nordestino, moro em Sr. do Bonfim, interior da Bahia.')}</p>
       </div>
 
-      <p className="max-w-4xl text-xl leading-relaxed lg:text-[3ch]">
+      <p className="max-w-4xl text-xl leading-relaxed lg:text-2xl">
         {t('Apaixonado por Ciência, Tecnologia, Web e entusiasta de UX/UI.')}
         <br />
         {t(

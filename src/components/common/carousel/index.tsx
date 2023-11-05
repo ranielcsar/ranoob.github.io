@@ -60,7 +60,7 @@ export function Carousel<T>({ items, children }: CarouselProps<T>) {
         <LeftArrow />
       </button>
 
-      <div className="flex-1 order-2 w-[95vw] lg:w-[60vw] xl:w-[40vw] overflow-hidden">
+      <div className="flex-1 order-2 w-fit h-fit overflow-hidden">
         {carouselFragment}
       </div>
 

@@ -17,7 +17,7 @@ export function LargeNavbar() {
 function NavbarLink({ label, route }: { label: string; route: string }) {
   return (
     <NavLink
-      className="hover uppercase tracking-wider xl:text-2xl flex-1 [&:not:(:last-child)]:border-r-2 lg:border-r-2 border-primary"
+      className="hover uppercase tracking-wider xl:text-2xl flex-1 [&:not(:last-child)]:border-r-2 lg:border-r-2 border-primary"
       to={route}
       aria-label={`Ir para a página ${label}`}
     >

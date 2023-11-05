@@ -91,7 +91,7 @@ function Skill({ text, title }: SkillProps) {
 
   return (
     <article className="h-max list-none lg:text-[1.75ch]">
-      <strong className="rounded-sm p-1 text-2xl lg:text-xl tracking-widest text-black bg-accent border-2 border-primary dark:shadow-accent shadow-neo-sm">
+      <strong className="rounded-sm p-1 text-2xl md: text-xl tracking-widest text-black bg-accent border-2 border-primary dark:shadow-accent shadow-neo-sm">
         ✦ {t(title)}
       </strong>
       <span className="leading-relaxed text-xl tracking-wide" ref={textRef}>

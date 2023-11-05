@@ -6,7 +6,10 @@ export default {
     extend: {
       maxWidth: {
         'max-xl': '75%',
-        'max-lg': '90%',
+        'max-lg': '100%',
+      },
+      fontSize: {
+        '2xl': 'clamp(2ch, 3vh, 2.7ch)',
       },
       colors: {
         primary: 'rgb(var(--primary) / <alpha-value>)',
