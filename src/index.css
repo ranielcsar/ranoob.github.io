@@ -3,13 +3,27 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 2.5ch;
+    }
+  }
+
   @media (hover: hover) {
     a:hover {
       @apply text-accent bg-secondary transition-colors;
     }
 
     .custom_hover:hover {
-      @apply text-primary bg-primary transition-colors;
+      @apply text-primary bg-secondary transition-colors;
     }
   }
 
@@ -20,13 +34,13 @@
     --black: 20 16 1;
     --white: 241 235 213;
 
-    --primary: var(--black);
-    --secondary: var(--white);
+    --primary: var(--white);
+    --secondary: var(--black);
   }
 
   [data-theme='dark'] {
-    --primary: var(--white);
-    --secondary: var(--black);
+    --primary: var(--black);
+    --secondary: var(--white);
   }
 
   @font-face {
@@ -37,9 +51,29 @@
 
   /* SCROLLBAR */
   * {
-    scrollbar-width: 0;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--primary));
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--secondary));
+    border: 4px solid rgb(var(--primary));
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--accent));
   }
 }

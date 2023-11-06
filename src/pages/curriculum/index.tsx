@@ -5,7 +5,7 @@ export function CurriculumPage() {
   const { t } = useTranslation()
 
   return (
-    <section className="flex m-auto cursor-default flex-col justify-center gap-10 text-[3ch] lg:text-[2.55ch] xl:text-[2.8ch]">
+    <section className="flex m-auto cursor-default flex-col justify-center gap-10 text-[3ch] lg:text-[2.55ch] xl:text-[2ch] xl:max-w-max-xl">
       <div className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
         {skills.map((skill) => (
           <Skill key={skill.title} {...skill} />
@@ -90,12 +90,12 @@ function Skill({ text, title }: SkillProps) {
   const { t } = useTranslation()
 
   return (
-    <article className="h-max list-none lg:text-[1.75ch]">
-      <strong className="rounded-sm p-1 text-2xl md: text-xl tracking-widest text-black bg-accent border-2 border-primary dark:shadow-accent shadow-neo-sm">
+    <article className="h-max list-none lg:text-[1.5ch]">
+      <h3 className="rounded-sm p-1 text-2xl md:text-xl lg:w-full xl:w-max tracking-widest text-black bg-accent border-2 border-secondary dark:shadow-accent shadow-neo-sm">
         ✦ {t(title)}
-      </strong>
+      </h3>
       <span className="leading-relaxed text-xl tracking-wide" ref={textRef}>
-        <strong className="ml-1">:</strong> {t(text)}
+        {t(text)}
       </span>
     </article>
   )

@@ -31,7 +31,7 @@ export function Navbar() {
     <section className="relative h-full">
       <button
         onClick={handleMenu}
-        className="uppercase flex items-center justify-center gap-4 bg-primary text-xl text-secondary h-[inherit] w-full tracking-wider border-secondary"
+        className="uppercase flex items-center justify-center gap-4 bg-secondary text-xl text-primary h-[inherit] w-full tracking-wider border-primary"
       >
         {t(links[pathname])}
         <span className="w-5 h-5 rotate-90">
@@ -63,7 +63,7 @@ function NavbarLink({ label, route }: { label: string; route: string }) {
         <span
           className={`relative transition-[background] w-full h-full flex
           items-center justify-center ${
-            isActive ? 'bg-primary text-secondary' : 'bg-secondary text-primary'
+            isActive ? 'bg-secondary text-primary' : 'bg-secondary text-primary'
           }`}
         >
           {label}

@@ -17,7 +17,7 @@ export function Modal({
   return (
     <Transition show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose}>
-        <div className="fixed inset-0 bg-primary/50 w-full h-full" />
+        <div className="fixed inset-0 bg-secondary/50 w-full h-full" />
 
         <div className="fixed inset-0 overflow-y-auto">
           <div className="m-auto flex h-full w-[90%] items-center justify-center text-center md:p-4">

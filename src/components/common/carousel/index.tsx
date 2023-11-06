@@ -50,7 +50,7 @@ export function Carousel<T>({ items, children }: CarouselProps<T>) {
   }, [])
 
   return (
-    <section className="flex flex-column w-full lg:gap-5 lg:items-center xl:flex-row xl:gap-10">
+    <section className="flex flex-column w-full h-full lg:gap-5 lg:items-center xl:flex-row xl:gap-10">
       <button
         onClick={slideToPrevItem}
         className="hidden z-20 lg:block col-[1] row-[2] ml-5 h-8 w-8 order-1"
@@ -60,9 +60,7 @@ export function Carousel<T>({ items, children }: CarouselProps<T>) {
         <LeftArrow />
       </button>
 
-      <div className="flex-1 order-2 w-fit h-fit overflow-hidden">
-        {carouselFragment}
-      </div>
+      <div className="flex-1 order-2 overflow-hidden">{carouselFragment}</div>
 
       <button
         onClick={slideToNextItem}

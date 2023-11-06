@@ -7,7 +7,7 @@ export function Profile() {
 
   return (
     <>
-      <picture className="row-[1] col-[1] lg:row-span-2 border-2 lg:border-x-2 lg:border-t-0 border-b-0 bg-accent flex items-end overflow-hidden border-primary h-full w-full">
+      <picture className="row-[1] col-[1] lg:row-span-2 border-2 lg:border-x-2 lg:border-t-0 border-b-0 bg-accent flex items-end overflow-hidden border-secondary h-full w-full">
         <img
           src={ProfilePic}
           alt="foto perfil de Raniel César"
@@ -16,7 +16,7 @@ export function Profile() {
         />
       </picture>
 
-      <div className="flex items-center border-r-2 border-t-2 border-b-0 lg:border-l-0 border-primary justify-around lg:hidden">
+      <div className="flex items-center border-r-2 border-t-2 border-b-0 lg:border-l-0 border-secondary justify-around lg:hidden">
         <SocialLinksAndContact />
       </div>
     </>

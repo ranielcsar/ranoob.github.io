@@ -95,9 +95,7 @@ export function SendEmail() {
   }
 
   useEffect(() => {
-    function close() {
-      if (openSendEmailModal) reset()
-    }
+    const close = () => (openSendEmailModal ? reset() : null)
 
     window.addEventListener('popstate', close)
 
@@ -107,7 +105,7 @@ export function SendEmail() {
   return (
     <>
       <button
-        className="h-10 w-10 md:h-14 md:w-14 shadow-neo shadow-primary rounded-full bg-secondary text-primary border-2 border-primary p-2 cursor-pointer outline-none transition-colors animate-bounce"
+        className="h-10 w-10 md:h-14 md:w-14 lg:w-10 lg:h-10 shadow-neo shadow-secondary rounded-full bg-primary text-secondary border-2 border-secondary p-2 cursor-pointer outline-none transition-colors animate-bounce"
         onClick={handleOpen}
         aria-label="Abrir formulário de contato"
       >
