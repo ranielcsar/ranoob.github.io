@@ -12,7 +12,7 @@ export function Header() {
         <Profile />
 
         <section className="border-2 row-[2] col-span-2 lg:row-[1] lg:col-[2] lg:w-full text-2xl relative flex justify-around items-center lg:border-r-2 lg:border-y-0 lg:border-l-0 border-secondary xl:text-3xl">
-          <div className="lg:flex lg:flex-1 lg:min-w-[16vw] lg:items-center lg:justify-around hidden">
+          <div className="lg:flex lg:flex-1 lg:min-w-max lg:gap-3 lg:px-3 lg:items-center lg:justify-around hidden">
             <SocialLinksAndContact />
           </div>
 
@@ -40,7 +40,7 @@ export function Header() {
 
 function ChangeThemeAndLang() {
   return (
-    <div className="flex flex-1 h-full max-w-[15vw] items-center justify-center gap-5">
+    <div className="flex flex-1 h-full lg:max-w-[15vw] items-center justify-center gap-5">
       <button
         className="h-6 cursor-pointer"
         aria-label="Button for change color mode"

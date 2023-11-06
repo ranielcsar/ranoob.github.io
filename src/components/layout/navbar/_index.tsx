@@ -40,7 +40,7 @@ export function Navbar() {
       </button>
 
       <div
-        className={`absolute grid auto-rows-[8vh] text-xl inset-x-1 border-x-2 border-t-2 border-primary overflow-hidden transition-all duration-300 ${menuStyle}`}
+        className={`absolute grid auto-rows-[8vh] text-xl inset-x-1 border-x-2 border-t-2 border-secondary overflow-hidden transition-all duration-300 ${menuStyle}`}
         onClick={handleMenu}
       >
         <NavbarLink label={t('Sobre')} route="/" />
@@ -55,7 +55,7 @@ export function Navbar() {
 function NavbarLink({ label, route }: { label: string; route: string }) {
   return (
     <NavLink
-      className="uppercase h-full w-full tracking-wider flex-1 border-b-2 border-primary"
+      className="uppercase h-full w-full tracking-wider flex-1 border-b-2 border-secondary"
       to={route}
       aria-label={`Ir para a página ${label}`}
     >
@@ -63,7 +63,7 @@ function NavbarLink({ label, route }: { label: string; route: string }) {
         <span
           className={`relative transition-[background] w-full h-full flex
           items-center justify-center ${
-            isActive ? 'bg-secondary text-primary' : 'bg-secondary text-primary'
+            isActive ? 'bg-secondary text-primary' : 'bg-primary text-secondary'
           }`}
         >
           {label}
