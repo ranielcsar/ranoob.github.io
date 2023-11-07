@@ -29,18 +29,45 @@
 
   /* --- THEMING --- */
   :root {
-    --accent: 243 211 95;
-
     --black: 20 16 1;
-    --white: 241 235 213;
+    --white: 249 246 236;
+
+    --default-accent: 243 211 95;
+    --green-accent: 95 187 134;
+    --purple-accent: 149 142 236;
 
     --primary: var(--white);
     --secondary: var(--black);
+    --accent: var(--default-accent);
   }
 
   [data-theme='dark'] {
     --primary: var(--black);
     --secondary: var(--white);
+  }
+
+  [data-theme='green'] {
+    --black: 20 21 20;
+    --white: 239 245 242;
+    --accent: var(--green-accent);
+  }
+
+  [data-theme='green-dark'] {
+    --black: 239 245 242;
+    --white: 20 21 20;
+    --accent: var(--green-accent);
+  }
+
+  [data-theme='purple'] {
+    --black: 20 20 21;
+    --white: 240 240 245;
+    --accent: var(--purple-accent);
+  }
+
+  [data-theme='purple-dark'] {
+    --black: 240 240 245;
+    --white: 20 20 21;
+    --accent: var(--purple-accent);
   }
 
   @font-face {
