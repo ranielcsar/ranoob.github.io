@@ -1,6 +1,8 @@
-import { MoonIcon } from '@/assets/icons'
-// import { Link } from 'react-router-dom'
-import { LanguageSwitch, SocialLinksAndContact } from '@/components/common'
+import {
+  LanguageSwitch,
+  SocialLinksAndContact,
+  ThemeSelector,
+} from '@/components/common'
 import { Navbar } from '../navbar/_index'
 import { Profile } from './profile'
 import { Link } from 'react-router-dom'
@@ -41,21 +43,9 @@ export function Header() {
 function ChangeThemeAndLang() {
   return (
     <div className="flex flex-1 h-full lg:max-w-[15vw] items-center justify-center gap-5">
-      <button
-        className="h-6 cursor-pointer"
-        aria-label="Button for change color mode"
-        onClick={handleChangeTheme}
-      >
-        <MoonIcon />
-      </button>
+      <ThemeSelector />
 
       <LanguageSwitch />
     </div>
   )
-}
-
-function handleChangeTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-theme')
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
-  document.documentElement.setAttribute('data-theme', newTheme)
 }
