@@ -128,7 +128,7 @@ export function SendEmail() {
               name="from"
               id="from"
               aria-label="Input de remetente do email"
-              className="w-full rounded-sm border-2 border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full rounded-sm border-2 border-primary p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.from}</p>
           </label>
@@ -140,7 +140,7 @@ export function SendEmail() {
               name="subject"
               id="subject"
               aria-label="Input de assunto do email"
-              className="w-full rounded-sm border-2 border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full rounded-sm border-2 border-primary p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.subject}</p>
           </label>
@@ -151,7 +151,7 @@ export function SendEmail() {
               name="message"
               id="message"
               aria-label="Área de texto para mensagem do email"
-              className="w-full h-[20vh] resize-none rounded-sm border-2 border-black p-2 text-zinc-900 focus:outline-accent"
+              className="w-full h-[20vh] resize-none rounded-sm border-2 border-primary p-2 text-zinc-900 focus:outline-accent"
             />
             <p className="text-red-500">{errors?.message}</p>
           </label>
@@ -159,7 +159,7 @@ export function SendEmail() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-max justify-self-end rounded-sm border-2 border-black px-5 py-2 transition-colors ${
+            className={`w-max justify-self-end rounded-sm border-2 border-primary px-5 py-2 transition-colors ${
               loading ? 'bg-black text-accent' : 'bg-accent text-black'
             }`}
           >
