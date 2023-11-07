@@ -26,7 +26,7 @@ function NavbarLink({ label, route }: { label: string; route: string }) {
           className={`relative transition-[background] w-full h-full flex
           items-center justify-center ${
             isActive ? 'bg-secondary text-primary' : 'bg-primary text-secondary'
-          }`}
+          } hover:bg-secondary hover:text-primary`}
         >
           {label}
         </span>
