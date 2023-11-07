@@ -27,7 +27,7 @@ export function App() {
 
         <main
           ref={mainRef}
-          className="row-[2] px-3 py-5 w-full lg:h-full overflow-y-auto flex items-center justify-center lg:m-auto"
+          className="row-[2] px-3 py-5 w-full h-full overflow-y-auto flex items-center justify-center lg:m-auto"
         >
           <AppRoutes />
         </main>
