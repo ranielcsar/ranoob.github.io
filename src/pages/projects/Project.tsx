@@ -22,12 +22,12 @@ export function Project({
 
   return (
     <article
-      className={`transition-opacity mx-3 w-full flex flex-col gap-2 overflow-hidden rounded-sm text-secondary ${
+      className={`transition-opacity mx-3 w-full h-full flex flex-col gap-2 overflow-hidden rounded-sm text-secondary ${
         activeItem ? 'opacity-100' : 'opacity-40'
       }`}
     >
       <section className="relative flex items-center flex-wrap gap-3">
-        <h3 className="text-xl min-w-[50vw] lg:min-w-[30vw] font-bold lg:text-2xl flex-1 xl:text-3xl">
+        <h3 className="text-2xl min-w-[50vw] lg:min-w-[30vw] font-bold flex-1 xl:text-3xl">
           {t(project.title)}
         </h3>
 
@@ -38,9 +38,9 @@ export function Project({
             // href={project.links.sandbox}
             disabled={true}
             title="CodeSandbox"
-            className="lg:p-2 border-2 border-black disabled:bg-secondary/40 disabled:select-none disabled:hover:text-secondary flex items-center rounded-sm bg-secondary w-max gap-1 p-1 text-secondary transition-colors hover:text-secondary"
+            className="border-2 border-black disabled:bg-secondary/50 disabled:select-none disabled:hover:text-secondary flex items-center rounded-sm bg-secondary w-max gap-1 p-1 text-secondary transition-colors hover:text-secondary"
           >
-            <i className="h-5 w-5 lg:h-7 lg:w-7">
+            <i className="h-5 w-5">
               <CodeSandboxIcon />
             </i>
             <span className="text-xl">Demo</span>
@@ -51,9 +51,9 @@ export function Project({
             rel="noreferrer"
             href={project.links.github}
             title="Github"
-            className="lg:p-2 flex border-2 border-black items-center rounded-sm bg-white w-max gap-1 p-1 text-black transition-colors hover:text-secondary"
+            className="flex border-2 border-black items-center rounded-sm bg-white w-max gap-1 p-1 text-black transition-colors hover:bg-secondary hover:text-primary"
           >
-            <i className="h-5 w-5 lg:h-7 lg:w-7">
+            <i className="h-5 w-5">
               <GithubIcon />
             </i>
             <span className="text-xl">Code</span>
@@ -61,13 +61,13 @@ export function Project({
         </div>
       </section>
 
-      <p className="text-[2ch] lg:text-xl lg:max-w-[70%]">
+      <p className="text-[2ch] lg:text-[1.8ch] lg:max-w-[70%]">
         {t(project.description)}
       </p>
 
-      <picture className="w-full lg:h-[calc(100%_-_15rem)] xl:h-[55vh] overflow-hidden">
+      <picture className="w-full 2xl:max-w-[60%] lg:m-auto overflow-hidden">
         <img
-          className={`w-full h-full aspect-video object-center object-fill rounded-sm bg-white/60 text-black`}
+          className={`w-full aspect-video object-center object-fill border-2 border-secondary rounded-sm bg-white/60 text-black`}
           src={project.image}
           alt={`${project.title} image`}
           rel="preload"

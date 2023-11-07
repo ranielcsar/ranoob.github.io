@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: ['class', '[data-theme=dark]'],
+  darkMode: ['class', '[data-theme*="dark"]'],
   theme: {
     extend: {
       maxWidth: {
@@ -17,6 +17,9 @@ export default {
         accent: 'rgb(var(--accent) / <alpha-value>)',
         black: 'rgb(var(--black) / <alpha-value>)',
         white: 'rgb(var(--white) / <alpha-value>)',
+        'default-accent': 'rgb(var(--default-accent) / <alpha-value>)',
+        'green-accent': 'rgb(var(--green-accent) / <alpha-value>)',
+        'purple-accent': 'rgb(var(--purple-accent) / <alpha-value>)',
       },
       fontFamily: {
         jetbrains: ['MPLUSCodeLatin', 'sans-serif'],
