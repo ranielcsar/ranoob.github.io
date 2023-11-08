@@ -7,7 +7,7 @@ export function LanguageSwitch() {
 
   return (
     <button onClick={() => changeLanguage(language === 'en' ? 'pt' : 'en')}>
-      <span className="text-[1.5rem] tracking-wider font-bold">
+      <span className="text-[1.4rem] tracking-wider font-bold">
         {language === 'en' ? 'PT' : 'EN'}
       </span>
     </button>
