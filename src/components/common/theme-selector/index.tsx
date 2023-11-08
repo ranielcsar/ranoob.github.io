@@ -37,7 +37,7 @@ const themes = [
 export function ThemeSelector() {
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <Menu.Button className="h-6 w-full" aria-label="Button for change theme">
+      <Menu.Button className="h-5" aria-label="Button for change theme">
         <MoonIcon />
       </Menu.Button>
 
