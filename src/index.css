@@ -35,6 +35,7 @@
     --default-accent: 243 211 95;
     --green-accent: 95 187 134;
     --purple-accent: 149 142 236;
+    --black-accent: 78 78 78;
 
     --primary: var(--white);
     --secondary: var(--black);
@@ -56,6 +57,16 @@
     --black: 20 20 21;
     --white: 240 240 245;
     --accent: var(--purple-accent);
+  }
+
+  [data-accent='black'] {
+    --black: 20 20 20;
+    --white: 243 243 243;
+    --accent: var(--black-accent);
+  }
+
+  [data-accent='black'] h2 {
+    color: white !important;
   }
 
   @font-face {

@@ -48,9 +48,9 @@ function Exp({ title, children }: { title: string; children: ReactNode }) {
 
   return (
     <li className="flex list-none flex-col gap-4">
-      <h3 className="bg-accent text-[3ch] lg:text-[2.5vw] xl:text-[clamp(1vw,3vh,10rem)] px-3 py-2 border-4 border-secondary text-black rounded-sm shadow-neo-sm lg:shadow-neo-md dark:shadow-accent font-bold w-auto max-w-max tracking-wider">
+      <h2 className="bg-accent text-[3ch] lg:text-[2.5vw] xl:text-[clamp(1vw,3vh,10rem)] px-3 py-2 border-4 border-secondary text-black rounded-sm shadow-neo-sm lg:shadow-neo-md dark:shadow-accent font-bold w-auto max-w-max tracking-wider">
         ✦ {title}
-      </h3>
+      </h2>
 
       <section className="text-xl leading-relaxed max-w-6xl" ref={childrenRef}>
         {children}

@@ -13,7 +13,9 @@ export function CurriculumPage() {
       </div>
 
       <div className="flex flex-col gap-6">
-        <h2 className="text-2xl font-bold">{t('Conhecimentos em Backend')}</h2>
+        <h3 className="text-2xl font-bold text-secondary">
+          {t('Conhecimentos em Backend')}
+        </h3>
 
         <div className="grid grid-rows-[auto] gap-5 lg:gap-x-20 lg:grid-cols-2">
           {backendSkills.map((skill) => (
@@ -91,9 +93,9 @@ function Skill({ text, title }: SkillProps) {
 
   return (
     <article className="h-max list-none lg:text-[1.5ch]">
-      <h3 className="rounded-sm p-1 text-2xl md:text-xl lg:w-full xl:w-max tracking-widest text-black bg-accent border-2 border-secondary dark:shadow-accent shadow-neo-sm">
+      <h2 className="rounded-sm p-1 text-2xl md:text-xl lg:w-full xl:w-max tracking-widest text-black bg-accent border-2 border-secondary dark:shadow-accent shadow-neo-sm">
         ✦ {t(title)}
-      </h3>
+      </h2>
       <span className="leading-relaxed text-xl tracking-wide" ref={textRef}>
         {t(text)}
       </span>

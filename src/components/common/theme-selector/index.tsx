@@ -17,6 +17,11 @@ const accents = [
     label: 'Purple',
     bg: 'bg-purple-accent',
   },
+  {
+    value: 'black',
+    label: 'Black',
+    bg: 'bg-black-accent',
+  },
 ]
 
 export function ThemeSelector() {

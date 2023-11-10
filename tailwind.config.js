@@ -20,6 +20,7 @@ export default {
         'default-accent': 'rgb(var(--default-accent) / <alpha-value>)',
         'green-accent': 'rgb(var(--green-accent) / <alpha-value>)',
         'purple-accent': 'rgb(var(--purple-accent) / <alpha-value>)',
+        'black-accent': 'rgb(var(--black-accent) / <alpha-value>)',
       },
       fontFamily: {
         jetbrains: ['MPLUSCodeLatin', 'sans-serif'],
