@@ -41,32 +41,20 @@
     --accent: var(--default-accent);
   }
 
-  [data-theme='dark'] {
+  [data-mode='dark'] {
     --primary: var(--black);
     --secondary: var(--white);
   }
 
-  [data-theme='green'] {
+  [data-accent='green'] {
     --black: 20 21 20;
     --white: 239 245 242;
     --accent: var(--green-accent);
   }
 
-  [data-theme='green-dark'] {
-    --black: 239 245 242;
-    --white: 20 21 20;
-    --accent: var(--green-accent);
-  }
-
-  [data-theme='purple'] {
+  [data-accent='purple'] {
     --black: 20 20 21;
     --white: 240 240 245;
-    --accent: var(--purple-accent);
-  }
-
-  [data-theme='purple-dark'] {
-    --black: 240 240 245;
-    --white: 20 20 21;
     --accent: var(--purple-accent);
   }
 
