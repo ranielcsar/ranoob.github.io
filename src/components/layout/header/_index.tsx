@@ -20,7 +20,7 @@ export function Header() {
 
           <Link
             to="/"
-            className="hover:text-secondary text-center flex-1 lg:flex-[3] lg:flex lg:h-full lg:border-x-2 lg:border-secondary"
+            className="hover:text-secondary text-center flex-[1.2] lg:flex-[3] lg:flex lg:h-full lg:border-x-2 lg:border-secondary"
           >
             <strong className="tracking-wider xl:text-2xl m-auto">
               {'<'}
