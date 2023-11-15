@@ -3,7 +3,7 @@ import { FormEvent, useEffect, useState } from 'react'
 import { Modal } from '@/components/common'
 import { SendEmailParams, useSendEmail } from '@/hooks'
 import { ZodError, z } from 'zod'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { useMediaQuery } from '@/hooks'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 

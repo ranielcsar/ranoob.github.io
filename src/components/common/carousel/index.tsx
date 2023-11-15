@@ -1,5 +1,5 @@
 import { LeftArrow, RightArrow } from '@/assets/icons'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { useMediaQuery } from '@/hooks'
 import { FunctionComponent, useEffect, useState } from 'react'
 import { useSpringCarousel } from 'react-spring-carousel'
 

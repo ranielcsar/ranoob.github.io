@@ -1,4 +1,5 @@
 export * from './useTransitionAnimation'
 export * from './useSendEmail'
 export * from './useToast'
+export * from './useMediaQuery'
 export * from './useClickOutside'
