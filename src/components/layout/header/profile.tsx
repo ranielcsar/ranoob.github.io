@@ -12,7 +12,7 @@ export function Profile() {
           src={ProfilePic}
           alt="foto perfil de Raniel César"
           loading="lazy"
-          className="object-fill lg:object-contain w-[inherit] h-auto object-center max-h-52 max-w-sm lg:max-h-60"
+          className="object-fill lg:object-contain w-[inherit] h-auto object-center max-h-48 max-w-sm lg:max-h-60"
         />
       </picture>
 
