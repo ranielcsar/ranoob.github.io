@@ -1,5 +1,7 @@
 import { MoonIcon } from '@/assets/icons'
+import { useClickOutside } from '@/hooks'
 import { Menu } from '@headlessui/react'
+import { useRef, useState } from 'react'
 
 const accents = [
   {
@@ -25,42 +27,53 @@ const accents = [
 ]
 
 export function ThemeSelector() {
+  const ref = useRef(null)
+  const [open, setOpen] = useState(false)
+
+  useClickOutside(ref, () => setOpen(false))
+
   return (
     <Menu as="div" role="theme-menu" className="relative h-6 xl:h-max">
-      <Menu.Button className="h-6" aria-label="Button for change theme">
+      <Menu.Button
+        className="h-6"
+        aria-label="Button for change theme"
+        onClick={() => setOpen(true)}
+      >
         <MoonIcon />
       </Menu.Button>
 
-      <Menu.Items className="absolute -right-10 lg:right-0 mt-2 w-56 origin-top-right border-secondary border divide-y divide-secondary bg-primary focus:outline-none z-20">
-        <Menu.Item
-          as="button"
-          className="gap-3 text-xl items-center w-full m-auto px-2 py-2 flex hover:border-4 hover:border-secondary transition-[border]"
-          onClick={handleChangeMode}
-        >
-          <div
-            className={`bg-gradient-to-r from-primary to-secondary rounded-full w-6 h-6`}
-          />
-          Dark/Light
-        </Menu.Item>
+      {open && (
+        <Menu.Items className="absolute -right-10 lg:right-0 mt-2 w-56 origin-top-right border-secondary border divide-y divide-secondary bg-primary focus:outline-none z-20">
+          <Menu.Item
+            as="button"
+            className="gap-3 text-xl items-center w-full m-auto px-2 py-2 flex hover:border-4 hover:border-secondary transition-[border]"
+            onClick={handleChangeMode}
+          >
+            <div
+              className={`bg-gradient-to-r from-primary to-secondary rounded-full w-6 h-6`}
+            />
+            Dark/Light
+          </Menu.Item>
 
-        <section>
-          {accents.map((accent) => (
-            <Menu.Item>
-              {({ active }) => (
-                <button
-                  className={`${
-                    active && 'bg-secondary text-primary'
-                  } flex gap-3 items-center border border-primary px-2 py-2 w-full text-xl`}
-                  onClick={() => handleChangeAccent(accent.value)}
-                >
-                  <div className={`${accent.bg} rounded-full w-6 h-6`} />
-                  {accent.label}
-                </button>
-              )}
-            </Menu.Item>
-          ))}
-        </section>
-      </Menu.Items>
+          <section>
+            {accents.map((accent) => (
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active && 'bg-secondary text-primary'
+                    } flex gap-3 items-center border border-primary px-2 py-2 w-full text-xl`}
+                    onClick={() => handleChangeAccent(accent.value)}
+                  >
+                    <div className={`${accent.bg} rounded-full w-6 h-6`} />
+                    {accent.label}
+                  </button>
+                )}
+              </Menu.Item>
+            ))}
+          </section>
+        </Menu.Items>
+      )}
     </Menu>
   )
 }

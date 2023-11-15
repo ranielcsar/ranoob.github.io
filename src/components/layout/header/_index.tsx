@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 export function Header() {
   return (
     <header className="row-[1] w-full h-max flex lg:border-y-2 border-secondary">
-      <div className="grid grid-rows-[10rem,8vh,8vh] grid-cols-[max-content,1fr] w-full lg:grid-rows-[repeat(2,11vh)] xl:grid-rows-[repeat(2,10.5vh)] m-auto xl:max-w-max-xl lg:max-w-max-lg">
+      <div className="grid grid-rows-[10rem,min(10vh,4rem),min(10vh,4rem)] grid-cols-[max-content,1fr] w-full lg:grid-rows-[repeat(2,max(11vh,5rem))] m-auto xl:max-w-max-xl lg:max-w-max-lg">
         <Profile />
 
         <section className="border-2 row-[2] col-span-2 lg:row-[1] lg:col-[2] lg:w-full text-2xl relative flex justify-around items-center lg:border-r-2 lg:border-y-0 lg:border-l-0 border-secondary xl:text-3xl">
