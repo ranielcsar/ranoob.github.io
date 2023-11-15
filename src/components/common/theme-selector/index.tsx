@@ -1,5 +1,5 @@
 import { MoonIcon } from '@/assets/icons'
-import { useClickOutside } from '@/hooks'
+import { useOnClickOutside } from '@/hooks'
 import { Menu } from '@headlessui/react'
 import { useRef, useState } from 'react'
 
@@ -30,7 +30,7 @@ export function ThemeSelector() {
   const ref = useRef(null)
   const [open, setOpen] = useState(false)
 
-  useClickOutside(ref, () => setOpen(false))
+  useOnClickOutside(ref, () => setOpen(false))
 
   return (
     <Menu as="div" role="theme-menu" className="relative h-6 xl:h-max">
@@ -57,7 +57,7 @@ export function ThemeSelector() {
 
           <section>
             {accents.map((accent) => (
-              <Menu.Item>
+              <Menu.Item key={accent.value}>
                 {({ active }) => (
                   <button
                     className={`${
