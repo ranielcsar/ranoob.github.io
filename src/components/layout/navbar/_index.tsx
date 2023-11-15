@@ -1,5 +1,5 @@
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { useState } from 'react'
+import { useMediaQuery, useClickOutside } from '@/hooks'
+import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom'
 import { LargeNavbar } from './large'
@@ -15,9 +15,12 @@ const links: Record<string, string> = {
 export function Navbar() {
   const isTablet = useMediaQuery('(min-width: 768px)')
   const { t } = useTranslation()
+  const menuRef = useRef(null)
 
   const [openMenu, setOpenMenu] = useState(false)
   const handleMenu = () => setOpenMenu((open) => !open)
+
+  useClickOutside(menuRef, handleMenu)
 
   const { pathname } = useLocation()
 
@@ -28,7 +31,7 @@ export function Navbar() {
   if (isTablet) return <LargeNavbar />
 
   return (
-    <section className="relative h-full">
+    <section className="relative h-full" ref={menuRef}>
       <button
         onClick={handleMenu}
         className="uppercase flex items-center justify-center gap-4 bg-secondary text-xl text-primary h-[inherit] w-full tracking-wider border-primary"
