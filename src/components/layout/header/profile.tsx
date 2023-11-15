@@ -1,10 +1,7 @@
 import ProfilePic from '@/assets/perfil.png'
 import { SocialLinksAndContact } from '@/components/common'
-// import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 export function Profile() {
-  // const isMobile = useMediaQuery('(max-width: 1020px)')
-
   return (
     <>
       <picture className="row-[1] col-[1] lg:row-span-2 border-2 lg:border-x-2 lg:border-t-0 border-b-0 bg-accent flex items-end overflow-hidden border-secondary h-full w-full">
