@@ -24,6 +24,11 @@ const accents = [
     label: 'Black',
     bg: 'bg-black-accent',
   },
+  {
+    value: 'blue',
+    label: 'Blue',
+    bg: 'bg-blue-accent',
+  },
 ]
 
 export function ThemeSelector() {
