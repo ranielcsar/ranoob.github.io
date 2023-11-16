@@ -36,6 +36,7 @@
     --green-accent: 95 187 134;
     --purple-accent: 149 142 236;
     --black-accent: 78 78 78;
+    --blue-accent: 113 173 233;
 
     --primary: var(--white);
     --secondary: var(--black);
@@ -67,6 +68,12 @@
 
   [data-accent='black'] h2 {
     color: white !important;
+  }
+
+  [data-accent='blue'] {
+    --black: 7 10 14;
+    --white: 233 236 239;
+    --accent: var(--blue-accent);
   }
 
   @font-face {
