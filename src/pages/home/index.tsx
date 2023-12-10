@@ -11,7 +11,7 @@ export function HomePage() {
         {t('Me chamo')} <strong className="tracking-wide">Raniel César</strong>{' '}
         {t('e sou')} <br />
         <h2 className="bg-accent max-w-3xl text-black font-pixel rounded-sm p-2 mb-2 border-4 border-secondary shadow-neo-md dark:shadow-accent text-[8.5vw] md:text-[6vw] leading-tight tracking-wider lg:text-5xl lg:p-4 lg:text-center">
-          ✦ {t('Desenvolvedor Frontend')}
+          ✦ {t('Desenvolvedor Web')}
         </h2>
         <p>{t('Nordestino, moro em Sr. do Bonfim, interior da Bahia.')}</p>
       </div>
@@ -24,11 +24,11 @@ export function HomePage() {
         )}
         <br />
         {t(
-          'Tenho experiência com ReactJS, TypeScript, NextJS, TailwindCSS, ChakraUI entre outras bibliotecas de desenvolvimento web. Possuo conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.',
+          'Tenho experiência com as principais ferramentas de Desenvolvimento Web como Angular, NextJS, Typscript, VueJS, entre outras. Também possuo conhecimento em desenvolvimento Backend com NestJS, Prisma e Express.',
         )}
         <br />
         {t(
-          'Atualmente estou estudando VueJS, Python e Aprendizado de Máquina.',
+          'Estou sempre estudando novas tecnologias como Docker e Kuberneets, e outras linguagens como Python e Java.',
         )}
       </p>
     </section>
