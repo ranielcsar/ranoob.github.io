@@ -28,7 +28,7 @@ export function HomePage() {
         )}
         <br />
         {t(
-          'Estou sempre estudando novas tecnologias como Docker e Kubernets, e outras linguagens como Python e Java.',
+          'Estou sempre estudando novas tecnologias como Docker, e outras linguagens como Python e Java.',
         )}
       </p>
     </section>
