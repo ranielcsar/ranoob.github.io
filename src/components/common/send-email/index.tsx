@@ -13,7 +13,7 @@ const emailSubmitSchema = z.object({
     .email('Digite um email válido')
     .nonempty('Preciso saber quem envia o Email.'),
   subject: z.string().nonempty('Sem assunto?'),
-  message: z.string().nonempty('Não esquece de falar o que você quer!'),
+  message: z.string().nonempty('Não esquece de falar o que você precisa! :]'),
 })
 
 function handleZodErrors(err: ZodError) {

@@ -3,7 +3,7 @@ import { ToastContainer } from 'react-toastify'
 
 import { useTransitionAnimation } from '@/hooks'
 
-import { Header } from '@/components/layout'
+// import { Header } from '@/components/layout'
 import { AppRoutes } from '@/routes'
 
 import 'react-toastify/dist/ReactToastify.css'
@@ -22,12 +22,10 @@ export function App() {
 
   return (
     <MemoryRouter initialEntries={['/']}>
-      <div className="grid h-full grid-rows-[max-content,1fr]">
-        <Header />
-
+      <div>
         <main
           ref={mainRef}
-          className="row-[2] px-3 py-5 w-full h-full overflow-y-auto flex items-center justify-center lg:m-auto"
+          className="flex min-h-screen flex-col flex-1 w-[90%] m-auto items-center"
         >
           <AppRoutes />
         </main>

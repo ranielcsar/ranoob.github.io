@@ -29,8 +29,9 @@
 
   /* --- THEMING --- */
   :root {
-    --black: 20 16 1;
-    --white: 249 246 236;
+    --black: 53 49 46;
+    --white: 232 226 212;
+    --body-bg: 214 199 174;
 
     --default-accent: 243 211 95;
     --green-accent: 95 187 134;
@@ -77,9 +78,26 @@
   }
 
   @font-face {
-    font-family: 'MPLUSCodeLatin';
-    src: url('./assets/MPLUSCodeLatin.ttf');
+    font-family: 'Farro';
+    src: url('./assets/Farro-Regular.ttf');
     font-display: swap;
+  }
+
+  .accent_mark {
+    width: max-content;
+    height: max-content;
+    position: relative;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      z-index: -10;
+      width: 105%;
+      height: 70%;
+      background-color: rgb(var(--accent));
+    }
   }
 
   /* SCROLLBAR */

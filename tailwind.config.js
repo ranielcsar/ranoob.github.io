@@ -24,8 +24,7 @@ export default {
         'blue-accent': 'rgb(var(--blue-accent) / <alpha-value>)',
       },
       fontFamily: {
-        jetbrains: ['MPLUSCodeLatin', 'sans-serif'],
-        roboto: ['Roboto Mono', 'sans-serif'],
+        farro: ['Farro', 'sans-serif'],
       },
       boxShadow: {
         neo: '0 2px 0 rgb(var(--black))',
