@@ -1,4 +1,4 @@
-import { Carousel } from '@/components/common'
+import { Carousel } from './Carousel'
 import { ProjectProps, Project } from './Project'
 import {
   CoinSynchPrint,
@@ -10,18 +10,16 @@ import {
 
 export function ProjectsPage() {
   return (
-    <section className="xl:max-w-max-xl lg:max-w-max-lg m-auto overflow-hidden h-[min(100%,70vh)] lg:h-[max(100%,70vh)]">
-      <Carousel
-        items={projects}
-        children={({ item: project, activeItem }) => (
-          <Project
-            key={project.title}
-            project={project}
-            activeItem={activeItem}
-          />
-        )}
-      />
-    </section>
+    <Carousel
+      items={projects}
+      children={({ item: project, activeItem }) => (
+        <Project
+          key={project.title}
+          project={project}
+          activeItem={activeItem}
+        />
+      )}
+    />
   )
 }
 

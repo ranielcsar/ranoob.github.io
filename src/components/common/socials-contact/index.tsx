@@ -24,7 +24,7 @@ export function SocialLinksAndContact() {
         <LinkedinIcon />
       </a>
 
-      <SendEmail />
+      {/* <SendEmail /> */}
     </>
   )
 }

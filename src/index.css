@@ -42,6 +42,8 @@
     --primary: var(--white);
     --secondary: var(--black);
     --accent: var(--default-accent);
+
+    scroll-behavior: smooth;
   }
 
   [data-mode='dark'] {

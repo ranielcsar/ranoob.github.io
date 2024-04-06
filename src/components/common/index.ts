@@ -1,4 +1,4 @@
-export * from './carousel'
+export * from '../../modules/projects/Carousel'
 export * from './modal'
 export * from './send-email'
 export * from './socials-contact'
