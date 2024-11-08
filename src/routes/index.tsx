@@ -1,6 +1,5 @@
 import {
   HomePage,
-  ProjectsPage,
   ExperienciesPage,
   CurriculumPage,
 } from '@/pages'
@@ -11,7 +10,6 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/experiences" element={<ExperienciesPage />} />
       <Route path="/curriculum" element={<CurriculumPage />} />
     </Routes>

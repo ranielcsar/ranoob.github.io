@@ -10,7 +10,7 @@ export function ExperienciesPage() {
       <ul className="flex flex-col gap-12">
         <Exp title={t('Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)')}>
           {t(
-            'Prestação de serviços para reparo e criação de novas funcionalidades em aplicações web de administração, assim como em landing pages, usando tecnologias web como React, TypeScript, ChakraUI, Apollo e GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum (dailies, reviews, plannings, sprints, etc) para desenvolver soluções web eficientes e de alta qualidade.',
+            'Responsável pelo reparo e criação de novas funcionalidades em aplicações web de administração, dashboards, gestão/agendamento de serviços, assim como em landing pages, usando tecnologias web como React, TypeScript, ChakraUI, Apollo e GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum (dailies, reviews, plannings, sprints, etc).',
           )}
           <p className="mt-5">
             {t('Tempo de atuação')}:{' '}
@@ -26,12 +26,12 @@ export function ExperienciesPage() {
           )}
         >
           {t(
-            'Reparos e criação de novas funcionalidades em aplicações web de administração, como também num projeto de plataforma EAD, utilizando React, TypeScript e ChakraUI como principais tecnologias.',
+            'Responsável pelo reparo e criação de funcionalidades em sistemas web de administração, dashboards, controles de estoque e também num projeto de plataforma de vídeos usando React, Styled Components, MaterialUI, ChakraUI, React Router entre outras tecnologias.',
           )}
           <p className="mt-5">
             {t('Tempo de atuação')}:{' '}
             <strong className="tracking-wide">
-              {t('Maio de 2020 - Novembro de 2020')}
+              {t('Maio de 2020 - Janeiro de 2021')}
             </strong>
           </p>
         </Exp>

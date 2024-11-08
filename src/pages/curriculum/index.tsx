@@ -42,8 +42,8 @@ const skills: SkillProps[] = [
     text: 'Conhecimentos em UX/UI para criação de interfaces amigáveis e legíveis. Boas práticas de desenvolvimento de código limpo e legível.',
   },
   {
-    title: 'TypeScript',
-    text: `Experiência sólida em desenvolvimento com TypeScript.`,
+    title: 'TypeScript e Python',
+    text: `Experiência sólida em desenvolvimento com TypeScript e também Python.`,
   },
 
   {

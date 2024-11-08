@@ -7,7 +7,6 @@ export function LargeNavbar() {
   return (
     <section className="flex h-full text-xl md:border-b-2 lg:border-t-2 lg:border-b-0 md:border-x-2 lg:border-x-0 border-secondary">
       <NavbarLink label={t('Sobre')} route="/" />
-      <NavbarLink label={t('Projetos')} route="/projects" />
       <NavbarLink label={t('Experiências')} route="/experiences" />
       <NavbarLink label={t('Currículo')} route="/curriculum" />
     </section>

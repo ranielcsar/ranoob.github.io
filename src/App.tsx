@@ -1,12 +1,9 @@
 import { MemoryRouter } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
 
 import { useTransitionAnimation } from '@/hooks'
 
 import { Header } from '@/components/layout'
 import { AppRoutes } from '@/routes'
-
-import 'react-toastify/dist/ReactToastify.css'
 
 export function App() {
   const [mainRef] = useTransitionAnimation({
@@ -32,8 +29,6 @@ export function App() {
           <AppRoutes />
         </main>
       </div>
-
-      <ToastContainer />
     </MemoryRouter>
   )
 }
