@@ -1,4 +1,4 @@
-import { useMediaQuery, useOnClickOutside } from '@/hooks'
+import { useMediaQuery } from '@/hooks'
 import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom'
@@ -7,7 +7,6 @@ import { RightArrow } from '@/assets/icons'
 
 const links: Record<string, string> = {
   ['/']: 'Sobre',
-  ['/projects']: 'Projetos',
   ['/experiences']: 'Experiências',
   ['/curriculum']: 'Currículo',
 }
@@ -19,8 +18,6 @@ export function Navbar() {
 
   const [openMenu, setOpenMenu] = useState(false)
   const handleMenu = () => setOpenMenu((open) => !open)
-
-  useOnClickOutside(menuRef, () => setOpenMenu(false))
 
   const { pathname } = useLocation()
 
@@ -47,7 +44,6 @@ export function Navbar() {
         onClick={handleMenu}
       >
         <NavbarLink label={t('Sobre')} route="/" />
-        <NavbarLink label={t('Projetos')} route="/projects" />
         <NavbarLink label={t('Experiências')} route="/experiences" />
         <NavbarLink label={t('Currículo')} route="/curriculum" />
       </div>
