@@ -1,3 +1,3 @@
 export * from './home'
-export * from './curriculum'
+export * from './skills'
 export * from './experiences'

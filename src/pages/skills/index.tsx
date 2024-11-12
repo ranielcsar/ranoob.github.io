@@ -1,7 +1,7 @@
 import { useTransitionAnimation } from '@/hooks'
 import { useTranslation } from 'react-i18next'
 
-export function CurriculumPage() {
+export function SkillsPage() {
   const { t } = useTranslation()
 
   return (
@@ -29,57 +29,57 @@ export function CurriculumPage() {
 
 type SkillProps = {
   title: string
-  text: string
+  description: string
 }
 
 const skills: SkillProps[] = [
   {
-    title: 'React e NextJS',
-    text: 'Experiência em desenvolvimento de aplicações web com React e NextJS, incluindo criação de componentes reutilizáveis, gerenciamento de estado com Context API, Zustand e Redux. Roteamento de páginas com React Router e Pages/App folder do NextJS.',
+    title: 'React, NextJS e Django',
+    description: 'Experiência em desenvolvimento de aplicações web com React, NextJS e Django. Incluindo criação de componentes reutilizáveis, gerenciamento de estado, roteamento de páginas entre outras funcionalidades.',
   },
   {
     title: 'UX e Clean Code',
-    text: 'Conhecimentos em UX/UI para criação de interfaces amigáveis e legíveis. Boas práticas de desenvolvimento de código limpo e legível.',
+    description: 'Conhecimentos em UX/UI para criação de interfaces agradáveis. Boas práticas de desenvolvimento de código limpo e legível.',
   },
   {
     title: 'TypeScript e Python',
-    text: `Experiência sólida em desenvolvimento com TypeScript e também Python.`,
+    description: `Experiência em desenvolvimento com TypeScript e Python.`,
   },
 
   {
     title: 'Metodologias ágeis',
-    text: 'Experiência em trabalhar em equipe ágil seguindo as metodologias do Scrum. Incluindo sprints, dailies, reviews, etc.',
+    description: 'Experiência em trabalhar em equipe ágil seguindo as metodologias do Scrum. Incluindo sprints, dailies, reviews, etc.',
   },
   {
-    title: 'ChakraUI, TailwindCSS e StyledComponents',
-    text: 'Experiência em desenvolvimento de interfaces responsivas com ChakraUI, Tailwind CSS e StyledComponents.',
+    title: 'CSS, ChakraUI, TailwindCSS, StyledComponents, MaterialUI...',
+    description: 'Experiência em desenvolvimento de interfaces responsivas com CSS, ChakraUI, Tailwind CSS, StyledComponents, MaterialUI entre outras bibliotecas.',
   },
   {
     title: 'Inglês intermediário',
-    text: 'Compreensão e comunicação em inglês intermediário.',
+    description: 'Compreensão e comunicação em inglês intermediário.',
   },
   {
     title: 'TDD',
-    text: `Testes unitários e de integração usando Jest, React Testing Library e Mock Service Worker (MSW)`,
+    description: `Testes unitários e de integração usando Jest, React Testing Library e Mock Service Worker (MSW)`,
   },
 ]
 
 const backendSkills: SkillProps[] = [
   {
     title: 'NodeJS e Express',
-    text: 'Experiência no desenvolvimento de aplicativos utilizando o ambiente de execução do Nodejs e Express.',
+    description: 'Experiência no desenvolvimento de aplicativos utilizando o ambiente de execução do Nodejs e Express.',
   },
   {
     title: 'NestJS',
-    text: 'Familiaridade com o framework NestJS para construção de aplicativos server-side.',
+    description: 'Familiaridade com o framework NestJS para construção de aplicativos server-side.',
   },
   {
     title: 'Prisma',
-    text: 'Experiência no uso do Prisma como ORM (Object-Relational Mapping) para interagir com bancos de dados.',
+    description: 'Experiência no uso do Prisma como ORM (Object-Relational Mapping) para interagir com bancos de dados.',
   },
 ]
 
-function Skill({ text, title }: SkillProps) {
+function Skill({ description: text, title }: SkillProps) {
   const [textRef] = useTransitionAnimation({
     from: {
       opacity: 0,

@@ -8,7 +8,7 @@ import { RightArrow } from '@/assets/icons'
 const links: Record<string, string> = {
   ['/']: 'Sobre',
   ['/experiences']: 'Experiências',
-  ['/curriculum']: 'Currículo',
+  ['/skills']: 'Habilidades',
 }
 
 export function Navbar() {
@@ -45,7 +45,7 @@ export function Navbar() {
       >
         <NavbarLink label={t('Sobre')} route="/" />
         <NavbarLink label={t('Experiências')} route="/experiences" />
-        <NavbarLink label={t('Currículo')} route="/curriculum" />
+        <NavbarLink label={t('Habilidades')} route="/skills" />
       </div>
     </section>
   )

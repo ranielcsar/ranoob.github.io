@@ -1,7 +1,7 @@
 import {
   HomePage,
   ExperienciesPage,
-  CurriculumPage,
+  SkillsPage,
 } from '@/pages'
 
 import { Route, Routes } from 'react-router-dom'
@@ -11,7 +11,7 @@ export function AppRoutes() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/experiences" element={<ExperienciesPage />} />
-      <Route path="/curriculum" element={<CurriculumPage />} />
+      <Route path="/skills" element={<SkillsPage />} />
     </Routes>
   )
 }
