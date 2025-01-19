@@ -1,9 +1,7 @@
-import { MemoryRouter } from 'react-router-dom'
-
 import { useTransitionAnimation } from '@/hooks'
 
 import { Header } from '@/components/layout'
-import { AppRoutes } from '@/routes'
+import { HomePage, ExperienciesPage } from '@/pages'
 
 export function App() {
   const [mainRef] = useTransitionAnimation({
@@ -18,17 +16,17 @@ export function App() {
   })
 
   return (
-    <MemoryRouter initialEntries={['/']}>
-      <div className="grid h-full grid-rows-[max-content,1fr]">
-        <Header />
+    <div className="grid grid-rows-[5em,1fr] h-full overflow-y-auto">
+      <Header />
 
-        <main
-          ref={mainRef}
-          className="row-[2] px-3 py-5 w-full h-full overflow-y-auto flex items-center justify-center lg:m-auto"
-        >
-          <AppRoutes />
-        </main>
-      </div>
-    </MemoryRouter>
+      <main
+        ref={mainRef}
+        className="row-[2] py-5 w-full flex flex-col items-center justify-center lg:m-auto max-w-5xl"
+      >
+        <HomePage />
+
+        <ExperienciesPage />
+      </main>
+    </div>
   )
 }

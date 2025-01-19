@@ -6,33 +6,23 @@ export function ExperienciesPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="m-auto xl:max-w-max-xl lg:max-w-max-lg flex cursor-default items-center">
-      <ul className="flex flex-col gap-12">
-        <Exp title={t('Dev Frontend Jr ~ (PJ na Brainny Smart Solutions)')}>
-          {t(
-            'Responsável pelo reparo e criação de novas funcionalidades em aplicações web de administração, dashboards, gestão/agendamento de serviços, assim como em landing pages, usando tecnologias web como React, TypeScript, ChakraUI, Apollo e GraphQL. Atuação em uma equipe ágil seguindo metodologias do Scrum (dailies, reviews, plannings, sprints, etc).',
-          )}
+    <div className="m-auto mt-10 flex flex-col cursor-default">
+      <h2 className="mb-4 lg:text-3xl font-bold">{t('exp')}</h2>
+
+      <ul className="flex flex-col gap-12 self-center">
+        <Exp title={t('brainny')}>
+          {t('brainnyAbout')}
           <p className="mt-5">
-            {t('Tempo de atuação')}:{' '}
-            <strong className="tracking-wide">
-              {t('Setembro de 2021 - Outubro de 2022')}
-            </strong>
+            {t('workingTime')}:{' '}
+            <strong className="tracking-wide">{t('brainnyWorkingTime')}</strong>
           </p>
         </Exp>
 
-        <Exp
-          title={t(
-            'Dev Frontend Jr ~ (Freelancer na SystemHope - Agência de Software)',
-          )}
-        >
-          {t(
-            'Responsável pelo reparo e criação de funcionalidades em sistemas web de administração, dashboards, controles de estoque e também num projeto de plataforma de vídeos usando React, Styled Components, MaterialUI, ChakraUI, React Router entre outras tecnologias.',
-          )}
+        <Exp title={t('system')}>
+          {t('systemAbout')}
           <p className="mt-5">
-            {t('Tempo de atuação')}:{' '}
-            <strong className="tracking-wide">
-              {t('Maio de 2020 - Janeiro de 2021')}
-            </strong>
+            {t('workingTime')}:{' '}
+            <strong className="tracking-wide">{t('systemWorkingTime')}</strong>
           </p>
         </Exp>
       </ul>
