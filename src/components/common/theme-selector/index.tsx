@@ -37,7 +37,7 @@ export function ThemeSelector() {
       </Menu.Button>
 
       <Menu.Items
-        className={`data-[headlessui-state="open"]:opacity-100 opacity-0 transition-all absolute -right-10 lg:right-0 mt-2 w-56 border-secondary border divide-y divide-secondary bg-primary focus:outline-none z-20`}
+        className={`data-[headlessui-state="open"]:opacity-100 opacity-0 transition-all absolute -right-28 lg:right-0 mt-2 w-56 border-secondary border divide-y divide-secondary bg-primary focus:outline-none z-20`}
       >
         <Menu.Item
           as="button"

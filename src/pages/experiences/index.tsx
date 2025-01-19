@@ -7,7 +7,7 @@ export function ExperienciesPage() {
 
   return (
     <div className="m-auto mt-10 flex flex-col cursor-default">
-      <h2 className="mb-4 lg:text-3xl font-bold">{t('exp')}</h2>
+      <h2 className="mb-4 text-2xl lg:text-3xl font-bold">{t('exp')}</h2>
 
       <ul className="flex flex-col gap-12 self-center">
         <Exp title={t('brainny')}>
@@ -38,7 +38,7 @@ function Exp({ title, children }: { title: string; children: ReactNode }) {
 
   return (
     <li className="flex list-none flex-col gap-4">
-      <h2 className="bg-accent text-[3ch] lg:text-[2.5vw] xl:text-[clamp(1vw,3vh,10rem)] px-3 py-2 border-4 border-secondary text-black rounded-sm shadow-neo-sm lg:shadow-neo-md dark:shadow-accent font-bold w-auto max-w-max tracking-wider">
+      <h2 className="bg-accent text-xl lg:text-2xl xl:text-[clamp(1vw,3vh,10rem)] px-3 py-2 border-4 border-secondary text-black rounded-sm shadow-neo-sm lg:shadow-neo-md dark:shadow-accent font-bold w-auto max-w-max tracking-wider">
         ✦ {title}
       </h2>
 
