@@ -16,12 +16,12 @@ export function App() {
   })
 
   return (
-    <div className="grid grid-rows-[10em,1fr] lg:grid-rows-[5em,1fr] h-full">
+    <div className="grid grid-rows-[10em,1fr] lg:grid-rows-[5em,1fr] lg:overflow-y-auto h-full">
       <Header />
 
       <main
         ref={mainRef}
-        className="row-[2] py-5 w-full px-2 lg:px-0 flex flex-col items-center justify-center lg:m-auto max-w-5xl"
+        className="row-[2] py-5 w-full px-3 flex flex-col items-center justify-center lg:m-auto max-w-5xl"
       >
         <HomePage />
 

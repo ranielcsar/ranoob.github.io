@@ -32,7 +32,7 @@ const accents = [
 export function ThemeSelector() {
   return (
     <Menu as="div" role="theme-menu" className="relative h-6 xl:h-8">
-      <Menu.Button className="h-6" aria-label="Button for change theme">
+      <Menu.Button className="h-[1.6em]" aria-label="Button for change theme">
         <MoonIcon />
       </Menu.Button>
 
