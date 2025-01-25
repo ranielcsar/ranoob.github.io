@@ -21,7 +21,7 @@ export function App() {
 
       <main
         ref={mainRef}
-        className="row-[2] py-5 w-full px-3 flex flex-col items-center justify-center lg:m-auto max-w-5xl"
+        className="row-[2] pb-5 lg:py-8 w-full px-3 flex flex-col items-center justify-center lg:m-auto max-w-5xl"
       >
         <HomePage />
 
